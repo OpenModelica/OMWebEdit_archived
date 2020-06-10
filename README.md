@@ -13,7 +13,7 @@ The [OMWebEdit](https://github.com/OpenModelica/OMWebEdit) will be the front-end
 ## Timeline
 
 ### First phase functionality - simulate already existing models
-- [ ] no text support
+- no text support
 - [ ] upload Modelica libraries (as zip files) or SSPs to the backend
 - [ ] backend returns the model diagrams
 - [ ] setup a simulation (start time, stop time, solver, etc)
@@ -21,7 +21,7 @@ The [OMWebEdit](https://github.com/OpenModelica/OMWebEdit) will be the front-end
 - [ ] plot the data (in the front-end)
 
 ### Second phase functionality - compose models
-- [ ] no text support
+- no text support
 - [ ] upload Modelica libraries (as zip files) or FMUs to the backend
 - [ ] backend returns the library components or FMUs as icons with port data
 - [ ] drag-and-drop these Modelica components or FMUs and connect them
