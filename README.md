@@ -8,7 +8,7 @@ Should support drag-and-drop (and textual) composition of:
 - composite FMU models (SSP)
 
 The [OMWebEdit](https://github.com/OpenModelica/OMWebEdit) will be the front-end (running in the browser) and 
-[OMWebService](https://github.com/OpenModelica/OMWebService) will be the backend.
+[OMWebService](https://github.com/OpenModelica/OMWebService) will be the backend (on some external server).
 
 ## Timeline
 
@@ -21,7 +21,6 @@ The [OMWebEdit](https://github.com/OpenModelica/OMWebEdit) will be the front-end
 - [ ] plot the data (in the front-end)
 
 ### Second phase functionality - compose models
-** Modelica / Composite FMU models**
 - [ ] no text support
 - [ ] upload Modelica libraries (as zip files) or FMUs to the backend
 - [ ] backend returns the library components or FMUs as icons with port data
@@ -39,10 +38,9 @@ The [OMWebEdit](https://github.com/OpenModelica/OMWebEdit) will be the front-end
 ## Web Frameworks
 
 Possible web frameworks to use:
-
-https://www.diagrams.net/
-https://github.com/jgraph/drawio (web app)
-https://github.com/jgraph/drawio-desktop (desktop app, electron based)
+- https://www.diagrams.net/
+- https://github.com/jgraph/drawio (web app)
+- https://github.com/jgraph/drawio-desktop (desktop app, electron based)
 
 
 
