@@ -1,0 +1,1607 @@
+parseFile("C:/home/adrpo33/dev/OMWebEdit/example/RLCircuit.mo","UTF-8") 16:39:27:459
+{RLCircuit} 16:39:27:461
+#s#; 0.002000; 4.870000; 'parseFile("C:/home/adrpo33/dev/OMWebEdit/example/RLCircuit.mo","UTF-8")'
+
+loadFile("C:/home/adrpo33/dev/OMWebEdit/example/RLCircuit.mo","UTF-8",true) 16:39:27:461
+true 16:39:27:462
+#s#; 0.001000; 4.871000; 'loadFile("C:/home/adrpo33/dev/OMWebEdit/example/RLCircuit.mo","UTF-8",true)'
+
+errors:=getMessagesStringInternal() 16:39:27:463
+{record OpenModelica.Scripting.ErrorMessage
+    info = record OpenModelica.Scripting.SourceInfo
+    filename = "",
+    readonly = false,
+    lineStart = 0,
+    columnStart = 0,
+    lineEnd = 0,
+    columnEnd = 0
+end OpenModelica.Scripting.SourceInfo;,
+    message = "Performance of loadFile(C:/home/adrpo33/dev/OMWebEdit/example/RLCircuit.mo): time 0.001107/0.001107, allocations: 48.73 kB / 0.7194 GB, free: 97.09 MB / 474.7 MB",
+    kind = .OpenModelica.Scripting.ErrorKind.translation,
+    level = .OpenModelica.Scripting.ErrorLevel.notification,
+    id = 572
+end OpenModelica.Scripting.ErrorMessage;} 16:39:27:640
+#s#; 0.177000; 5.048000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:27:640
+1 16:39:27:641
+#s#; 0.001000; 5.049000; 'size(errors,1)'
+
+currentError:=errors[1] 16:39:27:641
+record OpenModelica.Scripting.ErrorMessage
+    info = record OpenModelica.Scripting.SourceInfo
+    filename = "",
+    readonly = false,
+    lineStart = 0,
+    columnStart = 0,
+    lineEnd = 0,
+    columnEnd = 0
+end OpenModelica.Scripting.SourceInfo;,
+    message = "Performance of loadFile(C:/home/adrpo33/dev/OMWebEdit/example/RLCircuit.mo): time 0.001107/0.001107, allocations: 48.73 kB / 0.7194 GB, free: 97.09 MB / 474.7 MB",
+    kind = .OpenModelica.Scripting.ErrorKind.translation,
+    level = .OpenModelica.Scripting.ErrorLevel.notification,
+    id = 572
+end OpenModelica.Scripting.ErrorMessage; 16:39:27:642
+#s#; 0.001000; 5.050000; 'currentError:=errors[1]'
+
+currentError.level 16:39:27:642
+.OpenModelica.Scripting.ErrorLevel.notification 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.level'
+
+currentError.kind 16:39:27:642
+.OpenModelica.Scripting.ErrorKind.translation 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.kind'
+
+currentError.message 16:39:27:642
+"Performance of loadFile(C:/home/adrpo33/dev/OMWebEdit/example/RLCircuit.mo): time 0.001107/0.001107, allocations: 48.73 kB / 0.7194 GB, free: 97.09 MB / 474.7 MB" 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.message'
+
+currentError.info.columnEnd 16:39:27:642
+0 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.info.columnEnd'
+
+currentError.info.lineEnd 16:39:27:642
+0 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.info.lineEnd'
+
+currentError.info.columnStart 16:39:27:642
+0 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.info.columnStart'
+
+currentError.info.lineStart 16:39:27:642
+0 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.info.lineStart'
+
+currentError.info.readonly 16:39:27:642
+false 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.info.readonly'
+
+currentError.info.filename 16:39:27:642
+"" 16:39:27:642
+#s#; 0.000000; 5.050000; 'currentError.info.filename'
+
+getClassInformation(RLCircuit) 16:39:27:654
+("model","",false,false,false,"C:/home/adrpo33/dev/OMWebEdit/example/RLCircuit.mo",false,1,1,21,14,{},false,false,"","",false,"") 16:39:27:654
+#s#; 0.001000; 5.051000; 'getClassInformation(RLCircuit)'
+
+getClassNames(RLCircuit,true,true,false,false,true,false) 16:39:27:654
+{RLCircuit} 16:39:27:654
+#s#; 0.000000; 5.051000; 'getClassNames(RLCircuit,true,true,false,false,true,false)'
+
+getInheritedClasses(RLCircuit) 16:39:27:655
+{} 16:39:27:656
+#s#; 0.001000; 5.052000; 'getInheritedClasses(RLCircuit)'
+
+errors:=getMessagesStringInternal() 16:39:27:656
+{} 16:39:27:662
+#s#; 0.005000; 5.057000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:27:662
+0 16:39:27:663
+#s#; 0.001000; 5.058000; 'size(errors,1)'
+
+getIconAnnotation(RLCircuit) 16:39:27:663
+{} 16:39:27:663
+#s#; 0.000000; 5.058000; 'getIconAnnotation(RLCircuit)'
+
+errors:=getMessagesStringInternal() 16:39:27:663
+{} 16:39:27:668
+#s#; 0.005000; 5.063000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:27:668
+0 16:39:27:670
+#s#; 0.002000; 5.065000; 'size(errors,1)'
+
+getClassNames(AllLoadedClasses,false,false,false,false,true,false) 16:39:27:694
+{RLCircuit,ModelicaReference,ModelicaServices,Complex,Modelica} 16:39:27:694
+#s#; 0.000000; 5.065000; 'getClassNames(AllLoadedClasses,false,false,false,false,true,false)'
+
+getComponents(RLCircuit, useQuotes = true) 16:39:29:418
+{{"Modelica.Electrical.Analog.Basic.Ground","ground1","", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.Electrical.Analog.Basic.Resistor","resistor1","", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.Electrical.Analog.Basic.Inductor","inductor1","", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.Electrical.Analog.Sources.SineVoltage","sineVoltage1","", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:505
+#s#; 0.086000; 5.151000; 'getComponents(RLCircuit, useQuotes = true)'
+
+getComponentAnnotations(RLCircuit) 16:39:29:505
+{{Placement(true,-58.0,-44.0,-10.0,-10.0,10.0,10.0,0.0,-,-,-,-,-,-,)},{Placement(true,-46.0,50.0,-10.0,-10.0,10.0,10.0,0.0,-,-,-,-,-,-,)},{Placement(true,20.0,50.0,-10.0,-10.0,10.0,10.0,0.0,-,-,-,-,-,-,)},{Placement(true,-74.0,12.0,-10.0,-10.0,10.0,10.0,-90.0,-,-,-,-,-,-,)}} 16:39:29:508
+#s#; 0.003000; 5.154000; 'getComponentAnnotations(RLCircuit)'
+
+getDiagramAnnotation(RLCircuit) 16:39:29:509
+{} 16:39:29:509
+#s#; 0.000000; 5.154000; 'getDiagramAnnotation(RLCircuit)'
+
+errors:=getMessagesStringInternal() 16:39:29:509
+{} 16:39:29:514
+#s#; 0.004000; 5.158000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:514
+0 16:39:29:515
+#s#; 0.001000; 5.159000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Basic.Ground) 16:39:29:516
+{} 16:39:29:517
+#s#; 0.001000; 5.160000; 'getInheritedClasses(Modelica.Electrical.Analog.Basic.Ground)'
+
+errors:=getMessagesStringInternal() 16:39:29:517
+{} 16:39:29:521
+#s#; 0.004000; 5.164000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:521
+0 16:39:29:523
+#s#; 0.002000; 5.166000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Basic.Ground) 16:39:29:523
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Line(true, {0.0, 0.0}, 0.0, {{-60.0, 50.0}, {60.0, 50.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-40.0, 30.0}, {40.0, 30.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-20.0, 10.0}, {20.0, 10.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{0.0, 90.0}, {0.0, 50.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-150.0, -10.0}, {150.0, -50.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:29:524
+#s#; 0.001000; 5.167000; 'getIconAnnotation(Modelica.Electrical.Analog.Basic.Ground)'
+
+errors:=getMessagesStringInternal() 16:39:29:525
+{} 16:39:29:529
+#s#; 0.004000; 5.171000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:529
+0 16:39:29:531
+#s#; 0.002000; 5.173000; 'size(errors,1)'
+
+getComponents(Modelica.Electrical.Analog.Basic.Ground, useQuotes = true) 16:39:29:531
+{{"Modelica.Electrical.Analog.Interfaces.Pin","p","", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:532
+#s#; 0.001000; 5.174000; 'getComponents(Modelica.Electrical.Analog.Basic.Ground, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Basic.Ground) 16:39:29:532
+{{Placement(true,0.0,100.0,10.0,-10.0,-10.0,10.0,270.0,-,-,-,-,-,-,)}} 16:39:29:533
+#s#; 0.001000; 5.175000; 'getComponentAnnotations(Modelica.Electrical.Analog.Basic.Ground)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Interfaces.Pin) 16:39:29:534
+{} 16:39:29:535
+#s#; 0.001000; 5.176000; 'getInheritedClasses(Modelica.Electrical.Analog.Interfaces.Pin)'
+
+errors:=getMessagesStringInternal() 16:39:29:535
+{} 16:39:29:539
+#s#; 0.004000; 5.180000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:539
+0 16:39:29:540
+#s#; 0.001000; 5.181000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Interfaces.Pin) 16:39:29:540
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-100.0, 100.0}, {100.0, -100.0}}, 0.0)}} 16:39:29:542
+#s#; 0.002000; 5.183000; 'getIconAnnotation(Modelica.Electrical.Analog.Interfaces.Pin)'
+
+errors:=getMessagesStringInternal() 16:39:29:542
+{} 16:39:29:546
+#s#; 0.004000; 5.187000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:546
+0 16:39:29:548
+#s#; 0.002000; 5.189000; 'size(errors,1)'
+
+getComponents(Modelica.Electrical.Analog.Interfaces.Pin, useQuotes = true) 16:39:29:549
+{{"Modelica.SIunits.ElectricPotential","v","Potential at the pin", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.SIunits.Current","i","Current flowing into the pin", "public", "false", "true", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:549
+#s#; 0.000000; 5.189000; 'getComponents(Modelica.Electrical.Analog.Interfaces.Pin, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.Pin) 16:39:29:550
+{{unassignedMessage="An electrical potential cannot be uniquely calculated.
+The reason could be that
+- a ground object is missing (Modelica.Electrical.Analog.Basic.Ground)
+  to define the zero potential of the electrical circuit, or
+- a connector of an electrical component is not connected."},{unassignedMessage="An electrical current cannot be uniquely calculated.
+The reason could be that
+- a ground object is missing (Modelica.Electrical.Analog.Basic.Ground)
+  to define the zero potential of the electrical circuit, or
+- a connector of an electrical component is not connected."}} 16:39:29:550
+#s#; 0.000000; 5.189000; 'getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.Pin)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.Pin) 16:39:29:550
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-40.0, 40.0}, {40.0, -40.0}}, 0.0), Text(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-160.0, 110.0}, {40.0, 50.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:29:551
+#s#; 0.001000; 5.190000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.Pin)'
+
+errors:=getMessagesStringInternal() 16:39:29:551
+{} 16:39:29:555
+#s#; 0.004000; 5.194000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:555
+0 16:39:29:556
+#s#; 0.001000; 5.195000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.ElectricPotential) 16:39:29:558
+{Real} 16:39:29:559
+#s#; 0.001000; 5.196000; 'getInheritedClasses(Modelica.SIunits.ElectricPotential)'
+
+errors:=getMessagesStringInternal() 16:39:29:559
+{} 16:39:29:563
+#s#; 0.004000; 5.200000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:563
+0 16:39:29:566
+#s#; 0.003000; 5.203000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.ElectricPotential) 16:39:29:566
+{} 16:39:29:566
+#s#; 0.000000; 5.203000; 'getIconAnnotation(Modelica.SIunits.ElectricPotential)'
+
+errors:=getMessagesStringInternal() 16:39:29:566
+{} 16:39:29:571
+#s#; 0.004000; 5.207000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:571
+0 16:39:29:572
+#s#; 0.001000; 5.208000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.ElectricPotential, useQuotes = true) 16:39:29:572
+{} 16:39:29:572
+#s#; 0.000000; 5.208000; 'getComponents(Modelica.SIunits.ElectricPotential, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.ElectricPotential) 16:39:29:572
+{} 16:39:29:572
+#s#; 0.000000; 5.208000; 'getDiagramAnnotation(Modelica.SIunits.ElectricPotential)'
+
+errors:=getMessagesStringInternal() 16:39:29:573
+{} 16:39:29:578
+#s#; 0.005000; 5.213000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:578
+0 16:39:29:580
+#s#; 0.002000; 5.215000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Current) 16:39:29:581
+{Modelica.SIunits.ElectricCurrent} 16:39:29:584
+#s#; 0.003000; 5.218000; 'getInheritedClasses(Modelica.SIunits.Current)'
+
+errors:=getMessagesStringInternal() 16:39:29:584
+{} 16:39:29:588
+#s#; 0.004000; 5.222000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:589
+0 16:39:29:589
+#s#; 0.000000; 5.222000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.ElectricCurrent) 16:39:29:591
+{Real} 16:39:29:593
+#s#; 0.002000; 5.224000; 'getInheritedClasses(Modelica.SIunits.ElectricCurrent)'
+
+errors:=getMessagesStringInternal() 16:39:29:593
+{} 16:39:29:597
+#s#; 0.004000; 5.228000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:597
+0 16:39:29:599
+#s#; 0.002000; 5.230000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.ElectricCurrent) 16:39:29:599
+{} 16:39:29:600
+#s#; 0.001000; 5.231000; 'getIconAnnotation(Modelica.SIunits.ElectricCurrent)'
+
+errors:=getMessagesStringInternal() 16:39:29:600
+{} 16:39:29:603
+#s#; 0.003000; 5.234000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:603
+0 16:39:29:606
+#s#; 0.003000; 5.237000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.SIunits.Current, 1) 16:39:29:606
+{Error,{}} 16:39:29:606
+#s#; 0.000000; 5.237000; 'getNthInheritedClassIconMapAnnotation(Modelica.SIunits.Current, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.SIunits.Current, 1) 16:39:29:606
+{Error,{}} 16:39:29:606
+#s#; 0.000000; 5.237000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.SIunits.Current, 1)'
+
+getIconAnnotation(Modelica.SIunits.Current) 16:39:29:606
+{} 16:39:29:606
+#s#; 0.000000; 5.237000; 'getIconAnnotation(Modelica.SIunits.Current)'
+
+errors:=getMessagesStringInternal() 16:39:29:606
+{} 16:39:29:609
+#s#; 0.003000; 5.240000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:610
+0 16:39:29:611
+#s#; 0.002000; 5.242000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.ElectricCurrent, useQuotes = true) 16:39:29:611
+{} 16:39:29:611
+#s#; 0.000000; 5.242000; 'getComponents(Modelica.SIunits.ElectricCurrent, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.ElectricCurrent) 16:39:29:611
+{} 16:39:29:611
+#s#; 0.000000; 5.242000; 'getDiagramAnnotation(Modelica.SIunits.ElectricCurrent)'
+
+errors:=getMessagesStringInternal() 16:39:29:612
+{} 16:39:29:617
+#s#; 0.005000; 5.247000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:617
+0 16:39:29:618
+#s#; 0.001000; 5.248000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Current, useQuotes = true) 16:39:29:618
+{} 16:39:29:618
+#s#; 0.000000; 5.248000; 'getComponents(Modelica.SIunits.Current, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Current) 16:39:29:618
+{} 16:39:29:618
+#s#; 0.000000; 5.248000; 'getDiagramAnnotation(Modelica.SIunits.Current)'
+
+errors:=getMessagesStringInternal() 16:39:29:619
+{} 16:39:29:623
+#s#; 0.004000; 5.252000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:623
+0 16:39:29:624
+#s#; 0.001000; 5.253000; 'size(errors,1)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Basic.Ground) 16:39:29:626
+{} 16:39:29:626
+#s#; 0.000000; 5.253000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Basic.Ground)'
+
+errors:=getMessagesStringInternal() 16:39:29:627
+{} 16:39:29:630
+#s#; 0.003000; 5.256000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:630
+0 16:39:29:632
+#s#; 0.002000; 5.258000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Basic.Resistor) 16:39:29:635
+{Modelica.Electrical.Analog.Interfaces.OnePort,Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort} 16:39:29:635
+#s#; 0.000000; 5.258000; 'getInheritedClasses(Modelica.Electrical.Analog.Basic.Resistor)'
+
+errors:=getMessagesStringInternal() 16:39:29:636
+{} 16:39:29:640
+#s#; 0.004000; 5.262000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:640
+0 16:39:29:641
+#s#; 0.001000; 5.263000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Interfaces.OnePort) 16:39:29:643
+{} 16:39:29:644
+#s#; 0.001000; 5.264000; 'getInheritedClasses(Modelica.Electrical.Analog.Interfaces.OnePort)'
+
+errors:=getMessagesStringInternal() 16:39:29:644
+{} 16:39:29:648
+#s#; 0.004000; 5.268000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:648
+0 16:39:29:649
+#s#; 0.001000; 5.269000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Interfaces.OnePort) 16:39:29:649
+{} 16:39:29:650
+#s#; 0.001000; 5.270000; 'getIconAnnotation(Modelica.Electrical.Analog.Interfaces.OnePort)'
+
+errors:=getMessagesStringInternal() 16:39:29:650
+{} 16:39:29:654
+#s#; 0.003000; 5.273000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:654
+0 16:39:29:655
+#s#; 0.001000; 5.274000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Basic.Resistor, 1) 16:39:29:655
+{Modelica.Electrical.Analog.Interfaces.OnePort,{}} 16:39:29:655
+#s#; 0.000000; 5.274000; 'getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Basic.Resistor, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Basic.Resistor, 1) 16:39:29:655
+{Modelica.Electrical.Analog.Interfaces.OnePort,{}} 16:39:29:655
+#s#; 0.000000; 5.274000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Basic.Resistor, 1)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort) 16:39:29:657
+{} 16:39:29:657
+#s#; 0.000000; 5.274000; 'getInheritedClasses(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort)'
+
+errors:=getMessagesStringInternal() 16:39:29:658
+{} 16:39:29:662
+#s#; 0.004000; 5.278000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:662
+0 16:39:29:663
+#s#; 0.001000; 5.279000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort) 16:39:29:663
+{} 16:39:29:663
+#s#; 0.000000; 5.279000; 'getIconAnnotation(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort)'
+
+errors:=getMessagesStringInternal() 16:39:29:664
+{} 16:39:29:668
+#s#; 0.004000; 5.283000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:668
+0 16:39:29:670
+#s#; 0.002000; 5.285000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Basic.Resistor, 2) 16:39:29:670
+{Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort,{}} 16:39:29:670
+#s#; 0.000000; 5.285000; 'getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Basic.Resistor, 2)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Basic.Resistor, 2) 16:39:29:670
+{Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort,{}} 16:39:29:670
+#s#; 0.000000; 5.285000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Basic.Resistor, 2)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Basic.Resistor) 16:39:29:670
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {255, 255, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-70.0, 30.0}, {70.0, -30.0}}, 0.0), Line(true, {0.0, 0.0}, 0.0, {{-90.0, 0.0}, {-70.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{70.0, 0.0}, {90.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {0, 0, 0}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-150.0, -40.0}, {150.0, -80.0}}, "R=%R", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center), Line(useHeatPort, {0.0, 0.0}, 0.0, {{0.0, -100.0}, {0.0, -30.0}}, {127, 0, 0}, LinePattern.Dot, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-150.0, 90.0}, {150.0, 50.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:29:672
+#s#; 0.002000; 5.287000; 'getIconAnnotation(Modelica.Electrical.Analog.Basic.Resistor)'
+
+errors:=getMessagesStringInternal() 16:39:29:672
+{} 16:39:29:677
+#s#; 0.005000; 5.292000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:677
+0 16:39:29:679
+#s#; 0.002000; 5.294000; 'size(errors,1)'
+
+getComponentModifierNames(RLCircuit,"resistor1") 16:39:29:679
+{} 16:39:29:679
+#s#; 0.000000; 5.294000; 'getComponentModifierNames(RLCircuit,"resistor1")'
+
+getComponents(Modelica.Electrical.Analog.Interfaces.OnePort, useQuotes = true) 16:39:29:679
+{{"Modelica.SIunits.Voltage","v","Voltage drop of the two pins (= p.v - n.v)", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.SIunits.Current","i","Current flowing from pin p to pin n", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.Electrical.Analog.Interfaces.PositivePin","p","Positive electrical pin", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.Electrical.Analog.Interfaces.NegativePin","n","Negative electrical pin", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:680
+#s#; 0.001000; 5.295000; 'getComponents(Modelica.Electrical.Analog.Interfaces.OnePort, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.OnePort) 16:39:29:680
+{{},{},{Placement(true,-,-,-110.0,-10.0,-90.0,10.0,-,-,-,-,-,-,-,)},{Placement(true,-,-,110.0,-10.0,90.0,10.0,-,-,-,-,-,-,-,)}} 16:39:29:681
+#s#; 0.001000; 5.296000; 'getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.OnePort)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Interfaces.PositivePin) 16:39:29:683
+{} 16:39:29:683
+#s#; 0.000000; 5.296000; 'getInheritedClasses(Modelica.Electrical.Analog.Interfaces.PositivePin)'
+
+errors:=getMessagesStringInternal() 16:39:29:684
+{} 16:39:29:688
+#s#; 0.004000; 5.300000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:688
+0 16:39:29:690
+#s#; 0.002000; 5.302000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Interfaces.PositivePin) 16:39:29:690
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-100.0, 100.0}, {100.0, -100.0}}, 0.0)}} 16:39:29:691
+#s#; 0.001000; 5.303000; 'getIconAnnotation(Modelica.Electrical.Analog.Interfaces.PositivePin)'
+
+errors:=getMessagesStringInternal() 16:39:29:691
+{} 16:39:29:695
+#s#; 0.004000; 5.307000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:695
+0 16:39:29:696
+#s#; 0.001000; 5.308000; 'size(errors,1)'
+
+getComponents(Modelica.Electrical.Analog.Interfaces.PositivePin, useQuotes = true) 16:39:29:697
+{{"Modelica.SIunits.ElectricPotential","v","Potential at the pin", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.SIunits.Current","i","Current flowing into the pin", "public", "false", "true", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:698
+#s#; 0.001000; 5.309000; 'getComponents(Modelica.Electrical.Analog.Interfaces.PositivePin, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.PositivePin) 16:39:29:698
+{{unassignedMessage="An electrical potential cannot be uniquely calculated.
+The reason could be that
+- a ground object is missing (Modelica.Electrical.Analog.Basic.Ground)
+  to define the zero potential of the electrical circuit, or
+- a connector of an electrical component is not connected."},{unassignedMessage="An electrical current cannot be uniquely calculated.
+The reason could be that
+- a ground object is missing (Modelica.Electrical.Analog.Basic.Ground)
+  to define the zero potential of the electrical circuit, or
+- a connector of an electrical component is not connected."}} 16:39:29:698
+#s#; 0.000000; 5.309000; 'getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.PositivePin)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.PositivePin) 16:39:29:698
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-40.0, 40.0}, {40.0, -40.0}}, 0.0), Text(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-160.0, 110.0}, {40.0, 50.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:29:699
+#s#; 0.001000; 5.310000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.PositivePin)'
+
+errors:=getMessagesStringInternal() 16:39:29:699
+{} 16:39:29:703
+#s#; 0.004000; 5.314000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:703
+0 16:39:29:705
+#s#; 0.002000; 5.316000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Interfaces.NegativePin) 16:39:29:711
+{} 16:39:29:712
+#s#; 0.001000; 5.317000; 'getInheritedClasses(Modelica.Electrical.Analog.Interfaces.NegativePin)'
+
+errors:=getMessagesStringInternal() 16:39:29:713
+{} 16:39:29:717
+#s#; 0.004000; 5.321000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:717
+0 16:39:29:718
+#s#; 0.001000; 5.322000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Interfaces.NegativePin) 16:39:29:718
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {255, 255, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-100.0, 100.0}, {100.0, -100.0}}, 0.0)}} 16:39:29:719
+#s#; 0.001000; 5.323000; 'getIconAnnotation(Modelica.Electrical.Analog.Interfaces.NegativePin)'
+
+errors:=getMessagesStringInternal() 16:39:29:720
+{} 16:39:29:723
+#s#; 0.003000; 5.326000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:723
+0 16:39:29:725
+#s#; 0.002000; 5.328000; 'size(errors,1)'
+
+getComponents(Modelica.Electrical.Analog.Interfaces.NegativePin, useQuotes = true) 16:39:29:725
+{{"Modelica.SIunits.ElectricPotential","v","Potential at the pin", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.SIunits.Current","i","Current flowing into the pin", "public", "false", "true", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:725
+#s#; 0.000000; 5.328000; 'getComponents(Modelica.Electrical.Analog.Interfaces.NegativePin, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.NegativePin) 16:39:29:725
+{{unassignedMessage="An electrical potential cannot be uniquely calculated.
+The reason could be that
+- a ground object is missing (Modelica.Electrical.Analog.Basic.Ground)
+  to define the zero potential of the electrical circuit, or
+- a connector of an electrical component is not connected."},{unassignedMessage="An electrical current cannot be uniquely calculated.
+The reason could be that
+- a ground object is missing (Modelica.Electrical.Analog.Basic.Ground)
+  to define the zero potential of the electrical circuit, or
+- a connector of an electrical component is not connected."}} 16:39:29:725
+#s#; 0.000000; 5.328000; 'getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.NegativePin)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.NegativePin) 16:39:29:726
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {255, 255, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-40.0, 40.0}, {40.0, -40.0}}, 0.0), Text(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-40.0, 110.0}, {160.0, 50.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:29:726
+#s#; 0.000000; 5.328000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.NegativePin)'
+
+errors:=getMessagesStringInternal() 16:39:29:727
+{} 16:39:29:731
+#s#; 0.004000; 5.332000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:731
+0 16:39:29:732
+#s#; 0.001000; 5.333000; 'size(errors,1)'
+
+getComponents(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort, useQuotes = true) 16:39:29:735
+{{"Boolean","useHeatPort","=true, if heatPort is enabled", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.SIunits.Temperature","T","Fixed device temperature if useHeatPort = false", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a","heatPort","Conditional heat port", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.SIunits.Power","LossPower","Loss power leaving component via heatPort", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.SIunits.Temperature","T_heatPort","Temperature of heatPort", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:736
+#s#; 0.000000; 5.333000; 'getComponents(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort) 16:39:29:736
+{{Evaluate=true, HideResult=true, choices(true,false)},{Dialog("General","Parameters",true,false,false,-,-,-,-,"",false)},{Placement(true,-,-,-10.0,-110.0,10.0,-90.0,-,-,-,-10.0,-110.0,10.0,-90.0,)},{},{}} 16:39:29:738
+#s#; 0.002000; 5.335000; 'getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort)'
+
+getInheritedClasses(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a) 16:39:29:741
+{Modelica.Thermal.HeatTransfer.Interfaces.HeatPort} 16:39:29:742
+#s#; 0.001000; 5.336000; 'getInheritedClasses(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a)'
+
+errors:=getMessagesStringInternal() 16:39:29:742
+{} 16:39:29:750
+#s#; 0.008000; 5.344000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:750
+0 16:39:29:752
+#s#; 0.002000; 5.346000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort) 16:39:29:754
+{} 16:39:29:755
+#s#; 0.000000; 5.346000; 'getInheritedClasses(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort)'
+
+errors:=getMessagesStringInternal() 16:39:29:755
+{} 16:39:29:761
+#s#; 0.006000; 5.352000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:761
+0 16:39:29:762
+#s#; 0.001000; 5.353000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort) 16:39:29:762
+{} 16:39:29:763
+#s#; 0.001000; 5.354000; 'getIconAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort)'
+
+errors:=getMessagesStringInternal() 16:39:29:763
+{} 16:39:29:769
+#s#; 0.006000; 5.360000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:769
+0 16:39:29:772
+#s#; 0.003000; 5.363000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a, 1) 16:39:29:772
+{HeatPort,{}} 16:39:29:772
+#s#; 0.000000; 5.363000; 'getNthInheritedClassIconMapAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a, 1) 16:39:29:772
+{HeatPort,{}} 16:39:29:772
+#s#; 0.000000; 5.363000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a, 1)'
+
+getIconAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a) 16:39:29:772
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {191, 0, 0}, {191, 0, 0}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-100.0, 100.0}, {100.0, -100.0}}, 0.0)}} 16:39:29:774
+#s#; 0.001000; 5.364000; 'getIconAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a)'
+
+errors:=getMessagesStringInternal() 16:39:29:774
+{} 16:39:29:780
+#s#; 0.006000; 5.370000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:780
+0 16:39:29:782
+#s#; 0.002000; 5.372000; 'size(errors,1)'
+
+getComponents(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort, useQuotes = true) 16:39:29:782
+{{"Modelica.SIunits.Temperature","T","Port temperature", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"},{"Modelica.SIunits.HeatFlowRate","Q_flow","Heat flow rate (positive if flowing from outside into the component)", "public", "false", "true", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:783
+#s#; 0.001000; 5.373000; 'getComponents(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort) 16:39:29:783
+{{},{}} 16:39:29:783
+#s#; 0.000000; 5.373000; 'getComponentAnnotations(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort)'
+
+getDiagramAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort) 16:39:29:783
+{} 16:39:29:783
+#s#; 0.000000; 5.373000; 'getDiagramAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort)'
+
+errors:=getMessagesStringInternal() 16:39:29:784
+{} 16:39:29:789
+#s#; 0.005000; 5.378000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:789
+0 16:39:29:791
+#s#; 0.002000; 5.380000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Temperature) 16:39:29:794
+{Modelica.SIunits.ThermodynamicTemperature} 16:39:29:796
+#s#; 0.002000; 5.382000; 'getInheritedClasses(Modelica.SIunits.Temperature)'
+
+errors:=getMessagesStringInternal() 16:39:29:797
+{} 16:39:29:804
+#s#; 0.007000; 5.389000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:804
+0 16:39:29:806
+#s#; 0.002000; 5.391000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.ThermodynamicTemperature) 16:39:29:807
+{Real} 16:39:29:809
+#s#; 0.002000; 5.393000; 'getInheritedClasses(Modelica.SIunits.ThermodynamicTemperature)'
+
+errors:=getMessagesStringInternal() 16:39:29:809
+{} 16:39:29:813
+#s#; 0.004000; 5.397000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:813
+0 16:39:29:815
+#s#; 0.001000; 5.398000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.ThermodynamicTemperature) 16:39:29:815
+{} 16:39:29:815
+#s#; 0.000000; 5.398000; 'getIconAnnotation(Modelica.SIunits.ThermodynamicTemperature)'
+
+errors:=getMessagesStringInternal() 16:39:29:815
+{} 16:39:29:819
+#s#; 0.004000; 5.402000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:819
+0 16:39:29:821
+#s#; 0.002000; 5.404000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.SIunits.Temperature, 1) 16:39:29:821
+{Error,{}} 16:39:29:821
+#s#; 0.000000; 5.404000; 'getNthInheritedClassIconMapAnnotation(Modelica.SIunits.Temperature, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.SIunits.Temperature, 1) 16:39:29:821
+{Error,{}} 16:39:29:821
+#s#; 0.000000; 5.404000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.SIunits.Temperature, 1)'
+
+getIconAnnotation(Modelica.SIunits.Temperature) 16:39:29:821
+{} 16:39:29:821
+#s#; 0.000000; 5.404000; 'getIconAnnotation(Modelica.SIunits.Temperature)'
+
+errors:=getMessagesStringInternal() 16:39:29:821
+{} 16:39:29:825
+#s#; 0.004000; 5.408000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:825
+0 16:39:29:827
+#s#; 0.002000; 5.410000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.ThermodynamicTemperature, useQuotes = true) 16:39:29:827
+{} 16:39:29:827
+#s#; 0.000000; 5.410000; 'getComponents(Modelica.SIunits.ThermodynamicTemperature, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.ThermodynamicTemperature) 16:39:29:827
+{} 16:39:29:827
+#s#; 0.000000; 5.410000; 'getDiagramAnnotation(Modelica.SIunits.ThermodynamicTemperature)'
+
+errors:=getMessagesStringInternal() 16:39:29:828
+{} 16:39:29:832
+#s#; 0.003000; 5.413000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:832
+0 16:39:29:833
+#s#; 0.001000; 5.414000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Temperature, useQuotes = true) 16:39:29:833
+{} 16:39:29:833
+#s#; 0.000000; 5.414000; 'getComponents(Modelica.SIunits.Temperature, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Temperature) 16:39:29:833
+{} 16:39:29:833
+#s#; 0.000000; 5.414000; 'getDiagramAnnotation(Modelica.SIunits.Temperature)'
+
+errors:=getMessagesStringInternal() 16:39:29:833
+{} 16:39:29:837
+#s#; 0.004000; 5.418000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:838
+0 16:39:29:839
+#s#; 0.002000; 5.420000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.HeatFlowRate) 16:39:29:840
+{Real} 16:39:29:842
+#s#; 0.002000; 5.422000; 'getInheritedClasses(Modelica.SIunits.HeatFlowRate)'
+
+errors:=getMessagesStringInternal() 16:39:29:842
+{} 16:39:29:846
+#s#; 0.004000; 5.426000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:846
+0 16:39:29:848
+#s#; 0.002000; 5.428000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.HeatFlowRate) 16:39:29:848
+{} 16:39:29:848
+#s#; 0.000000; 5.428000; 'getIconAnnotation(Modelica.SIunits.HeatFlowRate)'
+
+errors:=getMessagesStringInternal() 16:39:29:848
+{} 16:39:29:852
+#s#; 0.004000; 5.432000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:852
+0 16:39:29:854
+#s#; 0.002000; 5.434000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.HeatFlowRate, useQuotes = true) 16:39:29:854
+{} 16:39:29:854
+#s#; 0.000000; 5.434000; 'getComponents(Modelica.SIunits.HeatFlowRate, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.HeatFlowRate) 16:39:29:854
+{} 16:39:29:854
+#s#; 0.000000; 5.434000; 'getDiagramAnnotation(Modelica.SIunits.HeatFlowRate)'
+
+errors:=getMessagesStringInternal() 16:39:29:854
+{} 16:39:29:858
+#s#; 0.004000; 5.438000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:858
+0 16:39:29:860
+#s#; 0.002000; 5.440000; 'size(errors,1)'
+
+getComponents(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a, useQuotes = true) 16:39:29:860
+{} 16:39:29:860
+#s#; 0.000000; 5.440000; 'getComponents(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a) 16:39:29:861
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {191, 0, 0}, {191, 0, 0}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-50.0, 50.0}, {50.0, -50.0}}, 0.0), Text(true, {0.0, 0.0}, 0.0, {191, 0, 0}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-120.0, 120.0}, {100.0, 60.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:29:862
+#s#; 0.002000; 5.442000; 'getDiagramAnnotation(Modelica.Thermal.HeatTransfer.Interfaces.HeatPort_a)'
+
+errors:=getMessagesStringInternal() 16:39:29:863
+{} 16:39:29:867
+#s#; 0.004000; 5.446000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:867
+0 16:39:29:868
+#s#; 0.001000; 5.447000; 'size(errors,1)'
+
+getComponents(Modelica.Electrical.Analog.Basic.Resistor, useQuotes = true) 16:39:29:871
+{{"Modelica.SIunits.Resistance","R","Resistance at temperature T_ref", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.SIunits.Temperature","T_ref","Reference temperature", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.SIunits.LinearTemperatureCoefficient","alpha","Temperature coefficient of resistance (R_actual = R*(1 + alpha*(T_heatPort - T_ref))", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.SIunits.Resistance","R_actual","Actual resistance = R*(1 + alpha*(T_heatPort - T_ref))", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:29:871
+#s#; 0.000000; 5.447000; 'getComponents(Modelica.Electrical.Analog.Basic.Resistor, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Basic.Resistor) 16:39:29:871
+{{},{},{},{}} 16:39:29:871
+#s#; 0.000000; 5.447000; 'getComponentAnnotations(Modelica.Electrical.Analog.Basic.Resistor)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.OnePort) 16:39:29:871
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Line(true, {0.0, 0.0}, 0.0, {{-110.0, 20.0}, {-85.0, 20.0}}, {160, 160, 164}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Polygon(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {160, 160, 164}, LinePattern.Solid, FillPattern.Solid, 0.25, {{-95.0, 23.0}, {-85.0, 20.0}, {-95.0, 17.0}, {-95.0, 23.0}}, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{90.0, 20.0}, {115.0, 20.0}}, {160, 160, 164}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-125.0, 0.0}, {-115.0, 0.0}}, {160, 160, 164}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-120.0, -5.0}, {-120.0, 5.0}}, {160, 160, 164}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-110.0, 25.0}, {-90.0, 45.0}}, "i", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center), Polygon(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {160, 160, 164}, LinePattern.Solid, FillPattern.Solid, 0.25, {{105.0, 23.0}, {115.0, 20.0}, {105.0, 17.0}, {105.0, 23.0}}, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{115.0, 0.0}, {125.0, 0.0}}, {160, 160, 164}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{90.0, 45.0}, {110.0, 25.0}}, "i", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:29:872
+#s#; 0.001000; 5.448000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.OnePort)'
+
+errors:=getMessagesStringInternal() 16:39:29:873
+{} 16:39:29:877
+#s#; 0.004000; 5.452000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:877
+0 16:39:29:878
+#s#; 0.001000; 5.453000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Voltage) 16:39:29:880
+{Modelica.SIunits.ElectricPotential} 16:39:29:881
+#s#; 0.002000; 5.455000; 'getInheritedClasses(Modelica.SIunits.Voltage)'
+
+errors:=getMessagesStringInternal() 16:39:29:882
+{} 16:39:29:886
+#s#; 0.004000; 5.459000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:886
+0 16:39:29:887
+#s#; 0.001000; 5.460000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.SIunits.Voltage, 1) 16:39:29:887
+{Error,{}} 16:39:29:887
+#s#; 0.000000; 5.460000; 'getNthInheritedClassIconMapAnnotation(Modelica.SIunits.Voltage, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.SIunits.Voltage, 1) 16:39:29:887
+{Error,{}} 16:39:29:888
+#s#; 0.001000; 5.461000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.SIunits.Voltage, 1)'
+
+getIconAnnotation(Modelica.SIunits.Voltage) 16:39:29:888
+{} 16:39:29:888
+#s#; 0.000000; 5.461000; 'getIconAnnotation(Modelica.SIunits.Voltage)'
+
+errors:=getMessagesStringInternal() 16:39:29:888
+{} 16:39:29:892
+#s#; 0.004000; 5.465000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:892
+0 16:39:29:893
+#s#; 0.001000; 5.466000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Voltage, useQuotes = true) 16:39:29:893
+{} 16:39:29:894
+#s#; 0.001000; 5.467000; 'getComponents(Modelica.SIunits.Voltage, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Voltage) 16:39:29:894
+{} 16:39:29:894
+#s#; 0.000000; 5.467000; 'getDiagramAnnotation(Modelica.SIunits.Voltage)'
+
+errors:=getMessagesStringInternal() 16:39:29:894
+{} 16:39:29:898
+#s#; 0.004000; 5.471000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:898
+0 16:39:29:899
+#s#; 0.001000; 5.472000; 'size(errors,1)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort) 16:39:29:902
+{} 16:39:29:902
+#s#; 0.000000; 5.472000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort)'
+
+errors:=getMessagesStringInternal() 16:39:29:902
+{} 16:39:29:906
+#s#; 0.004000; 5.476000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:906
+0 16:39:29:908
+#s#; 0.002000; 5.478000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Power) 16:39:29:912
+{Real} 16:39:29:914
+#s#; 0.002000; 5.480000; 'getInheritedClasses(Modelica.SIunits.Power)'
+
+errors:=getMessagesStringInternal() 16:39:29:914
+{} 16:39:29:919
+#s#; 0.005000; 5.485000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:919
+0 16:39:29:920
+#s#; 0.001000; 5.486000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.Power) 16:39:29:920
+{} 16:39:29:920
+#s#; 0.000000; 5.486000; 'getIconAnnotation(Modelica.SIunits.Power)'
+
+errors:=getMessagesStringInternal() 16:39:29:921
+{} 16:39:29:927
+#s#; 0.006000; 5.492000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:927
+0 16:39:29:928
+#s#; 0.001000; 5.493000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Power, useQuotes = true) 16:39:29:928
+{} 16:39:29:928
+#s#; 0.000000; 5.493000; 'getComponents(Modelica.SIunits.Power, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Power) 16:39:29:928
+{} 16:39:29:928
+#s#; 0.000000; 5.493000; 'getDiagramAnnotation(Modelica.SIunits.Power)'
+
+errors:=getMessagesStringInternal() 16:39:29:929
+{} 16:39:29:932
+#s#; 0.003000; 5.496000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:932
+0 16:39:29:934
+#s#; 0.002000; 5.498000; 'size(errors,1)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Basic.Resistor) 16:39:29:935
+{} 16:39:29:936
+#s#; 0.001000; 5.499000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Basic.Resistor)'
+
+errors:=getMessagesStringInternal() 16:39:29:936
+{} 16:39:29:940
+#s#; 0.004000; 5.503000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:940
+0 16:39:29:941
+#s#; 0.001000; 5.504000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Resistance) 16:39:29:944
+{Real} 16:39:29:946
+#s#; 0.002000; 5.506000; 'getInheritedClasses(Modelica.SIunits.Resistance)'
+
+errors:=getMessagesStringInternal() 16:39:29:946
+{} 16:39:29:951
+#s#; 0.005000; 5.511000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:951
+0 16:39:29:952
+#s#; 0.001000; 5.512000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.Resistance) 16:39:29:952
+{} 16:39:29:952
+#s#; 0.000000; 5.512000; 'getIconAnnotation(Modelica.SIunits.Resistance)'
+
+errors:=getMessagesStringInternal() 16:39:29:952
+{} 16:39:29:957
+#s#; 0.005000; 5.517000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:957
+0 16:39:29:958
+#s#; 0.001000; 5.518000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Resistance, useQuotes = true) 16:39:29:958
+{} 16:39:29:958
+#s#; 0.000000; 5.518000; 'getComponents(Modelica.SIunits.Resistance, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Resistance) 16:39:29:958
+{} 16:39:29:958
+#s#; 0.000000; 5.518000; 'getDiagramAnnotation(Modelica.SIunits.Resistance)'
+
+errors:=getMessagesStringInternal() 16:39:29:959
+{} 16:39:29:963
+#s#; 0.004000; 5.522000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:963
+0 16:39:29:964
+#s#; 0.001000; 5.523000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.LinearTemperatureCoefficient) 16:39:29:965
+{Real} 16:39:29:967
+#s#; 0.002000; 5.525000; 'getInheritedClasses(Modelica.SIunits.LinearTemperatureCoefficient)'
+
+errors:=getMessagesStringInternal() 16:39:29:968
+{} 16:39:29:973
+#s#; 0.005000; 5.530000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:973
+0 16:39:29:976
+#s#; 0.003000; 5.533000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.LinearTemperatureCoefficient) 16:39:29:976
+{} 16:39:29:977
+#s#; 0.001000; 5.534000; 'getIconAnnotation(Modelica.SIunits.LinearTemperatureCoefficient)'
+
+errors:=getMessagesStringInternal() 16:39:29:977
+{} 16:39:29:983
+#s#; 0.006000; 5.540000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:983
+0 16:39:29:986
+#s#; 0.003000; 5.543000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.LinearTemperatureCoefficient, useQuotes = true) 16:39:29:986
+{} 16:39:29:987
+#s#; 0.001000; 5.544000; 'getComponents(Modelica.SIunits.LinearTemperatureCoefficient, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.LinearTemperatureCoefficient) 16:39:29:987
+{} 16:39:29:987
+#s#; 0.000000; 5.544000; 'getDiagramAnnotation(Modelica.SIunits.LinearTemperatureCoefficient)'
+
+errors:=getMessagesStringInternal() 16:39:29:988
+{} 16:39:29:993
+#s#; 0.006000; 5.550000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:29:993
+0 16:39:29:996
+#s#; 0.003000; 5.553000; 'size(errors,1)'
+
+getParameterValue(Modelica.Electrical.Analog.Basic.Resistor,"R") 16:39:29:998
+"" 16:39:29:998
+#s#; 0.000000; 5.553000; 'getParameterValue(Modelica.Electrical.Analog.Basic.Resistor,"R")'
+
+getExtendsModifierNames(Modelica.Electrical.Analog.Basic.Resistor,Modelica.Electrical.Analog.Interfaces.OnePort, useQuotes = true) 16:39:29:998
+{} 16:39:29:998
+#s#; 0.000000; 5.553000; 'getExtendsModifierNames(Modelica.Electrical.Analog.Basic.Resistor,Modelica.Electrical.Analog.Interfaces.OnePort, useQuotes = true)'
+
+getExtendsModifierNames(Modelica.Electrical.Analog.Basic.Resistor,Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort, useQuotes = true) 16:39:29:998
+{"T"} 16:39:29:998
+#s#; 0.000000; 5.553000; 'getExtendsModifierNames(Modelica.Electrical.Analog.Basic.Resistor,Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort, useQuotes = true)'
+
+getExtendsModifierValue(Modelica.Electrical.Analog.Basic.Resistor,Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort,T) 16:39:29:999
+T_ref 16:39:29:999
+#s#; 0.000000; 5.553000; 'getExtendsModifierValue(Modelica.Electrical.Analog.Basic.Resistor,Modelica.Electrical.Analog.Interfaces.ConditionalHeatPort,T)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Basic.Inductor) 16:39:30:002
+{Modelica.Electrical.Analog.Interfaces.OnePort} 16:39:30:003
+#s#; 0.001000; 5.554000; 'getInheritedClasses(Modelica.Electrical.Analog.Basic.Inductor)'
+
+errors:=getMessagesStringInternal() 16:39:30:003
+{} 16:39:30:008
+#s#; 0.005000; 5.559000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:008
+0 16:39:30:009
+#s#; 0.001000; 5.560000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Basic.Inductor, 1) 16:39:30:010
+{Interfaces.OnePort,{}} 16:39:30:010
+#s#; 0.000000; 5.560000; 'getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Basic.Inductor, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Basic.Inductor, 1) 16:39:30:010
+{Interfaces.OnePort,{}} 16:39:30:010
+#s#; 0.000000; 5.560000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Basic.Inductor, 1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Basic.Inductor) 16:39:30:010
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Line(true, {0.0, 0.0}, 0.0, {{60.0, 0.0}, {90.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-90.0, 0.0}, {-60.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {0, 0, 0}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-150.0, -40.0}, {150.0, -80.0}}, "L=%L", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center), Line(true, {0.0, 0.0}, 0.0, {{-60.0, 0.0}, {-59.0, 6.0}, {-52.0, 14.0}, {-38.0, 14.0}, {-31.0, 6.0}, {-30.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.Bezier), Line(true, {0.0, 0.0}, 0.0, {{-30.0, 0.0}, {-29.0, 6.0}, {-22.0, 14.0}, {-8.0, 14.0}, {-1.0, 6.0}, {0.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.Bezier), Line(true, {0.0, 0.0}, 0.0, {{0.0, 0.0}, {1.0, 6.0}, {8.0, 14.0}, {22.0, 14.0}, {29.0, 6.0}, {30.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.Bezier), Line(true, {0.0, 0.0}, 0.0, {{30.0, 0.0}, {31.0, 6.0}, {38.0, 14.0}, {52.0, 14.0}, {59.0, 6.0}, {60.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.Bezier), Text(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-150.0, 90.0}, {150.0, 50.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:30:012
+#s#; 0.002000; 5.562000; 'getIconAnnotation(Modelica.Electrical.Analog.Basic.Inductor)'
+
+errors:=getMessagesStringInternal() 16:39:30:012
+{} 16:39:30:016
+#s#; 0.004000; 5.566000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:016
+0 16:39:30:019
+#s#; 0.003000; 5.569000; 'size(errors,1)'
+
+getComponentModifierNames(RLCircuit,"inductor1") 16:39:30:020
+{} 16:39:30:020
+#s#; 0.000000; 5.569000; 'getComponentModifierNames(RLCircuit,"inductor1")'
+
+getComponents(Modelica.Electrical.Analog.Basic.Inductor, useQuotes = true) 16:39:30:021
+{{"Modelica.SIunits.Inductance","L","Inductance", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"}} 16:39:30:022
+#s#; 0.001000; 5.570000; 'getComponents(Modelica.Electrical.Analog.Basic.Inductor, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Basic.Inductor) 16:39:30:022
+{{}} 16:39:30:022
+#s#; 0.000000; 5.570000; 'getComponentAnnotations(Modelica.Electrical.Analog.Basic.Inductor)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Basic.Inductor) 16:39:30:023
+{} 16:39:30:023
+#s#; 0.000000; 5.570000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Basic.Inductor)'
+
+errors:=getMessagesStringInternal() 16:39:30:023
+{} 16:39:30:029
+#s#; 0.006000; 5.576000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:029
+0 16:39:30:032
+#s#; 0.003000; 5.579000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Inductance) 16:39:30:036
+{Real} 16:39:30:038
+#s#; 0.002000; 5.581000; 'getInheritedClasses(Modelica.SIunits.Inductance)'
+
+errors:=getMessagesStringInternal() 16:39:30:038
+{} 16:39:30:042
+#s#; 0.004000; 5.585000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:042
+0 16:39:30:044
+#s#; 0.002000; 5.587000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.Inductance) 16:39:30:044
+{} 16:39:30:044
+#s#; 0.000000; 5.587000; 'getIconAnnotation(Modelica.SIunits.Inductance)'
+
+errors:=getMessagesStringInternal() 16:39:30:044
+{} 16:39:30:050
+#s#; 0.006000; 5.593000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:050
+0 16:39:30:051
+#s#; 0.001000; 5.594000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Inductance, useQuotes = true) 16:39:30:052
+{} 16:39:30:052
+#s#; 0.001000; 5.595000; 'getComponents(Modelica.SIunits.Inductance, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Inductance) 16:39:30:052
+{} 16:39:30:052
+#s#; 0.000000; 5.595000; 'getDiagramAnnotation(Modelica.SIunits.Inductance)'
+
+errors:=getMessagesStringInternal() 16:39:30:052
+{} 16:39:30:058
+#s#; 0.006000; 5.601000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:058
+0 16:39:30:059
+#s#; 0.001000; 5.602000; 'size(errors,1)'
+
+getParameterValue(Modelica.Electrical.Analog.Basic.Inductor,"L") 16:39:30:061
+"" 16:39:30:061
+#s#; 0.001000; 5.603000; 'getParameterValue(Modelica.Electrical.Analog.Basic.Inductor,"L")'
+
+getExtendsModifierNames(Modelica.Electrical.Analog.Basic.Inductor,Modelica.Electrical.Analog.Interfaces.OnePort, useQuotes = true) 16:39:30:061
+{"i.start"} 16:39:30:061
+#s#; 0.000000; 5.603000; 'getExtendsModifierNames(Modelica.Electrical.Analog.Basic.Inductor,Modelica.Electrical.Analog.Interfaces.OnePort, useQuotes = true)'
+
+getExtendsModifierValue(Modelica.Electrical.Analog.Basic.Inductor,Modelica.Electrical.Analog.Interfaces.OnePort,i.start) 16:39:30:061
+0 16:39:30:061
+#s#; 0.000000; 5.603000; 'getExtendsModifierValue(Modelica.Electrical.Analog.Basic.Inductor,Modelica.Electrical.Analog.Interfaces.OnePort,i.start)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Sources.SineVoltage) 16:39:30:063
+{Modelica.Electrical.Analog.Interfaces.VoltageSource} 16:39:30:065
+#s#; 0.001000; 5.604000; 'getInheritedClasses(Modelica.Electrical.Analog.Sources.SineVoltage)'
+
+errors:=getMessagesStringInternal() 16:39:30:065
+{} 16:39:30:070
+#s#; 0.005000; 5.609000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:070
+0 16:39:30:072
+#s#; 0.002000; 5.611000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Electrical.Analog.Interfaces.VoltageSource) 16:39:30:074
+{Modelica.Electrical.Analog.Interfaces.OnePort} 16:39:30:075
+#s#; 0.001000; 5.612000; 'getInheritedClasses(Modelica.Electrical.Analog.Interfaces.VoltageSource)'
+
+errors:=getMessagesStringInternal() 16:39:30:075
+{} 16:39:30:080
+#s#; 0.005000; 5.617000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:080
+0 16:39:30:082
+#s#; 0.002000; 5.619000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Interfaces.VoltageSource, 1) 16:39:30:082
+{OnePort,{}} 16:39:30:083
+#s#; 0.001000; 5.620000; 'getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Interfaces.VoltageSource, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Interfaces.VoltageSource, 1) 16:39:30:083
+{OnePort,{}} 16:39:30:083
+#s#; 0.000000; 5.620000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Interfaces.VoltageSource, 1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Interfaces.VoltageSource) 16:39:30:083
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Ellipse(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {255, 255, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, {{-50.0, 50.0}, {50.0, -50.0}}, 0.0, 360.0), Text(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-150.0, 60.0}, {150.0, 100.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center), Line(true, {0.0, 0.0}, 0.0, {{-90.0, 0.0}, {90.0, 0.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-80.0, 20.0}, {-60.0, 20.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-70.0, 30.0}, {-70.0, 10.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{60.0, 20.0}, {80.0, 20.0}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None)}} 16:39:30:084
+#s#; 0.001000; 5.621000; 'getIconAnnotation(Modelica.Electrical.Analog.Interfaces.VoltageSource)'
+
+errors:=getMessagesStringInternal() 16:39:30:085
+{} 16:39:30:090
+#s#; 0.005000; 5.626000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:090
+0 16:39:30:092
+#s#; 0.002000; 5.628000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Sources.SineVoltage, 1) 16:39:30:092
+{Interfaces.VoltageSource,{}} 16:39:30:092
+#s#; 0.000000; 5.628000; 'getNthInheritedClassIconMapAnnotation(Modelica.Electrical.Analog.Sources.SineVoltage, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Sources.SineVoltage, 1) 16:39:30:092
+{Interfaces.VoltageSource,{}} 16:39:30:093
+#s#; 0.000000; 5.628000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.Electrical.Analog.Sources.SineVoltage, 1)'
+
+getIconAnnotation(Modelica.Electrical.Analog.Sources.SineVoltage) 16:39:30:093
+{-100.0,-100.0,100.0,100.0,false,0.1,2.0,2.0, {Line(true, {0.0, 0.0}, 0.0, {{-66.0, 0.0}, {-56.2, 29.9}, {-49.8, 46.5}, {-44.2, 58.1}, {-39.3, 65.2}, {-34.3, 69.2}, {-29.4, 69.8}, {-24.5, 67.0}, {-19.6, 61.0}, {-14.6, 52.0}, {-9.0, 38.6}, {-1.98, 18.6}, {12.79, -26.9}, {19.1, -44.0}, {24.8, -56.2}, {29.7, -64.0}, {34.6, -68.59999999999999}, {39.5, -70.0}, {44.5, -67.90000000000001}, {49.4, -62.5}, {54.3, -54.1}, {59.9, -41.3}, {67.0, -21.7}, {74.0, 0.0}}, {192, 192, 192}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None)}} 16:39:30:094
+#s#; 0.001000; 5.629000; 'getIconAnnotation(Modelica.Electrical.Analog.Sources.SineVoltage)'
+
+errors:=getMessagesStringInternal() 16:39:30:094
+{} 16:39:30:101
+#s#; 0.007000; 5.636000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:101
+0 16:39:30:103
+#s#; 0.002000; 5.638000; 'size(errors,1)'
+
+getComponents(Modelica.Electrical.Analog.Interfaces.VoltageSource, useQuotes = true) 16:39:30:104
+{{"Modelica.SIunits.Voltage","offset","Voltage offset", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.SIunits.Time","startTime","Time offset", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.Blocks.Interfaces.SignalSource","signalSource","", "public", "false", "false", "false", "true", "unspecified", "none", "unspecified","{}"}} 16:39:30:105
+#s#; 0.001000; 5.639000; 'getComponents(Modelica.Electrical.Analog.Interfaces.VoltageSource, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.VoltageSource) 16:39:30:105
+{{},{},{Placement(true,-,-,70.0,70.0,90.0,90.0,-,-,-,-,-,-,-,)}} 16:39:30:105
+#s#; 0.000000; 5.639000; 'getComponentAnnotations(Modelica.Electrical.Analog.Interfaces.VoltageSource)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.VoltageSource) 16:39:30:106
+{} 16:39:30:106
+#s#; 0.000000; 5.639000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Interfaces.VoltageSource)'
+
+errors:=getMessagesStringInternal() 16:39:30:106
+{} 16:39:30:112
+#s#; 0.006000; 5.645000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:112
+0 16:39:30:113
+#s#; 0.001000; 5.646000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Time) 16:39:30:116
+{Real} 16:39:30:118
+#s#; 0.002000; 5.648000; 'getInheritedClasses(Modelica.SIunits.Time)'
+
+errors:=getMessagesStringInternal() 16:39:30:118
+{} 16:39:30:122
+#s#; 0.004000; 5.652000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:122
+0 16:39:30:124
+#s#; 0.002000; 5.654000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.Time) 16:39:30:124
+{} 16:39:30:124
+#s#; 0.000000; 5.654000; 'getIconAnnotation(Modelica.SIunits.Time)'
+
+errors:=getMessagesStringInternal() 16:39:30:125
+{} 16:39:30:129
+#s#; 0.004000; 5.658000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:129
+0 16:39:30:132
+#s#; 0.003000; 5.661000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Time, useQuotes = true) 16:39:30:132
+{} 16:39:30:133
+#s#; 0.001000; 5.662000; 'getComponents(Modelica.SIunits.Time, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Time) 16:39:30:133
+{} 16:39:30:133
+#s#; 0.000000; 5.662000; 'getDiagramAnnotation(Modelica.SIunits.Time)'
+
+errors:=getMessagesStringInternal() 16:39:30:133
+{} 16:39:30:138
+#s#; 0.005000; 5.667000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:138
+0 16:39:30:139
+#s#; 0.001000; 5.668000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Blocks.Interfaces.SignalSource) 16:39:30:141
+{Modelica.Blocks.Interfaces.SO} 16:39:30:142
+#s#; 0.001000; 5.669000; 'getInheritedClasses(Modelica.Blocks.Interfaces.SignalSource)'
+
+errors:=getMessagesStringInternal() 16:39:30:142
+{} 16:39:30:148
+#s#; 0.006000; 5.675000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:148
+0 16:39:30:149
+#s#; 0.001000; 5.676000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Blocks.Interfaces.SO) 16:39:30:151
+{Modelica.Blocks.Icons.Block} 16:39:30:152
+#s#; 0.001000; 5.677000; 'getInheritedClasses(Modelica.Blocks.Interfaces.SO)'
+
+errors:=getMessagesStringInternal() 16:39:30:152
+{} 16:39:30:157
+#s#; 0.005000; 5.682000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:157
+0 16:39:30:159
+#s#; 0.002000; 5.684000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.Blocks.Icons.Block) 16:39:30:161
+{} 16:39:30:161
+#s#; 0.000000; 5.684000; 'getInheritedClasses(Modelica.Blocks.Icons.Block)'
+
+errors:=getMessagesStringInternal() 16:39:30:162
+{} 16:39:30:167
+#s#; 0.006000; 5.690000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:167
+0 16:39:30:168
+#s#; 0.001000; 5.691000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Blocks.Icons.Block) 16:39:30:168
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Rectangle(true, {0.0, 0.0}, 0.0, {0, 0, 127}, {255, 255, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, BorderPattern.None, {{-100.0, -100.0}, {100.0, 100.0}}, 0.0), Text(true, {0.0, 0.0}, 0.0, {0, 0, 255}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-150.0, 150.0}, {150.0, 110.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:30:169
+#s#; 0.001000; 5.692000; 'getIconAnnotation(Modelica.Blocks.Icons.Block)'
+
+errors:=getMessagesStringInternal() 16:39:30:170
+{} 16:39:30:175
+#s#; 0.005000; 5.697000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:175
+0 16:39:30:177
+#s#; 0.002000; 5.699000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.Blocks.Interfaces.SO, 1) 16:39:30:177
+{Modelica.Blocks.Icons.Block,{}} 16:39:30:178
+#s#; 0.000000; 5.699000; 'getNthInheritedClassIconMapAnnotation(Modelica.Blocks.Interfaces.SO, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.Blocks.Interfaces.SO, 1) 16:39:30:178
+{Modelica.Blocks.Icons.Block,{}} 16:39:30:178
+#s#; 0.000000; 5.699000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.Blocks.Interfaces.SO, 1)'
+
+getIconAnnotation(Modelica.Blocks.Interfaces.SO) 16:39:30:178
+{} 16:39:30:178
+#s#; 0.000000; 5.699000; 'getIconAnnotation(Modelica.Blocks.Interfaces.SO)'
+
+errors:=getMessagesStringInternal() 16:39:30:178
+{} 16:39:30:182
+#s#; 0.004000; 5.703000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:182
+0 16:39:30:184
+#s#; 0.002000; 5.705000; 'size(errors,1)'
+
+getNthInheritedClassIconMapAnnotation(Modelica.Blocks.Interfaces.SignalSource, 1) 16:39:30:184
+{SO,{}} 16:39:30:184
+#s#; 0.000000; 5.705000; 'getNthInheritedClassIconMapAnnotation(Modelica.Blocks.Interfaces.SignalSource, 1)'
+
+getNthInheritedClassDiagramMapAnnotation(Modelica.Blocks.Interfaces.SignalSource, 1) 16:39:30:184
+{SO,{}} 16:39:30:184
+#s#; 0.000000; 5.705000; 'getNthInheritedClassDiagramMapAnnotation(Modelica.Blocks.Interfaces.SignalSource, 1)'
+
+getIconAnnotation(Modelica.Blocks.Interfaces.SignalSource) 16:39:30:184
+{} 16:39:30:184
+#s#; 0.000000; 5.705000; 'getIconAnnotation(Modelica.Blocks.Interfaces.SignalSource)'
+
+errors:=getMessagesStringInternal() 16:39:30:185
+{} 16:39:30:189
+#s#; 0.004000; 5.709000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:189
+0 16:39:30:191
+#s#; 0.002000; 5.711000; 'size(errors,1)'
+
+getComponents(Modelica.Blocks.Icons.Block, useQuotes = true) 16:39:30:191
+{} 16:39:30:191
+#s#; 0.000000; 5.711000; 'getComponents(Modelica.Blocks.Icons.Block, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.Blocks.Icons.Block) 16:39:30:191
+{} 16:39:30:191
+#s#; 0.000000; 5.711000; 'getDiagramAnnotation(Modelica.Blocks.Icons.Block)'
+
+errors:=getMessagesStringInternal() 16:39:30:192
+{} 16:39:30:284
+#s#; 0.092000; 5.803000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:284
+0 16:39:30:286
+#s#; 0.002000; 5.805000; 'size(errors,1)'
+
+getComponents(Modelica.Blocks.Interfaces.SO, useQuotes = true) 16:39:30:287
+{{"Modelica.Blocks.Interfaces.RealOutput","y","Connector of Real output signal", "public", "false", "false", "false", "false", "unspecified", "none", "unspecified","{}"}} 16:39:30:288
+#s#; 0.001000; 5.806000; 'getComponents(Modelica.Blocks.Interfaces.SO, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Blocks.Interfaces.SO) 16:39:30:288
+{{Placement(true,-,-,100.0,-10.0,120.0,10.0,-,-,-,-,-,-,-,)}} 16:39:30:289
+#s#; 0.001000; 5.807000; 'getComponentAnnotations(Modelica.Blocks.Interfaces.SO)'
+
+getInheritedClasses(Modelica.Blocks.Interfaces.RealOutput) 16:39:30:290
+{Real} 16:39:30:291
+#s#; 0.001000; 5.808000; 'getInheritedClasses(Modelica.Blocks.Interfaces.RealOutput)'
+
+errors:=getMessagesStringInternal() 16:39:30:291
+{} 16:39:30:296
+#s#; 0.005000; 5.813000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:296
+0 16:39:30:298
+#s#; 0.002000; 5.815000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.Blocks.Interfaces.RealOutput) 16:39:30:298
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Polygon(true, {0.0, 0.0}, 0.0, {0, 0, 127}, {255, 255, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, {{-100.0, 100.0}, {100.0, 0.0}, {-100.0, -100.0}}, Smooth.None)}} 16:39:30:299
+#s#; 0.001000; 5.816000; 'getIconAnnotation(Modelica.Blocks.Interfaces.RealOutput)'
+
+errors:=getMessagesStringInternal() 16:39:30:299
+{} 16:39:30:305
+#s#; 0.006000; 5.822000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:305
+0 16:39:30:309
+#s#; 0.004000; 5.826000; 'size(errors,1)'
+
+getComponents(Modelica.Blocks.Interfaces.RealOutput, useQuotes = true) 16:39:30:309
+{} 16:39:30:309
+#s#; 0.000000; 5.826000; 'getComponents(Modelica.Blocks.Interfaces.RealOutput, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.Blocks.Interfaces.RealOutput) 16:39:30:310
+{-100.0,-100.0,100.0,100.0,true,0.1,2.0,2.0, {Polygon(true, {0.0, 0.0}, 0.0, {0, 0, 127}, {255, 255, 255}, LinePattern.Solid, FillPattern.Solid, 0.25, {{-100.0, 50.0}, {0.0, 0.0}, {-100.0, -50.0}}, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {0, 0, 127}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{30.0, 60.0}, {30.0, 110.0}}, "%name", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:30:311
+#s#; 0.002000; 5.828000; 'getDiagramAnnotation(Modelica.Blocks.Interfaces.RealOutput)'
+
+errors:=getMessagesStringInternal() 16:39:30:312
+{} 16:39:30:318
+#s#; 0.006000; 5.834000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:318
+0 16:39:30:320
+#s#; 0.002000; 5.836000; 'size(errors,1)'
+
+getDiagramAnnotation(Modelica.Blocks.Interfaces.SO) 16:39:30:322
+{} 16:39:30:323
+#s#; 0.001000; 5.837000; 'getDiagramAnnotation(Modelica.Blocks.Interfaces.SO)'
+
+errors:=getMessagesStringInternal() 16:39:30:323
+{} 16:39:30:329
+#s#; 0.005000; 5.842000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:329
+0 16:39:30:330
+#s#; 0.001000; 5.843000; 'size(errors,1)'
+
+getComponents(Modelica.Blocks.Interfaces.SignalSource, useQuotes = true) 16:39:30:332
+{{"Real","offset","Offset of output signal y", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.SIunits.Time","startTime","Output y = offset for time < startTime", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"}} 16:39:30:332
+#s#; 0.000000; 5.843000; 'getComponents(Modelica.Blocks.Interfaces.SignalSource, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Blocks.Interfaces.SignalSource) 16:39:30:332
+{{},{}} 16:39:30:332
+#s#; 0.000000; 5.843000; 'getComponentAnnotations(Modelica.Blocks.Interfaces.SignalSource)'
+
+getDiagramAnnotation(Modelica.Blocks.Interfaces.SignalSource) 16:39:30:332
+{} 16:39:30:332
+#s#; 0.000000; 5.843000; 'getDiagramAnnotation(Modelica.Blocks.Interfaces.SignalSource)'
+
+errors:=getMessagesStringInternal() 16:39:30:333
+{} 16:39:30:338
+#s#; 0.005000; 5.848000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:338
+0 16:39:30:341
+#s#; 0.003000; 5.851000; 'size(errors,1)'
+
+getComponents(Modelica.Electrical.Analog.Sources.SineVoltage, useQuotes = true) 16:39:30:346
+{{"Modelica.SIunits.Voltage","V","Amplitude of sine wave", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.SIunits.Angle","phase","Phase of sine wave", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"},{"Modelica.SIunits.Frequency","freqHz","Frequency of sine wave", "public", "false", "false", "false", "false", "parameter", "none", "unspecified","{}"}} 16:39:30:348
+#s#; 0.002000; 5.853000; 'getComponents(Modelica.Electrical.Analog.Sources.SineVoltage, useQuotes = true)'
+
+getComponentAnnotations(Modelica.Electrical.Analog.Sources.SineVoltage) 16:39:30:348
+{{},{},{}} 16:39:30:348
+#s#; 0.000000; 5.853000; 'getComponentAnnotations(Modelica.Electrical.Analog.Sources.SineVoltage)'
+
+getDiagramAnnotation(Modelica.Electrical.Analog.Sources.SineVoltage) 16:39:30:348
+{-100.0,-100.0,100.0,100.0,false,0.1,2.0,2.0, {Line(true, {0.0, 0.0}, 0.0, {{-80.0, -90.0}, {-80.0, 84.0}}, {192, 192, 192}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Polygon(true, {0.0, 0.0}, 0.0, {192, 192, 192}, {192, 192, 192}, LinePattern.Solid, FillPattern.Solid, 0.25, {{-80.0, 100.0}, {-86.0, 84.0}, {-74.0, 84.0}, {-80.0, 100.0}}, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-99.0, -40.0}, {100.0, -40.0}}, {192, 192, 192}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Polygon(true, {0.0, 0.0}, 0.0, {192, 192, 192}, {192, 192, 192}, LinePattern.Solid, FillPattern.Solid, 0.25, {{100.0, -40.0}, {84.0, -34.0}, {84.0, -46.0}, {100.0, -40.0}}, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-41.0, -2.0}, {-32.6, 32.2}, {-27.1, 51.1}, {-22.3, 64.40000000000001}, {-18.1, 72.59999999999999}, {-13.9, 77.09999999999999}, {-8.0, 78.0}, {-5.42, 74.59999999999999}, {-1.201, 67.7}, {3.02, 57.4}, {7.84, 42.1}, {13.9, 19.2}, {26.5, -32.8}, {32.0, -52.2}, {36.8, -66.2}, {41.0, -75.09999999999999}, {45.2, -80.40000000000001}, {49.5, -82.0}, {53.7, -79.59999999999999}, {57.9, -73.5}, {62.1, -63.9}, {66.90000000000001, -49.2}, {73.0, -26.8}, {79.0, -2.0}}, {0, 0, 0}, LinePattern.Solid, 0.5, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-41.0, -2.0}, {-80.0, -2.0}}, {0, 0, 0}, LinePattern.Solid, 0.5, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-106.0, -11.0}, {-60.0, -29.0}}, "offset", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center), Line(true, {0.0, 0.0}, 0.0, {{-41.0, -2.0}, {-41.0, -40.0}}, {192, 192, 192}, LinePattern.Dash, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-60.0, -43.0}, {-14.0, -61.0}}, "startTime", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center), Text(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{76.0, -52.0}, {100.0, -72.0}}, "time", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center), Line(true, {0.0, 0.0}, 0.0, {{-8.0, 78.0}, {45.0, 78.0}}, {192, 192, 192}, LinePattern.Dash, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{-41.0, -2.0}, {52.0, -2.0}}, {192, 192, 192}, LinePattern.Dash, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Polygon(true, {0.0, 0.0}, 0.0, {192, 192, 192}, {192, 192, 192}, LinePattern.Solid, FillPattern.Solid, 0.25, {{33.0, 78.0}, {30.0, 65.0}, {37.0, 65.0}, {33.0, 78.0}}, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{37.0, 57.0}, {83.0, 39.0}}, "V", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center), Polygon(true, {0.0, 0.0}, 0.0, {192, 192, 192}, {192, 192, 192}, LinePattern.Solid, FillPattern.Solid, 0.25, {{33.0, -2.0}, {30.0, 11.0}, {36.0, 11.0}, {33.0, -2.0}, {33.0, -2.0}}, Smooth.None), Line(true, {0.0, 0.0}, 0.0, {{33.0, 78.0}, {33.0, -2.0}}, {192, 192, 192}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3.0, Smooth.None), Text(true, {0.0, 0.0}, 0.0, {160, 160, 164}, {0, 0, 0}, LinePattern.Solid, FillPattern.None, 0.25, {{-69.0, 109.0}, {-4.0, 83.0}}, "v = p.v - n.v", 0.0, {-1, -1, -1}, "", {}, TextAlignment.Center)}} 16:39:30:351
+#s#; 0.003000; 5.856000; 'getDiagramAnnotation(Modelica.Electrical.Analog.Sources.SineVoltage)'
+
+errors:=getMessagesStringInternal() 16:39:30:352
+{} 16:39:30:358
+#s#; 0.006000; 5.862000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:358
+0 16:39:30:360
+#s#; 0.002000; 5.864000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Angle) 16:39:30:365
+{Real} 16:39:30:367
+#s#; 0.002000; 5.866000; 'getInheritedClasses(Modelica.SIunits.Angle)'
+
+errors:=getMessagesStringInternal() 16:39:30:367
+{} 16:39:30:372
+#s#; 0.005000; 5.871000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:372
+0 16:39:30:374
+#s#; 0.002000; 5.873000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.Angle) 16:39:30:374
+{} 16:39:30:374
+#s#; 0.000000; 5.873000; 'getIconAnnotation(Modelica.SIunits.Angle)'
+
+errors:=getMessagesStringInternal() 16:39:30:375
+{} 16:39:30:380
+#s#; 0.005000; 5.878000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:380
+0 16:39:30:382
+#s#; 0.002000; 5.880000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Angle, useQuotes = true) 16:39:30:382
+{} 16:39:30:382
+#s#; 0.000000; 5.880000; 'getComponents(Modelica.SIunits.Angle, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Angle) 16:39:30:382
+{} 16:39:30:383
+#s#; 0.001000; 5.881000; 'getDiagramAnnotation(Modelica.SIunits.Angle)'
+
+errors:=getMessagesStringInternal() 16:39:30:383
+{} 16:39:30:389
+#s#; 0.006000; 5.887000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:389
+0 16:39:30:391
+#s#; 0.002000; 5.889000; 'size(errors,1)'
+
+getInheritedClasses(Modelica.SIunits.Frequency) 16:39:30:394
+{Real} 16:39:30:396
+#s#; 0.002000; 5.891000; 'getInheritedClasses(Modelica.SIunits.Frequency)'
+
+errors:=getMessagesStringInternal() 16:39:30:397
+{} 16:39:30:402
+#s#; 0.005000; 5.896000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:403
+0 16:39:30:404
+#s#; 0.002000; 5.898000; 'size(errors,1)'
+
+getIconAnnotation(Modelica.SIunits.Frequency) 16:39:30:404
+{} 16:39:30:405
+#s#; 0.000000; 5.898000; 'getIconAnnotation(Modelica.SIunits.Frequency)'
+
+errors:=getMessagesStringInternal() 16:39:30:405
+{} 16:39:30:409
+#s#; 0.004000; 5.902000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:409
+0 16:39:30:411
+#s#; 0.002000; 5.904000; 'size(errors,1)'
+
+getComponents(Modelica.SIunits.Frequency, useQuotes = true) 16:39:30:411
+{} 16:39:30:411
+#s#; 0.000000; 5.904000; 'getComponents(Modelica.SIunits.Frequency, useQuotes = true)'
+
+getDiagramAnnotation(Modelica.SIunits.Frequency) 16:39:30:411
+{} 16:39:30:411
+#s#; 0.000000; 5.904000; 'getDiagramAnnotation(Modelica.SIunits.Frequency)'
+
+errors:=getMessagesStringInternal() 16:39:30:412
+{} 16:39:30:417
+#s#; 0.005000; 5.909000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:417
+0 16:39:30:418
+#s#; 0.001000; 5.910000; 'size(errors,1)'
+
+getConnectionCount(RLCircuit) 16:39:30:420
+4 16:39:30:420
+#s#; 0.000000; 5.910000; 'getConnectionCount(RLCircuit)'
+
+getNthConnection(RLCircuit,1) 16:39:30:420
+{"sineVoltage1.n","ground1.p",""} 16:39:30:420
+#s#; 0.000000; 5.910000; 'getNthConnection(RLCircuit,1)'
+
+getNthConnectionAnnotation(RLCircuit, 1) 16:39:30:420
+{Line(true, {0.0, 0.0}, 0, {{-74, 2}, {-76, 2}, {-76, -34}, {-58, -34}, {-58, -34}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3, Smooth.None)} 16:39:30:425
+#s#; 0.005000; 5.915000; 'getNthConnectionAnnotation(RLCircuit, 1)'
+
+getNthConnection(RLCircuit,2) 16:39:30:427
+{"inductor1.n","ground1.p",""} 16:39:30:427
+#s#; 0.000000; 5.915000; 'getNthConnection(RLCircuit,2)'
+
+getNthConnectionAnnotation(RLCircuit, 2) 16:39:30:427
+{Line(true, {0.0, 0.0}, 0, {{30, 50}, {56, 50}, {56, -32}, {-58, -32}, {-58, -34}, {-58, -34}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3, Smooth.None)} 16:39:30:431
+#s#; 0.004000; 5.919000; 'getNthConnectionAnnotation(RLCircuit, 2)'
+
+getNthConnection(RLCircuit,3) 16:39:30:432
+{"resistor1.n","inductor1.p",""} 16:39:30:432
+#s#; 0.000000; 5.919000; 'getNthConnection(RLCircuit,3)'
+
+getNthConnectionAnnotation(RLCircuit, 3) 16:39:30:432
+{Line(true, {0.0, 0.0}, 0, {{-36, 50}, {10, 50}, {10, 50}, {10, 50}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3, Smooth.None)} 16:39:30:436
+#s#; 0.004000; 5.923000; 'getNthConnectionAnnotation(RLCircuit, 3)'
+
+getNthConnection(RLCircuit,4) 16:39:30:437
+{"sineVoltage1.p","resistor1.p",""} 16:39:30:437
+#s#; 0.000000; 5.923000; 'getNthConnection(RLCircuit,4)'
+
+getNthConnectionAnnotation(RLCircuit, 4) 16:39:30:437
+{Line(true, {0.0, 0.0}, 0, {{-74, 22}, {-76, 22}, {-76, 50}, {-56, 50}, {-56, 50}}, {0, 0, 255}, LinePattern.Solid, 0.25, {Arrow.None, Arrow.None}, 3, Smooth.None)} 16:39:30:441
+#s#; 0.004000; 5.927000; 'getNthConnectionAnnotation(RLCircuit, 4)'
+
+getTransitions(RLCircuit) 16:39:30:442
+{} 16:39:30:442
+#s#; 0.000000; 5.927000; 'getTransitions(RLCircuit)'
+
+errors:=getMessagesStringInternal() 16:39:30:442
+{} 16:39:30:448
+#s#; 0.006000; 5.933000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:448
+0 16:39:30:449
+#s#; 0.001000; 5.934000; 'size(errors,1)'
+
+getInitialStates(RLCircuit) 16:39:30:449
+{} 16:39:30:450
+#s#; 0.000000; 5.934000; 'getInitialStates(RLCircuit)'
+
+errors:=getMessagesStringInternal() 16:39:30:450
+{} 16:39:30:454
+#s#; 0.004000; 5.938000; 'errors:=getMessagesStringInternal()'
+
+size(errors,1) 16:39:30:454
+0 16:39:30:455
+#s#; 0.001000; 5.939000; 'size(errors,1)'
+
+getDocumentationAnnotation(RLCircuit) 16:39:30:498
+{"","",""} 16:39:30:498
+#s#; 0.000000; 5.939000; 'getDocumentationAnnotation(RLCircuit)'
+
+getClassComment(RLCircuit) 16:39:30:498
+"" 16:39:30:498
+#s#; 0.000000; 5.939000; 'getClassComment(RLCircuit)'
+
+quit() 16:39:35:217
