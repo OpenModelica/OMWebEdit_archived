@@ -1,3 +1,6 @@
 # Various IDE config files that are not meant to shared source control
 .idea/
 *.iml
+
+# Build files
+node_modules/
