@@ -5,10 +5,10 @@ import createEngine, {
 } from "@projectstorm/react-diagrams";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import "./App.css";
-import {SimplePortFactory} from "./components/common/SimplePortFactory";
-import {ResistorPortModel} from "./components/resistor/ResistorPortModel";
-import {ResistorNodeFactory} from "./components/resistor/ResistorNodeFactory";
-import {ResistorNodeModel} from "./components/resistor/ResistorNodeModel";
+import {SimplePortFactory} from "./custom-nodes/common/SimplePortFactory";
+import {OMWebEditPortModel} from "./custom-nodes/omwebedit-default-node/OMWebEditPortModel";
+import {OMWebEditDefaultNodeFactory} from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeFactory";
+import {OMWebEditDefaultNodeModel} from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeModel";
 
 function App() {
 
@@ -18,23 +18,23 @@ function App() {
   // register some other factories as well
   engine
       .getPortFactories()
-      .registerFactory(new SimplePortFactory('omwebedit-default', (config) => new ResistorPortModel(PortModelAlignment.LEFT)));
-  engine.getNodeFactories().registerFactory(new ResistorNodeFactory());
+      .registerFactory(new SimplePortFactory('omwebedit-default', (config) => new OMWebEditPortModel(PortModelAlignment.LEFT)));
+  engine.getNodeFactories().registerFactory(new OMWebEditDefaultNodeFactory());
 
   // setup the diagram model
   var model = new DiagramModel();
 
   // setup nodes
-  var node1 = new ResistorNodeModel("sine-voltage");
+  var node1 = new OMWebEditDefaultNodeModel("sine-voltage");
   node1.setPosition(100, 200);
 
-  var node2 = new ResistorNodeModel("resistor");
+  var node2 = new OMWebEditDefaultNodeModel("resistor");
   node2.setPosition(250, 108);
 
-  var node3 = new ResistorNodeModel("inductor");
+  var node3 = new OMWebEditDefaultNodeModel("inductor");
   node3.setPosition(500, 100);
 
-  var node4 = new ResistorNodeModel("ground");
+  var node4 = new OMWebEditDefaultNodeModel("ground");
   node3.setPosition(500, 100);
 
   // add nodes to model
