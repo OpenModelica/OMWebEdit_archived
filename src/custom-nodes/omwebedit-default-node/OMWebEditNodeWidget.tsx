@@ -1,12 +1,10 @@
 import * as React from 'react';
-import { ResistorNodeModel } from './ResistorNodeModel';
+import { OMWebEditDefaultNodeModel } from './OMWebEditDefaultNodeModel';
 import { DiagramEngine, PortModelAlignment, PortWidget } from '@projectstorm/react-diagrams';
 import styled from '@emotion/styled';
-import ReactLogo from './../../logo.svg';
-import ResistorIcon from './Resistor-icon.svg';
 
 export interface ResistorNodeWidgetProps {
-	node: ResistorNodeModel;
+	node: OMWebEditDefaultNodeModel;
 	engine: DiagramEngine;
 	size?: number;
 }
@@ -25,17 +23,17 @@ export const Port = styled.div`
 	}
 `;
 
-export class ResistorNodeWidget extends React.Component<ResistorNodeWidgetProps> {
+export class OMWebEditNodeWidget extends React.Component<ResistorNodeWidgetProps> {
 	render() {
 		return (
 			<div
-				className={'resistor-node'}
+				className={'omwebedit-default-node'}
 				style={{
 					position: 'relative',
 					width: this.props.size,
 					height: this.props.size
 				}}>
-				<img src={ResistorIcon} alt="Resistor Icon" width="100%"/>
+				<img src={this.props.node.icon+"-icon.svg"} alt={this.props.node.icon + "-icon"} width="100%"/>
 				<PortWidget
 					style={{
 						top: this.props.size / 2 - 8,

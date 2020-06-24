@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="53px" viewBox="0 0 40 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="sine-voltage-icon" transform="translate(-55.000000, -179.000000)">
+            <g id="Group-3" transform="translate(55.405356, 179.334690)">
+                <g id="Group" stroke-linejoin="bevel" transform="translate(19.500000, 19.621591) scale(-1, 1) rotate(-180.000000) translate(-19.500000, -19.621591) translate(0.000000, 19.121591)" stroke="#0000FF" stroke-width="0.680388765">
+                    <line x1="0" y1="0.320035355" x2="38.4042426" y2="0.320035355" id="Path"></line>
+                </g>
+                <g id="Group" stroke-linejoin="bevel" transform="translate(19.400707, 26.022298) scale(-1, 1) rotate(-180.000000) translate(-19.400707, -26.022298) translate(6.400707, 25.522298)" stroke="#0000FF" stroke-width="0.680388765">
+                    <line x1="0" y1="0.320035355" x2="25.6028284" y2="0.320035355" id="Path"></line>
+                </g>
+                <g id="Group" stroke-linejoin="bevel" transform="translate(19.301414, 32.423005) scale(-1, 1) rotate(-180.000000) translate(-19.301414, -32.423005) translate(12.801414, 31.923005)" stroke="#0000FF" stroke-width="0.680388765">
+                    <line x1="0" y1="0.320035355" x2="12.8014142" y2="0.320035355" id="Path"></line>
+                </g>
+                <g id="Group" stroke-linejoin="bevel" transform="translate(19.382086, 13.301555) scale(-1, 1) rotate(-180.000000) translate(-19.382086, -13.301555) translate(18.882086, 6.801555)" stroke="#0000FF" stroke-width="0.680388765">
+                    <line x1="0.320035355" y1="12.8014142" x2="0.320035355" y2="0" id="Path"></line>
+                </g>
+                <g id="Group" transform="translate(0.504882, 39.331104)" fill="#0000FF" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
+                    <text id="ground1">
+                        <tspan x="0" y="10.2480383">ground1</tspan>
+                    </text>
+                </g>
+                <g id="Group" transform="translate(19.501768, 3.500000) rotate(-90.000000) translate(-19.501768, -3.500000) translate(16.001768, 0.000000)" fill="#0000FF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.5">
+                    <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
