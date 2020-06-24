@@ -15,3 +15,11 @@ code {
 .canvas {
   height: 100vh;
 }
+
+.rotation-clockwise-90 {
+  transform: rotate(90deg);
+}
+
+.rotation-clockwise-neg-90 {
+  transform: rotate(-90deg);
+}

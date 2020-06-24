@@ -9,6 +9,7 @@ import {SimplePortFactory} from "./custom-nodes/common/SimplePortFactory";
 import {OMWebEditPortModel} from "./custom-nodes/omwebedit-default-node/OMWebEditPortModel";
 import {OMWebEditDefaultNodeFactory} from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeFactory";
 import {OMWebEditDefaultNodeModel} from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeModel";
+import modelJson from "./model.json";
 
 function App() {
 
@@ -18,23 +19,23 @@ function App() {
   // register some other factories as well
   engine
       .getPortFactories()
-      .registerFactory(new SimplePortFactory('omwebedit-default', (config) => new OMWebEditPortModel(PortModelAlignment.LEFT)));
+      .registerFactory(new SimplePortFactory('omwebedit-default-node', (config) => new OMWebEditPortModel(PortModelAlignment.LEFT)));
   engine.getNodeFactories().registerFactory(new OMWebEditDefaultNodeFactory());
 
   // setup the diagram model
   var model = new DiagramModel();
 
   // setup nodes
-  var node1 = new OMWebEditDefaultNodeModel("sine-voltage");
+  var node1 = new OMWebEditDefaultNodeModel("sine-voltage", "clockwise-90");
   node1.setPosition(100, 200);
 
-  var node2 = new OMWebEditDefaultNodeModel("resistor");
+  var node2 = new OMWebEditDefaultNodeModel("resistor", "default");
   node2.setPosition(250, 108);
 
-  var node3 = new OMWebEditDefaultNodeModel("inductor");
+  var node3 = new OMWebEditDefaultNodeModel("inductor", "default");
   node3.setPosition(500, 100);
 
-  var node4 = new OMWebEditDefaultNodeModel("ground");
+  var node4 = new OMWebEditDefaultNodeModel("ground", "default");
   node3.setPosition(500, 100);
 
   // add nodes to model
@@ -43,7 +44,21 @@ function App() {
   // load model into engine
   engine.setModel(model);
 
-  return <CanvasWidget engine={engine} className="canvas" />;
+  var model2 = new DiagramModel();
+  var str = JSON.stringify(modelJson);
+  model2.deserializeModel(JSON.parse(str), engine);
+  engine.setModel(model2);
+
+  return (
+      <div>
+        <CanvasWidget engine={engine} className="canvas" />
+        <button onClick={() => {
+            console.log(JSON.stringify(model.serialize()));
+        }}>
+          Serialise Model
+        </button>
+      </div>
+      );
 }
 
 export default App;

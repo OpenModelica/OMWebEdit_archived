@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="53px" height="72px" viewBox="0 0 53 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="72px" height="52px" viewBox="0 0 72 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Group 2</title>
+    <title>sine-voltage-icon</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-        <g id="sine-voltage-icon" transform="translate(0.000000, 0.000000)">
-            <g id="Group-2" transform="translate(0.581701, 0.714240)">
-                <g id="Group" transform="translate(48.070065, 36.276226) rotate(90.000000) translate(-48.070065, -36.276226) translate(18.070065, 29.776226)" fill="#0000FF" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
-                    <text id="sineVoltage1">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sine-voltage-icon" transform="translate(35.981659, 23.615013) rotate(-90.000000) translate(-35.981659, -23.615013) translate(8.481659, -12.384987)">
+            <g id="Group" transform="translate(47.651766, 36.990466) rotate(90.000000) translate(-47.651766, -36.990466) translate(17.651766, 30.490466)" fill="#0000FF" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
+                <g id="sineVoltage1">
+                    <text>
                         <tspan x="0.176389051" y="10.3307295">sineVoltage1</tspan>
                     </text>
                 </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(23.000000, 35.400848) scale(-1, 1) rotate(90.000000) translate(-23.000000, -35.400848) translate(-6.000000, 34.900848)" stroke="#0000FF" stroke-width="0.680388765">
-                    <line x1="0" y1="0.320035355" x2="57.606364" y2="0.320035355" id="Path"></line>
-                </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(29.400707, 13.101202) scale(-1, 1) rotate(90.000000) translate(-29.400707, -13.101202) translate(25.900707, 12.601202)" stroke="#0000FF" stroke-width="0.680388765">
-                    <line x1="0" y1="0.320035355" x2="6.40070711" y2="0.320035355" id="Path"></line>
-                </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(29.520389, 12.981520) scale(-1, 1) rotate(90.000000) translate(-29.520389, -12.981520) translate(29.020389, 9.481520)" stroke="#0000FF" stroke-width="0.680388765">
-                    <line x1="0.320035355" y1="6.40070711" x2="0.320035355" y2="0" id="Path"></line>
-                </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(22.917560, 36.581697) scale(-1, 1) rotate(90.000000) translate(-22.917560, -36.581697) translate(0.417560, 14.081697)" stroke="#C0C0C0" stroke-width="0.680388765">
-                    <polyline id="Path" points="0 22.4024749 3.13634648 31.971532 5.18457276 37.2841189 6.97677075 40.996529 8.54494399 43.2687801 10.1451208 44.5489215 11.713294 44.7409427 13.2814672 43.8448437 14.8496405 41.9246316 16.4498173 39.0443134 18.2420153 34.7558396 20.4886635 28.3551325 25.2155857 13.7935238 27.2350087 8.32091924 29.0592103 4.4164879 30.6273835 1.92021213 32.1955568 0.448049498 33.76373 0 35.3639068 0.672074246 36.93208 2.40026517 38.5002533 5.08856215 40.2924512 9.1850147 42.5647023 15.4577077 44.8049498 22.4024749"></polyline>
-                </g>
-                <g id="Group" transform="translate(23.119682, 3.500000) scale(-1, 1) rotate(90.000000) translate(-23.119682, -3.500000) translate(19.619682, 0.000000)" fill="#0000FF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.5">
-                    <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
-                </g>
-                <g id="Group" transform="translate(23.119682, 66.907708) rotate(-90.000000) translate(-23.119682, -66.907708) translate(19.619682, 63.407708)" fill="#FFFFFF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.5">
-                    <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
-                </g>
-                <g id="Group" transform="translate(22.821803, 35.202262) rotate(90.000000) translate(-22.821803, -35.202262) translate(6.821803, 19.202262)" fill="#FFFFFF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.680388765">
-                    <path d="M32.0035355,16.0017678 C32.0035355,24.8392881 24.8392881,32.0035355 16.0017678,32.0035355 C7.16424746,32.0035355 0,24.8392881 0,16.0017678 C0,7.16424746 7.16424746,0 16.0017678,0 C24.8392881,0 32.0035355,7.16424746 32.0035355,16.0017678" id="Path"></path>
-                </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(29.400707, 57.906152) scale(-1, 1) rotate(90.000000) translate(-29.400707, -57.906152) translate(25.900707, 57.406152)" stroke="#0000FF" stroke-width="0.680388765">
-                    <line x1="0" y1="0.320035355" x2="6.40070711" y2="0.320035355" id="Path"></line>
-                </g>
+            </g>
+            <g id="Group" stroke-linejoin="bevel" transform="translate(22.081701, 36.115088) scale(-1, 1) rotate(90.000000) translate(-22.081701, -36.115088) translate(-6.918299, 35.115088)" stroke="#0000FF" stroke-width="0.680388765">
+                <line x1="0" y1="1.32003535" x2="57.606364" y2="1.32003535" id="Path"></line>
+            </g>
+            <g id="Group" stroke-linejoin="bevel" transform="translate(28.482408, 13.815442) scale(-1, 1) rotate(90.000000) translate(-28.482408, -13.815442) translate(24.982408, 12.815442)" stroke="#0000FF" stroke-width="0.680388765">
+                <line x1="0" y1="1.32003535" x2="6.40070711" y2="1.32003535" id="Path"></line>
+            </g>
+            <g id="Group" stroke-linejoin="bevel" transform="translate(29.102090, 13.195760) scale(-1, 1) rotate(90.000000) translate(-29.102090, -13.195760) translate(28.102090, 9.695760)" stroke="#0000FF" stroke-width="0.680388765">
+                <line x1="1.32003535" y1="6.40070711" x2="1.32003535" y2="0" id="Path"></line>
+            </g>
+            <g id="Group" stroke-linejoin="bevel" transform="translate(22.499261, 37.295937) scale(-1, 1) rotate(90.000000) translate(-22.499261, -37.295937) translate(-0.000739, 14.795937)" stroke="#C0C0C0" stroke-width="0.680388765">
+                <polyline id="Path" points="0 22.4024749 3.13634648 31.971532 5.18457276 37.2841189 6.97677075 40.996529 8.54494399 43.2687801 10.1451208 44.5489215 11.713294 44.7409427 13.2814672 43.8448437 14.8496405 41.9246316 16.4498173 39.0443134 18.2420153 34.7558396 20.4886635 28.3551325 25.2155857 13.7935238 27.2350087 8.32091924 29.0592103 4.4164879 30.6273835 1.92021213 32.1955568 0.448049498 33.76373 0 35.3639068 0.672074246 36.93208 2.40026517 38.5002533 5.08856215 40.2924512 9.1850147 42.5647023 15.4577077 44.8049498 22.4024749"></polyline>
+            </g>
+            <g id="Group" transform="translate(22.701383, 4.214240) scale(-1, 1) rotate(90.000000) translate(-22.701383, -4.214240) translate(19.201383, 0.714240)" fill="#0000FF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.5">
+                <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
+            </g>
+            <g id="Group" transform="translate(22.701383, 67.621948) rotate(-90.000000) translate(-22.701383, -67.621948) translate(19.201383, 64.121948)" fill="#FFFFFF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.5">
+                <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
+            </g>
+            <g id="Group" transform="translate(22.403504, 35.916502) rotate(90.000000) translate(-22.403504, -35.916502) translate(6.403504, 19.916502)" fill="#FFFFFF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.680388765">
+                <path d="M32.0035355,16.0017678 C32.0035355,24.8392881 24.8392881,32.0035355 16.0017678,32.0035355 C7.16424746,32.0035355 0,24.8392881 0,16.0017678 C0,7.16424746 7.16424746,0 16.0017678,0 C24.8392881,0 32.0035355,7.16424746 32.0035355,16.0017678" id="Path"></path>
+            </g>
+            <g id="Group" stroke-linejoin="bevel" transform="translate(28.482408, 58.620392) scale(-1, 1) rotate(90.000000) translate(-28.482408, -58.620392) translate(24.982408, 57.620392)" stroke="#0000FF" stroke-width="0.680388765">
+                <line x1="0" y1="1.32003535" x2="6.40070711" y2="1.32003535" id="Path"></line>
             </g>
         </g>
     </g>
