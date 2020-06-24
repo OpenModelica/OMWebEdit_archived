@@ -10,7 +10,7 @@ export class ResistorNodeFactory extends AbstractReactFactory<ResistorNodeModel,
 	}
 
 	generateReactWidget(event): JSX.Element {
-		return <ResistorNodeWidget engine={this.engine} size={50} node={event.model} />;
+		return <ResistorNodeWidget engine={this.engine} size={100} node={event.model} />;
 	}
 
 	generateModel(event) {

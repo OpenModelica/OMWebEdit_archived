@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="71px" viewBox="0 0 72 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+ <title>Resistor-icon-copy</title>
+ <desc>Created with Sketch.</desc>
+ <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+  <g id="Resistor-icon-copy" transform="translate(0.952872, -2.244426)">
+   <g id="Group-2" transform="translate(0.000000, 26.000000)" stroke="#0000FF">
+    <g id="Group" transform="translate(35.301203, 10.000000) scale(-1, 1) rotate(-180.000000) translate(-35.301203, -10.000000) translate(12.801203, 0.000000)" fill="#FFFFFF" fill-rule="nonzero" stroke-width="0.680388765">
+     <rect id="Rectangle" x="0" y="0" width="44.8049498" height="19.2021213"></rect>
+    </g>
+    <g id="Group" stroke-linejoin="bevel" transform="translate(9.900495, 10.218975) scale(-1, 1) rotate(-180.000000) translate(-9.900495, -10.218975) translate(6.400495, 9.718975)" stroke-width="0.680388765">
+     <line x1="0" y1="0.320035355" x2="6.40070711" y2="0.320035355" id="Path"></line>
+    </g>
+    <g id="Group" stroke-linejoin="bevel" transform="translate(61.106152, 10.218975) scale(-1, 1) rotate(-180.000000) translate(-61.106152, -10.218975) translate(57.606152, 9.718975)" stroke-width="0.680388765">
+     <line x1="0" y1="0.320035355" x2="6.40070711" y2="0.320035355" id="Path"></line>
+    </g>
+    <g id="Group" transform="translate(3.500000, 10.099293) scale(-1, 1) rotate(-180.000000) translate(-3.500000, -10.099293) translate(0.000000, 6.599293)" fill="#0000FF" fill-rule="nonzero" stroke-width="0.5">
+     <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
+    </g>
+    <g id="Group" transform="translate(66.907708, 10.099293) rotate(-180.000000) translate(-66.907708, -10.099293) translate(63.407708, 6.599293)" fill="#FFFFFF" fill-rule="nonzero" stroke-width="0.5">
+     <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
+    </g>
+   </g>
+   <g id="Group" transform="translate(25.000000, 49.000000)" fill="#000000" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
+    <text id="R=R">
+     <tspan x="0.176389051" y="10.3252261">R=R</tspan>
+    </text>
+   </g>
+   <g id="Group" transform="translate(16.000000, 0.000000)" fill="#0000FF" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
+    <text id="resistor1">
+     <tspan x="0" y="10">resistor1</tspan>
+    </text>
+   </g>
+   <g id="Group" transform="translate(35.500000, 68.500000) scale(-1, 1) rotate(-180.000000) translate(-35.500000, -68.500000) translate(32.000000, 65.000000)" fill="#BF0000" fill-rule="nonzero" stroke="#BF0000" stroke-width="0.5">
+    <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
+   </g>
+  </g>
+ </g>
+</svg>
