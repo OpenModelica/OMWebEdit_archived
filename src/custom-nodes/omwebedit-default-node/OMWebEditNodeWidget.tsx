@@ -3,7 +3,7 @@ import { OMWebEditDefaultNodeModel } from './OMWebEditDefaultNodeModel';
 import { DiagramEngine, PortModelAlignment, PortWidget } from '@projectstorm/react-diagrams';
 import styled from '@emotion/styled';
 
-export interface ResistorNodeWidgetProps {
+export interface OMWebEditDefaultNodeWidgetProps {
 	node: OMWebEditDefaultNodeModel;
 	engine: DiagramEngine;
 	size?: number;
@@ -23,7 +23,7 @@ export const Port = styled.div`
 	}
 `;
 
-export class OMWebEditNodeWidget extends React.Component<ResistorNodeWidgetProps> {
+export class OMWebEditNodeWidget extends React.Component<OMWebEditDefaultNodeWidgetProps> {
 	render() {
 		return (
 			<div
