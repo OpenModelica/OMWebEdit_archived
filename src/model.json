@@ -1,0 +1,144 @@
+{
+  "id": "79355cec-5ba2-459a-a4ae-57d77dab2060",
+  "offsetX": 0,
+  "offsetY": 0,
+  "zoom": 100,
+  "gridSize": 0,
+  "layers": [
+    {
+      "id": "c50a493e-47f6-4466-b488-4102d990477a",
+      "type": "diagram-links",
+      "isSvg": true,
+      "transformed": true,
+      "models": {}
+    },
+    {
+      "id": "6650c1aa-6ea6-44f8-ac87-3c6c026f32fa",
+      "type": "diagram-nodes",
+      "isSvg": false,
+      "transformed": true,
+      "models": {
+        "33ff0240-7e03-43f7-88f1-471176be190b": {
+          "id": "33ff0240-7e03-43f7-88f1-471176be190b",
+          "type": "omwebedit-default-node",
+          "x": 100,
+          "y": 200,
+          "ports": [
+            {
+              "id": "dc1f37e6-fa8b-4167-a121-f822dd337ff2",
+              "type": "omwebedit-default-node",
+              "x": 100,
+              "y": 200,
+              "name": "left",
+              "alignment": "left",
+              "parentNode": "33ff0240-7e03-43f7-88f1-471176be190b",
+              "links": []
+            },
+            {
+              "id": "06e06dff-5a59-4796-bbdb-b0c81c84eeb9",
+              "type": "omwebedit-default-node",
+              "x": 100,
+              "y": 200,
+              "name": "right",
+              "alignment": "right",
+              "parentNode": "33ff0240-7e03-43f7-88f1-471176be190b",
+              "links": []
+            }
+          ],
+          "icon": "sine-voltage",
+          "rotation": "clockwise-90"
+        },
+        "3771eb7c-da9f-4adb-92cf-67ba5b4b4671": {
+          "id": "3771eb7c-da9f-4adb-92cf-67ba5b4b4671",
+          "type": "omwebedit-default-node",
+          "x": 250,
+          "y": 108,
+          "ports": [
+            {
+              "id": "dd352940-ca4d-476f-ab5f-8bf743bfbd31",
+              "type": "omwebedit-default-node",
+              "x": 250,
+              "y": 108,
+              "name": "left",
+              "alignment": "left",
+              "parentNode": "3771eb7c-da9f-4adb-92cf-67ba5b4b4671",
+              "links": []
+            },
+            {
+              "id": "e8758255-0495-46cf-8959-617579fa6903",
+              "type": "omwebedit-default-node",
+              "x": 250,
+              "y": 108,
+              "name": "right",
+              "alignment": "right",
+              "parentNode": "3771eb7c-da9f-4adb-92cf-67ba5b4b4671",
+              "links": []
+            }
+          ],
+          "icon": "resistor",
+          "rotation": "default"
+        },
+        "3a8dd7ad-0f70-4c64-8819-7ae946360006": {
+          "id": "3a8dd7ad-0f70-4c64-8819-7ae946360006",
+          "type": "omwebedit-default-node",
+          "x": 500,
+          "y": 100,
+          "ports": [
+            {
+              "id": "dfaf9eae-44a6-42ca-915c-d1bef8f61329",
+              "type": "omwebedit-default-node",
+              "x": 500,
+              "y": 100,
+              "name": "left",
+              "alignment": "left",
+              "parentNode": "3a8dd7ad-0f70-4c64-8819-7ae946360006",
+              "links": []
+            },
+            {
+              "id": "4142dcb6-6cf8-4e5f-8ca9-582deaae7cde",
+              "type": "omwebedit-default-node",
+              "x": 500,
+              "y": 100,
+              "name": "right",
+              "alignment": "right",
+              "parentNode": "3a8dd7ad-0f70-4c64-8819-7ae946360006",
+              "links": []
+            }
+          ],
+          "icon": "inductor",
+          "rotation": "default"
+        },
+        "f1a08cee-e8bb-4517-bf92-fd0f2e982efb": {
+          "id": "f1a08cee-e8bb-4517-bf92-fd0f2e982efb",
+          "type": "omwebedit-default-node",
+          "x": 0,
+          "y": 0,
+          "ports": [
+            {
+              "id": "920ab678-7588-4932-adc5-fc223f287c2f",
+              "type": "omwebedit-default-node",
+              "x": 0,
+              "y": 0,
+              "name": "left",
+              "alignment": "left",
+              "parentNode": "f1a08cee-e8bb-4517-bf92-fd0f2e982efb",
+              "links": []
+            },
+            {
+              "id": "d3630385-e8ef-435f-a4d8-d248d7fdaf59",
+              "type": "omwebedit-default-node",
+              "x": 0,
+              "y": 0,
+              "name": "right",
+              "alignment": "right",
+              "parentNode": "f1a08cee-e8bb-4517-bf92-fd0f2e982efb",
+              "links": []
+            }
+          ],
+          "icon": "ground",
+          "rotation": "default"
+        }
+      }
+    }
+  ]
+}

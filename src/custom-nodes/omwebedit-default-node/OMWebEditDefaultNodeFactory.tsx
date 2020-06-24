@@ -14,6 +14,6 @@ export class OMWebEditDefaultNodeFactory extends AbstractReactFactory<OMWebEditD
 	}
 
 	generateModel(event) {
-		return new OMWebEditDefaultNodeModel("default");
+		return new OMWebEditDefaultNodeModel("default", "default");
 	}
 }

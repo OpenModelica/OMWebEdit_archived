@@ -27,7 +27,7 @@ export class OMWebEditNodeWidget extends React.Component<OMWebEditDefaultNodeWid
 	render() {
 		return (
 			<div
-				className={'omwebedit-default-node'}
+				className={'omwebedit-default-node rotation-'+this.props.node.rotation}
 				style={{
 					position: 'relative',
 					width: this.props.size,
