@@ -1,11 +1,11 @@
 import { NodeModel, NodeModelGenerics, PortModelAlignment } from '@projectstorm/react-diagrams';
 import { OMWebEditPortModel } from './OMWebEditPortModel';
 
-export interface ResistorNodeModelGenerics {
+export interface OMWebEditDefaultNodeModelGenerics {
 	PORT: OMWebEditPortModel;
 }
 
-export class OMWebEditDefaultNodeModel extends NodeModel<NodeModelGenerics & ResistorNodeModelGenerics> {
+export class OMWebEditDefaultNodeModel extends NodeModel<NodeModelGenerics & OMWebEditDefaultNodeModelGenerics> {
 
 	icon: string;
 
