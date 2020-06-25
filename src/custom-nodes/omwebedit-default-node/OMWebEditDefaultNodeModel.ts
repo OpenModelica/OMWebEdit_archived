@@ -1,9 +1,7 @@
-import { NodeModel, NodeModelGenerics, PortModelAlignment } from '@projectstorm/react-diagrams';
-import { OMWebEditPortModel } from './OMWebEditPortModel';
-import { merge} from 'lodash';
-import {
-	DeserializeEvent
-} from '@projectstorm/react-canvas-core';
+import {NodeModel, NodeModelGenerics, PortModelAlignment} from '@projectstorm/react-diagrams';
+import {OMWebEditPortModel} from './OMWebEditPortModel';
+import {merge} from 'lodash';
+import {DeserializeEvent} from '@projectstorm/react-canvas-core';
 
 export interface OMWebEditDefaultNodeModelGenerics {
 	PORT: OMWebEditPortModel;
@@ -15,15 +13,30 @@ export class OMWebEditDefaultNodeModel extends NodeModel<NodeModelGenerics & OMW
 	rotation: string;
 	data: object;
 
-	constructor(icon: string, rotation: string) {
+	// constructor(icon: string);
+	// constructor(icon: string, rotation?: string);
+	// constructor(icon: string, rotation?: string, ports?: PortModelAlignment[]);
+	constructor(icon: string, rotation?: string, ports?: PortModelAlignment[]) {
 		super({
 			type: 'omwebedit-default-node'
 		});
-		this.addPort(new OMWebEditPortModel(PortModelAlignment.LEFT));
-		this.addPort(new OMWebEditPortModel(PortModelAlignment.RIGHT));
 		this.icon = icon;
-		this.rotation = rotation;
-        this.data = {};
+		this.data = {};
+
+		if (ports) {
+			ports.forEach((port) => {
+				this.addPort(new OMWebEditPortModel(port));
+			});
+        } else {
+			this.addPort(new OMWebEditPortModel(PortModelAlignment.LEFT));
+			this.addPort(new OMWebEditPortModel(PortModelAlignment.RIGHT));
+		}
+
+		if(rotation) {
+			this.rotation = rotation;
+		} else {
+			this.rotation = 'default';
+		}
 	}
 
 	serialize() {
