@@ -24,7 +24,58 @@ export const Port = styled.div`
 `;
 
 export class OMWebEditNodeWidget extends React.Component<OMWebEditDefaultNodeWidgetProps> {
+
+	getPortWidget(topStyle, leftStyle, port) {
+		return (
+			<PortWidget
+				style={{
+					top: topStyle,
+					left: leftStyle,
+					position: 'absolute'
+				}}
+				port={this.props.node.getPort(port)}
+				engine={this.props.engine}>
+				<Port />
+			</PortWidget>
+		);
+	}
+
 	render() {
+
+		let leftPortWidget, rightPortWidget, topPortWidget, bottomPortWidget;
+
+		if (this.props.node.getPort(PortModelAlignment.LEFT)) {
+			leftPortWidget = this.getPortWidget(
+				this.props.size / 2 - 8,
+				-8,
+				PortModelAlignment.LEFT
+			);
+		}
+
+		if(this.props.node.getPort(PortModelAlignment.RIGHT)) {
+			rightPortWidget = this.getPortWidget(
+				this.props.size / 2 - 8,
+				this.props.size - 8,
+				PortModelAlignment.RIGHT
+			);
+		}
+
+		if (this.props.node.getPort(PortModelAlignment.TOP)) {
+			topPortWidget = this.getPortWidget(
+				-8,
+				this.props.size / 2 - 8,
+				PortModelAlignment.TOP
+			);
+		}
+
+		if (this.props.node.getPort(PortModelAlignment.BOTTOM)) {
+			bottomPortWidget = this.getPortWidget(
+				this.props.size - 8,
+				this.props.size / 2 - 8,
+				PortModelAlignment.BOTTOM
+			);
+		}
+
 		return (
 			<div
 				className={'omwebedit-default-node rotation-'+this.props.node.rotation}
@@ -34,26 +85,10 @@ export class OMWebEditNodeWidget extends React.Component<OMWebEditDefaultNodeWid
 					height: this.props.size
 				}}>
 				<img src={this.props.node.icon+"-icon.svg"} alt={this.props.node.icon + "-icon"} width="100%"/>
-				<PortWidget
-					style={{
-						top: this.props.size / 2 - 8,
-						left: -8,
-						position: 'absolute'
-					}}
-					port={this.props.node.getPort(PortModelAlignment.LEFT)}
-					engine={this.props.engine}>
-					<Port />
-				</PortWidget>
-				<PortWidget
-					style={{
-						left: this.props.size - 8,
-						top: this.props.size / 2 - 8,
-						position: 'absolute'
-					}}
-					port={this.props.node.getPort(PortModelAlignment.RIGHT)}
-					engine={this.props.engine}>
-					<Port />
-				</PortWidget>
+				{leftPortWidget}
+				{rightPortWidget}
+				{topPortWidget}
+				{bottomPortWidget}
 			</div>
 		);
 	}
