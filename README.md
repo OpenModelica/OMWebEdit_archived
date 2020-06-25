@@ -33,13 +33,13 @@ v12.18.1
 
 ## Running Locally
 1. Install dependencies 
-```
-npm install
-``` 
+    ```
+    npm install
+    ```  
 1. Run
-```
-npm run start
-```
+    ```
+    npm run start
+    ```
 
 # Project Information and Management
 
