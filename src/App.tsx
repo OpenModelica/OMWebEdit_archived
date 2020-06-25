@@ -1,7 +1,7 @@
 import React from "react";
 
 import createEngine, {
-  DiagramModel, PortModelAlignment,
+  DiagramModel, PortModelAlignment
 } from "@projectstorm/react-diagrams";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import "./App.css";
@@ -9,12 +9,12 @@ import {SimplePortFactory} from "./custom-nodes/common/SimplePortFactory";
 import {OMWebEditPortModel} from "./custom-nodes/omwebedit-default-node/OMWebEditPortModel";
 import {OMWebEditDefaultNodeFactory} from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeFactory";
 import {OMWebEditDefaultNodeModel} from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeModel";
-import modelJson from "./model.json";
+import modelJson from "./sample-rlc-circuit-model.json";
 
 function App() {
 
   // setup the diagram engine
-  var engine = createEngine();
+  const engine = createEngine();
 
   // register some other factories as well
   engine
@@ -23,29 +23,56 @@ function App() {
   engine.getNodeFactories().registerFactory(new OMWebEditDefaultNodeFactory());
 
   // setup the diagram model
-  var model = new DiagramModel();
+  const model = new DiagramModel();
 
-  // setup nodes
-  var node1 = new OMWebEditDefaultNodeModel("sine-voltage", "clockwise-90");
-  node1.setPosition(100, 200);
+  // // setup nodes
+  // const voltageNode = new OMWebEditDefaultNodeModel("sine-voltage", "clockwise-90");
+  // voltageNode.setPosition(100, 200);
+  //
+  // const resistorNode = new OMWebEditDefaultNodeModel("resistor", "default");
+  // resistorNode.setPosition(250, 100);
+  //
+  // const inductorNode = new OMWebEditDefaultNodeModel("inductor", "default");
+  // inductorNode.setPosition(500, 100);
+  //
+  // const groundNode = new OMWebEditDefaultNodeModel("ground", "default");
+  // groundNode.setPosition(300, 300);
+  //
+  // // setup links
+  // const resistorLeftPort = resistorNode.getPort(PortModelAlignment.LEFT);
+  // const resistorRightPort = resistorNode.getPort(PortModelAlignment.RIGHT);
+  // const inductorLeftPort = inductorNode.getPort(PortModelAlignment.LEFT);
+  // const inductorRightPort = inductorNode.getPort(PortModelAlignment.RIGHT);
+  // const groundRightPort = groundNode.getPort(PortModelAlignment.RIGHT);
+  // const groundLeftPort = groundNode.getPort(PortModelAlignment.LEFT);
+  // const voltageLeftPort = voltageNode.getPort(PortModelAlignment.LEFT);
+  // const voltageRightPort = voltageNode.getPort(PortModelAlignment.RIGHT);
+  //
+  // const resistorInductorLink = resistorLeftPort.createLinkModel();
+  // resistorInductorLink.setSourcePort(resistorRightPort);
+  // resistorInductorLink.setTargetPort(inductorLeftPort);
+  //
+  // const inductorGroundLink = inductorRightPort.createLinkModel();
+  // inductorGroundLink.setSourcePort(inductorRightPort);
+  // inductorGroundLink.setTargetPort(groundRightPort);
+  //
+  // const voltageResistorLink = voltageLeftPort.createLinkModel();
+  // voltageResistorLink.setSourcePort(voltageLeftPort);
+  // voltageResistorLink.setTargetPort(resistorLeftPort);
+  //
+  // const voltageGroundLink = voltageRightPort.createLinkModel();
+  // voltageGroundLink.setSourcePort(voltageRightPort);
+  // voltageGroundLink.setTargetPort(groundLeftPort);
+  //
+  // // add everything to model
+  // model.addAll(voltageNode, resistorNode, inductorNode, groundNode);
+  // model.addAll(resistorInductorLink, inductorGroundLink, voltageResistorLink, voltageGroundLink);
+  //
+  // // load model into engine
+  // engine.setModel(model);
 
-  var node2 = new OMWebEditDefaultNodeModel("resistor", "default");
-  node2.setPosition(250, 108);
-
-  var node3 = new OMWebEditDefaultNodeModel("inductor", "default");
-  node3.setPosition(500, 100);
-
-  var node4 = new OMWebEditDefaultNodeModel("ground", "default");
-  node3.setPosition(500, 100);
-
-  // add nodes to model
-  model.addAll(node1, node2, node3, node4);
-
-  // load model into engine
-  engine.setModel(model);
-
-  var model2 = new DiagramModel();
-  var str = JSON.stringify(modelJson);
+  const model2 = new DiagramModel();
+  const str = JSON.stringify(modelJson);
   model2.deserializeModel(JSON.parse(str), engine);
   engine.setModel(model2);
 
