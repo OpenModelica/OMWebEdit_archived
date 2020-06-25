@@ -1,44 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="72px" height="50px" viewBox="0 0 72 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="72px" height="62px" viewBox="0 0 72 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
     <title>inductor-icon</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-        <g id="inductor-icon" transform="translate(0.463902, -2.183320)">
-            <g id="Group-2" transform="translate(0.031349, 0.082474)">
-                <g id="Group" stroke-linejoin="bevel" transform="translate(59.405799, 28.042284) scale(-1, 1) rotate(-180.000000) translate(-59.405799, -28.042284) translate(54.405799, 27.542284)" stroke="#0000FF" stroke-width="0.680388765">
-                    <line x1="0" y1="0.320035355" x2="9.60106066" y2="0.320035355" id="Path"></line>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="inductor-icon" transform="translate(0.000000, -4.000000)">
+            <g id="Group-2" transform="translate(0.495251, 31.870374)" stroke="#0000FF">
+                <g id="Group" stroke-linejoin="bevel" transform="translate(59.405799, 6.840046) scale(-1, 1) rotate(-180.000000) translate(-59.405799, -6.840046) translate(54.405799, 5.554332)" stroke-width="0.680388765">
+                    <line x1="0" y1="1.69718831" x2="9.60106066" y2="1.69718831" id="Path"></line>
                 </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(11.400495, 28.042284) scale(-1, 1) rotate(-180.000000) translate(-11.400495, -28.042284) translate(6.400495, 27.542284)" stroke="#0000FF" stroke-width="0.680388765">
-                    <line x1="0" y1="0.320035355" x2="9.60106066" y2="0.320035355" id="Path"></line>
+                <g id="Group" stroke-linejoin="bevel" transform="translate(11.400495, 6.840046) scale(-1, 1) rotate(-180.000000) translate(-11.400495, -6.840046) translate(6.400495, 5.554332)" stroke-width="0.680388765">
+                    <line x1="0" y1="1.69718831" x2="9.60106066" y2="1.69718831" id="Path"></line>
                 </g>
-                <g id="Group" transform="translate(26.384225, 41.275038)" fill="#000000" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
-                    <text id="L=L">
-                        <tspan x="0.176389051" y="10.3252261">L=L</tspan>
+                <g id="Group" stroke-linejoin="bevel" transform="translate(21.001556, 3.214286) scale(-1, 1) rotate(-180.000000) translate(-21.001556, -3.214286) translate(16.001556, 0.000000)" stroke-width="0.680388765">
+                    <path d="M0,0 L0.160017678,1.23442208 C0.160017678,1.23442208 0.320035355,2.46884417 1.4401591,4.11474028 C1.4401591,4.11474028 2.56028284,5.7606364 4.80053033,5.7606364 C4.80053033,5.7606364 7.04077782,5.7606364 8.16090156,4.11474028 C8.16090156,4.11474028 9.28102531,2.46884417 9.44104298,1.23442208 L9.60106066,0" id="Path"></path>
+                </g>
+                <g id="Group" stroke-linejoin="bevel" transform="translate(30.602617, 3.214286) scale(-1, 1) rotate(-180.000000) translate(-30.602617, -3.214286) translate(25.602617, 0.000000)" stroke-width="0.680388765">
+                    <path d="M0,0 L0.160017678,1.23442208 C0.160017678,1.23442208 0.320035355,2.46884417 1.4401591,4.11474028 C1.4401591,4.11474028 2.56028284,5.7606364 4.80053033,5.7606364 C4.80053033,5.7606364 7.04077782,5.7606364 8.16090156,4.11474028 C8.16090156,4.11474028 9.28102531,2.46884417 9.44104298,1.23442208 L9.60106066,0" id="Path"></path>
+                </g>
+                <g id="Group" stroke-linejoin="bevel" transform="translate(40.203677, 3.214286) scale(-1, 1) rotate(-180.000000) translate(-40.203677, -3.214286) translate(35.203677, 0.000000)" stroke-width="0.680388765">
+                    <path d="M0,0 L0.160017678,1.23442208 C0.160017678,1.23442208 0.320035355,2.46884417 1.4401591,4.11474028 C1.4401591,4.11474028 2.56028284,5.7606364 4.80053033,5.7606364 C4.80053033,5.7606364 7.04077782,5.7606364 8.16090156,4.11474028 C8.16090156,4.11474028 9.28102531,2.46884417 9.44104298,1.23442208 L9.60106066,0" id="Path"></path>
+                </g>
+                <g id="Group" stroke-linejoin="bevel" transform="translate(49.804738, 3.214286) scale(-1, 1) rotate(-180.000000) translate(-49.804738, -3.214286) translate(44.804738, 0.000000)" stroke-width="0.680388765">
+                    <path d="M0,0 L0.160017678,1.23442208 C0.160017678,1.23442208 0.320035355,2.46884417 1.4401591,4.11474028 C1.4401591,4.11474028 2.56028284,5.7606364 4.80053033,5.7606364 C4.80053033,5.7606364 7.04077782,5.7606364 8.16090156,4.11474028 C8.16090156,4.11474028 9.28102531,2.46884417 9.44104298,1.23442208 L9.60106066,0" id="Path"></path>
+                </g>
+                <g id="Group" transform="translate(3.500000, 6.043312) scale(-1, 1) rotate(-180.000000) translate(-3.500000, -6.043312) translate(0.000000, 1.543312)" fill="#0000FF" fill-rule="nonzero" stroke-width="0.5">
+                    <rect id="Rectangle" x="0" y="0" width="6.40070711" height="8.22948057"></rect>
+                </g>
+                <g id="Group" transform="translate(66.909119, 6.043312) rotate(-180.000000) translate(-66.909119, -6.043312) translate(63.409119, 1.543312)" fill="#FFFFFF" fill-rule="nonzero" stroke-width="0.5">
+                    <rect id="Rectangle" x="0" y="0" width="6.40070711" height="8.22948057"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(26.879476, 53.223961)" fill="#000000" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
+                <g id="L=L">
+                    <text>
+                        <tspan x="0.176389051" y="12.1324336">L=L</tspan>
                     </text>
                 </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(21.001556, 25.722248) scale(-1, 1) rotate(-180.000000) translate(-21.001556, -25.722248) translate(16.001556, 23.222248)" stroke="#0000FF" stroke-width="0.680388765">
-                    <path d="M0,0 L0.160017678,0.960106066 C0.160017678,0.960106066 0.320035355,1.92021213 1.4401591,3.20035355 C1.4401591,3.20035355 2.56028284,4.48049498 4.80053033,4.48049498 C4.80053033,4.48049498 7.04077782,4.48049498 8.16090156,3.20035355 C8.16090156,3.20035355 9.28102531,1.92021213 9.44104298,0.960106066 L9.60106066,0" id="Path"></path>
-                </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(30.602617, 25.722248) scale(-1, 1) rotate(-180.000000) translate(-30.602617, -25.722248) translate(25.602617, 23.222248)" stroke="#0000FF" stroke-width="0.680388765">
-                    <path d="M0,0 L0.160017678,0.960106066 C0.160017678,0.960106066 0.320035355,1.92021213 1.4401591,3.20035355 C1.4401591,3.20035355 2.56028284,4.48049498 4.80053033,4.48049498 C4.80053033,4.48049498 7.04077782,4.48049498 8.16090156,3.20035355 C8.16090156,3.20035355 9.28102531,1.92021213 9.44104298,0.960106066 L9.60106066,0" id="Path"></path>
-                </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(40.203677, 25.722248) scale(-1, 1) rotate(-180.000000) translate(-40.203677, -25.722248) translate(35.203677, 23.222248)" stroke="#0000FF" stroke-width="0.680388765">
-                    <path d="M0,0 L0.160017678,0.960106066 C0.160017678,0.960106066 0.320035355,1.92021213 1.4401591,3.20035355 C1.4401591,3.20035355 2.56028284,4.48049498 4.80053033,4.48049498 C4.80053033,4.48049498 7.04077782,4.48049498 8.16090156,3.20035355 C8.16090156,3.20035355 9.28102531,1.92021213 9.44104298,0.960106066 L9.60106066,0" id="Path"></path>
-                </g>
-                <g id="Group" stroke-linejoin="bevel" transform="translate(49.804738, 25.722248) scale(-1, 1) rotate(-180.000000) translate(-49.804738, -25.722248) translate(44.804738, 23.222248)" stroke="#0000FF" stroke-width="0.680388765">
-                    <path d="M0,0 L0.160017678,0.960106066 C0.160017678,0.960106066 0.320035355,1.92021213 1.4401591,3.20035355 C1.4401591,3.20035355 2.56028284,4.48049498 4.80053033,4.48049498 C4.80053033,4.48049498 7.04077782,4.48049498 8.16090156,3.20035355 C8.16090156,3.20035355 9.28102531,1.92021213 9.44104298,0.960106066 L9.60106066,0" id="Path"></path>
-                </g>
-                <g id="Group" transform="translate(14.036991, 0.000000)" fill="#0000FF" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
-                    <text id="inductor1">
-                        <tspan x="0" y="10">inductor1</tspan>
+            </g>
+            <g id="Group" transform="translate(14.532242, 0.156055)" fill="#0000FF" font-family="Helvetica" font-size="10.2411483" font-weight="normal">
+                <g id="inductor1">
+                    <text>
+                        <tspan x="0" y="11.7142857">inductor1</tspan>
                     </text>
-                </g>
-                <g id="Group" transform="translate(3.500000, 27.922602) scale(-1, 1) rotate(-180.000000) translate(-3.500000, -27.922602) translate(0.000000, 24.422602)" fill="#0000FF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.5">
-                    <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
-                </g>
-                <g id="Group" transform="translate(66.909119, 27.922602) rotate(-180.000000) translate(-66.909119, -27.922602) translate(63.409119, 24.422602)" fill="#FFFFFF" fill-rule="nonzero" stroke="#0000FF" stroke-width="0.5">
-                    <rect id="Rectangle" x="0" y="0" width="6.40070711" height="6.40070711"></rect>
                 </g>
             </g>
         </g>
