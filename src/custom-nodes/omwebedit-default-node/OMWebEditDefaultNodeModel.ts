@@ -11,20 +11,19 @@ export class OMWebEditDefaultNodeModel extends NodeModel<NodeModelGenerics & OMW
 
 	icon: string;
 	rotation: string;
+	customPorts: PortModelAlignment[];
 	data: object;
 
-	// constructor(icon: string);
-	// constructor(icon: string, rotation?: string);
-	// constructor(icon: string, rotation?: string, ports?: PortModelAlignment[]);
-	constructor(icon: string, rotation?: string, ports?: PortModelAlignment[]) {
+	constructor(icon: string, rotation?: string, cutomPorts?: PortModelAlignment[]) {
 		super({
 			type: 'omwebedit-default-node'
 		});
 		this.icon = icon;
+		this.customPorts = cutomPorts;
 		this.data = {};
 
-		if (ports) {
-			ports.forEach((port) => {
+		if (cutomPorts) {
+			cutomPorts.forEach((port) => {
 				this.addPort(new OMWebEditPortModel(port));
 			});
         } else {
@@ -42,7 +41,8 @@ export class OMWebEditDefaultNodeModel extends NodeModel<NodeModelGenerics & OMW
 	serialize() {
 		return merge(super.serialize(), {
 			icon: this.icon,
-			rotation: this.rotation
+			rotation: this.rotation,
+			customPorts: this.customPorts
 		});
 	}
 
@@ -50,5 +50,6 @@ export class OMWebEditDefaultNodeModel extends NodeModel<NodeModelGenerics & OMW
 		super.deserialize(event);
 		this.icon = event.data.icon;
 		this.rotation = event.data.rotation;
+		this.customPorts = event.data.customPorts;
 	}
 }
