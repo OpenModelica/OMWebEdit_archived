@@ -1,5 +1,47 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [OMWebEdit](#omwebedit)
+- [Developer Guide](#developer-guide)
+  - [Dev Env Pre-requisites](#dev-env-pre-requisites)
+  - [Running Locally](#running-locally)
+- [Project Information and Management](#project-information-and-management)
+  - [Requirements](#requirements)
+  - [Timeline](#timeline)
+    - [First phase functionality - simulate already existing models](#first-phase-functionality---simulate-already-existing-models)
+    - [Second phase functionality - compose models](#second-phase-functionality---compose-models)
+    - [Third phase functionality - collaborative development](#third-phase-functionality---collaborative-development)
+  - [Web Frameworks](#web-frameworks)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # OMWebEdit
 OpenModelica connection editor in the browser
+
+# Developer Guide
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Dev Env Pre-requisites
+```
+❯ node --version
+v12.18.1
+
+❯ npm --version
+6.14.5
+```
+
+## Running Locally
+1. Install dependencies 
+    ```
+    npm install
+    ```  
+1. Run
+    ```
+    npm run start
+    ```
+
+# Project Information and Management
 
 ## Requirements
 
@@ -34,14 +76,9 @@ The [OMWebEdit](https://github.com/OpenModelica/OMWebEdit) will be the front-end
 - [ ] text support, edit and create Modelica models and libraries in the browser, including icons, etc.
 - [ ] collaborative editing of Modelica models, conflict solving, integration with git/svn repositories
 
-
 ## Web Frameworks
 
 Possible web frameworks to use:
 - https://www.diagrams.net/
 - https://github.com/jgraph/drawio (web app)
 - https://github.com/jgraph/drawio-desktop (desktop app, electron based)
-
-
-
-
