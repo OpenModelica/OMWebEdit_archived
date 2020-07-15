@@ -1,23 +1,30 @@
 import React from "react";
 
-import createEngine, {DiagramModel, PortModelAlignment} from "@projectstorm/react-diagrams";
-import {CanvasWidget} from "@projectstorm/react-canvas-core";
+import createEngine, {
+  DiagramModel,
+  PortModelAlignment,
+} from "@projectstorm/react-diagrams";
+import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import "./App.css";
-import {SimplePortFactory} from "./custom-nodes/common/SimplePortFactory";
-import {OMWebEditPortModel} from "./custom-nodes/omwebedit-default-node/OMWebEditPortModel";
-import {OMWebEditDefaultNodeFactory} from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeFactory";
-import {OMWebEditDefaultNodeModel} from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeModel";
+import { SimplePortFactory } from "./custom-nodes/common/SimplePortFactory";
+import { OMWebEditPortModel } from "./custom-nodes/omwebedit-default-node/OMWebEditPortModel";
+import { OMWebEditDefaultNodeFactory } from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeFactory";
+import { OMWebEditDefaultNodeModel } from "./custom-nodes/omwebedit-default-node/OMWebEditDefaultNodeModel";
 import modelJson from "./sample-rlc-circuit-model.json";
 
 function App() {
-
   // setup the diagram engine
   const engine = createEngine();
 
   // register some other factories as well
   engine
-      .getPortFactories()
-      .registerFactory(new SimplePortFactory('omwebedit-default-node', (config) => new OMWebEditPortModel(PortModelAlignment.LEFT)));
+    .getPortFactories()
+    .registerFactory(
+      new SimplePortFactory(
+        "omwebedit-default-node",
+        (config) => new OMWebEditPortModel(PortModelAlignment.LEFT)
+      )
+    );
   engine.getNodeFactories().registerFactory(new OMWebEditDefaultNodeFactory());
 
   // setup the diagram model
@@ -75,15 +82,17 @@ function App() {
   engine.setModel(model2);
 
   return (
-      <div>
-        <CanvasWidget engine={engine} className="canvas" />
-        <button onClick={() => {
-            console.log(JSON.stringify(model.serialize()));
-        }}>
-          Serialise Model
-        </button>
-      </div>
-      );
+    <div>
+      <CanvasWidget engine={engine} className="canvas" />
+      <button
+        onClick={() => {
+          console.log(JSON.stringify(model.serialize()));
+        }}
+      >
+        Serialise Model
+      </button>
+    </div>
+  );
 }
 
 export default App;
