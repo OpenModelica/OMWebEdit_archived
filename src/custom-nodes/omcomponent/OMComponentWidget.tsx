@@ -2,9 +2,10 @@ import * as React from "react";
 import { OMComponentModel } from "./OMComponentModel";
 import { DiagramEngine, PortWidget } from "@projectstorm/react-diagrams";
 import styled from "@emotion/styled";
+
 import { OMPortModel } from "./OMPortModel";
 
-export interface OMWebEditDefaultNodeWidgetProps {
+export interface OMComponentWidgetProps {
   node: OMComponentModel;
   engine: DiagramEngine;
   size?: number;
@@ -21,19 +22,12 @@ export const Port = styled.div`
   width: 16px;
   height: 16px;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
   cursor: pointer;
-
-  &:hover {
-    background: rgba(0, 0, 0, 1);
-  }
+  background-image: ${(props) => `url(${props["data-portimage"]})`};
 `;
 
-export class OMComponentWidget extends React.Component<
-  OMWebEditDefaultNodeWidgetProps
-> {
-  getPortWidget(topStyle, leftStyle, port) {
+export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
+  getPortWidget(topStyle, leftStyle, port, svgUrl) {
     return (
       <PortWidget
         style={{
@@ -41,25 +35,31 @@ export class OMComponentWidget extends React.Component<
           left: leftStyle,
           position: "absolute",
         }}
+        key={port.getName()}
         port={this.props.node.getPort(port.getName())}
         engine={this.props.engine}
       >
-        <Port />
+        <Port data-portimage={svgUrl} />
       </PortWidget>
     );
   }
 
+  // "./Modelica.Electrical.Analog.Interfaces.PositivePin.svg"
   render() {
+    const portWidth = 16;
     let portWidgets: JSX.Element[] = [];
     for (let portName in this.props.node.getPorts()) {
       const port: OMPortModel = this.props.node.getPort(portName);
-      let portOptions = port.getOptions();
+      const portOptions = port.getOptions();
       // TODO: My novice TS skills fail me here. What's the correct way to access 'placement' attribute without the
       // compiler complaining?
       const placement: ConnectorPlacement = portOptions["placement"];
-      const topMargin = this.props.node.size.height - placement.bottomLeft.y;
+      const svgUrl = portOptions["svgUrl"];
+      console.log(portOptions);
+      const topMargin =
+        this.props.node.size.height - placement.bottomLeft.y - portWidth / 2;
       const leftMargin = placement.bottomLeft.x;
-      portWidgets.push(this.getPortWidget(topMargin, leftMargin, port));
+      portWidgets.push(this.getPortWidget(topMargin, leftMargin, port, svgUrl));
     }
 
     return (
@@ -78,7 +78,7 @@ export class OMComponentWidget extends React.Component<
           alt={this.props.node.icon + "-icon"}
           width="100%"
         />
-        {portWidgets[0]}
+        {portWidgets}
       </div>
     );
   }
