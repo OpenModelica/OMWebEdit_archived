@@ -19,6 +19,6 @@ export class OMComponentFactory extends AbstractReactFactory<
   }
 
   generateModel(event) {
-    return new OMComponentModel("default", []);
+    return new OMComponentModel("default", null, []);
   }
 }

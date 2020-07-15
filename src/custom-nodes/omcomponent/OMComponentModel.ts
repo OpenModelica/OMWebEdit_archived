@@ -8,19 +8,26 @@ export interface OMWebEditDefaultNodeModelGenerics {
   PORT: OMPortModel;
 }
 
+interface size {
+  width: number;
+  height: number;
+}
+
 export class OMComponentModel extends NodeModel<
   NodeModelGenerics & OMWebEditDefaultNodeModelGenerics
 > {
   icon: string;
   rotation: string;
+  size: size;
   customPorts: OMPort[];
   data: object;
 
-  constructor(icon: string, ports: OMPort[]) {
+  constructor(icon: string, size: size, ports: OMPort[]) {
     super({
       type: "om-component",
     });
     this.icon = icon;
+    this.size = size;
     this.customPorts = ports;
     this.data = {};
 

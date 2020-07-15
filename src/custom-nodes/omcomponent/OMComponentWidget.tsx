@@ -56,10 +56,8 @@ export class OMComponentWidget extends React.Component<
       let portOptions = port.getOptions();
       // TODO: My novice TS skills fail me here. What's the correct way to access 'placement' attribute without the
       // compiler complaining?
-      let placement: ConnectorPlacement = portOptions["placement"];
-      console.log(placement);
-      console.log(this.props.size);
-      const topMargin = this.props.size - placement.bottomLeft.y;
+      const placement: ConnectorPlacement = portOptions["placement"];
+      const topMargin = this.props.node.size.height - placement.bottomLeft.y;
       const leftMargin = placement.bottomLeft.x;
       portWidgets.push(this.getPortWidget(topMargin, leftMargin, port));
     }
@@ -71,12 +69,12 @@ export class OMComponentWidget extends React.Component<
         }
         style={{
           position: "relative",
-          width: this.props.size,
-          height: this.props.size,
+          width: this.props.node.size.width,
+          height: this.props.node.size.height,
         }}
       >
         <img
-          src={this.props.node.icon + "-icon.svg"}
+          src={this.props.node.icon + ".svg"}
           alt={this.props.node.icon + "-icon"}
           width="100%"
         />

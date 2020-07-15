@@ -16,14 +16,18 @@ function App() {
     id: "foo-port1",
     placement: {
       bottomLeft: {
-        x: 0,
-        y: 60,
+        x: 50,
+        y: 112,
       },
     },
     rotation: 0,
   };
   let ports: OMPort[] = [port1];
-  const inductorNode = new OMComponentModel("inductor", ports);
+  const inductorNode = new OMComponentModel(
+    "Modelica.Electrical.Analog.Basic.Inductor",
+    { width: 310, height: 210 },
+    ports
+  );
   inductorNode.setPosition(600, 100);
 
   // add everything to model
