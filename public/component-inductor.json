@@ -1,0 +1,37 @@
+{
+  "id": "Modelica.Electrical.Analog.Basic.Inductor",
+  "svgPath": "./assets/inductor.svg",
+  "connectors": [
+    {
+      "id": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+      "placement": {
+        "bottomLeft": {
+          "x": 100,
+          "y": 100
+        },
+        "topRight": {
+          "x": 200,
+          "y": 200
+        },
+        "rotation": 90
+      }
+    },
+    {
+      "id": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+      "placement": {
+        "bottomLeft": {
+          "x": 100,
+          "y": 100
+        },
+        "rotation": 90
+      }
+    }
+  ],
+  "parameters": [
+    {
+      "id": "Modelica.Units.SI.Inductance",
+      "displayLabel": "Inductance",
+      "displayValue": "L=1"
+    }
+  ]
+}
