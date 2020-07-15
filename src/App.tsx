@@ -12,17 +12,29 @@ function App() {
   engine.getNodeFactories().registerFactory(new OMComponentFactory());
   const model = new DiagramModel();
 
-  let port1: OMPort = {
-    id: "foo-port1",
+  const port1: OMPort = {
+    id: "Modelica.Electrical.Analog.Interfaces.PositivePin",
+    svgUrl: "./Modelica.Electrical.Analog.Interfaces.PositivePin.svg",
     placement: {
       bottomLeft: {
         x: 50,
-        y: 112,
+        y: 105,
       },
     },
     rotation: 0,
   };
-  let ports: OMPort[] = [port1];
+  const port2: OMPort = {
+    id: "Modelica.Electrical.Analog.Interfaces.NegativePin",
+    svgUrl: "./Modelica.Electrical.Analog.Interfaces.NegativePin.svg",
+    placement: {
+      bottomLeft: {
+        x: 245,
+        y: 105,
+      },
+    },
+    rotation: 0,
+  };
+  const ports: OMPort[] = [port1, port2];
   const inductorNode = new OMComponentModel(
     "Modelica.Electrical.Analog.Basic.Inductor",
     { width: 310, height: 210 },

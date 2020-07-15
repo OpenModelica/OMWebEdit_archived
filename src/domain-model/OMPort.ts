@@ -1,5 +1,6 @@
 export interface OMPort {
   id: string;
+  svgUrl: string;
   placement: OMPortPlacement;
   rotation: number;
 }

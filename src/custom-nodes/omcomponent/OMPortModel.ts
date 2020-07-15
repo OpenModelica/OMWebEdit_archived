@@ -10,6 +10,7 @@ export class OMPortModel extends PortModel {
     super({
       type: "om-port",
       name: port.id,
+      svgUrl: port.svgUrl,
       placement: port.placement,
       rotation: port.rotation,
     });
