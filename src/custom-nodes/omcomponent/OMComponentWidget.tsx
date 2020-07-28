@@ -44,7 +44,6 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
     );
   }
 
-  // "./Modelica.Electrical.Analog.Interfaces.PositivePin.svg"
   render() {
     const portWidth = 16;
     let portWidgets: JSX.Element[] = [];
