@@ -1,14 +1,13 @@
 import * as React from "react";
-import * as _ from "lodash";
 import { TrayWidget } from "./TrayWidget";
 import { Application } from "../Application";
 import { TrayItemWidget } from "./TrayItemWidget";
-import { DefaultNodeModel } from "@projectstorm/react-diagrams";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import styled from "@emotion/styled";
 import { OMPort } from "../domain-model/OMPort";
 import { OMComponentModel } from "../custom-nodes/omcomponent/OMComponentModel";
 import inductorJson from "../component-inductor.json";
+import groundJson from "../component-ground.json";
 
 export interface BodyWidgetProps {
   app: Application;
@@ -80,24 +79,12 @@ export class BodyWidget extends React.Component<BodyWidgetProps> {
               var data = JSON.parse(
                 event.dataTransfer.getData("storm-diagram-node")
               );
-              var nodesCount = _.keys(
-                this.props.app.getDiagramEngine().getModel().getNodes()
-              ).length;
 
               var node: OMComponentModel = null;
               if (data.type === "in") {
                 node = getNodeFromServerResponse(inductorJson);
-                // node = new DefaultNodeModel(
-                //   "Node " + (nodesCount + 1),
-                //   "rgb(192,255,0)"
-                // );
-                // node.addInPort("In");
               } else {
-                // node = new DefaultNodeModel(
-                //   "Node " + (nodesCount + 1),
-                //   "rgb(0,192,255)"
-                // );
-                // node.addOutPort("Out");
+                node = getNodeFromServerResponse(groundJson);
               }
               var point = this.props.app
                 .getDiagramEngine()
