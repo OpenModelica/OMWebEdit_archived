@@ -2,7 +2,7 @@ import { NodeModel, NodeModelGenerics } from "@projectstorm/react-diagrams";
 import { OMPortModel } from "./OMPortModel";
 import { merge } from "lodash";
 import { DeserializeEvent } from "@projectstorm/react-canvas-core";
-import { OMPort } from "../../domain-model/OMPort";
+import { OMPort } from "./OMPort";
 
 export interface OMWebEditDefaultNodeModelGenerics {
   PORT: OMPortModel;
@@ -13,7 +13,7 @@ interface size {
   height: number;
 }
 
-export class OMComponentModel extends NodeModel<
+export class OMComponent extends NodeModel<
   NodeModelGenerics & OMWebEditDefaultNodeModelGenerics
 > {
   iconId: string;

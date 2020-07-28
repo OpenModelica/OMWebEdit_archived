@@ -1,11 +1,11 @@
 import { OMComponentWidget } from "./OMComponentWidget";
-import { OMComponentModel } from "./OMComponentModel";
+import { OMComponent } from "../../domain-model/OMComponent";
 import * as React from "react";
 import { AbstractReactFactory } from "@projectstorm/react-canvas-core";
 import { DiagramEngine } from "@projectstorm/react-diagrams-core";
 
 export class OMComponentFactory extends AbstractReactFactory<
-  OMComponentModel,
+  OMComponent,
   DiagramEngine
 > {
   constructor() {
@@ -19,6 +19,6 @@ export class OMComponentFactory extends AbstractReactFactory<
   }
 
   generateModel(event) {
-    return new OMComponentModel("default", "svgPath", null, []);
+    return new OMComponent("default", "svgPath", null, []);
   }
 }

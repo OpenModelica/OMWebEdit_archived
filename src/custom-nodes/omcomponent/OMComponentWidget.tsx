@@ -1,12 +1,12 @@
 import * as React from "react";
-import { OMComponentModel } from "./OMComponentModel";
+import { OMComponent } from "../../domain-model/OMComponent";
 import { DiagramEngine, PortWidget } from "@projectstorm/react-diagrams";
 import styled from "@emotion/styled";
 
-import { OMPortModel } from "./OMPortModel";
+import { OMPortModel } from "../../domain-model/OMPortModel";
 
 export interface OMComponentWidgetProps {
-  node: OMComponentModel;
+  node: OMComponent;
   engine: DiagramEngine;
   size?: number;
 }

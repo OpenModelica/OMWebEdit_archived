@@ -3,7 +3,7 @@ import {
   PortModel,
   DefaultLinkModel,
 } from "@projectstorm/react-diagrams";
-import { OMPort } from "../../domain-model/OMPort";
+import { OMPort } from "./OMPort";
 
 export class OMPortModel extends PortModel {
   constructor(port: OMPort) {
