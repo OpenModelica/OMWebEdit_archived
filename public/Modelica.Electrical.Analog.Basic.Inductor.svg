@@ -8,9 +8,6 @@
     <defs/>
     <polyline fill="none" fill-opacity="0" points="65.0,105.0 95.0,105.0" stroke="rgb(0,0,255)" stroke-width="0.25mm"/>
     <defs/>
-    <text dominant-baseline="middle" fill="rgb(0,0,0)" fill-opacity="1" font-family="Verdana" font-size="40.0"
-          text-anchor="middle" x="155.0" y="165.0">L=L
-    </text>
     <defs/>
     <path d="M 95.0 105.0 C 95.5 102.0 96.0 99.0 99.5 95.0 99.5 95.0 103.0 91.0 110.0 91.0 110.0 91.0 117.0 91.0 120.5 95.0 120.5 95.0 124.0 99.0 124.5 102.0 124.5 102.0 125.0 105.0 125.0 105.0"
           fill="none" fill-opacity="0" stroke="rgb(0,0,255)" stroke-width="0.25mm"/>
@@ -24,8 +21,5 @@
     <path d="M 185.0 105.0 C 185.5 102.0 186.0 99.0 189.5 95.0 189.5 95.0 193.0 91.0 200.0 91.0 200.0 91.0 207.0 91.0 210.5 95.0 210.5 95.0 214.0 99.0 214.5 102.0 214.5 102.0 215.0 105.0 215.0 105.0"
           fill="none" fill-opacity="0" stroke="rgb(0,0,255)" stroke-width="0.25mm"/>
     <defs/>
-    <text dominant-baseline="middle" fill="rgb(0,0,0)" fill-opacity="1" font-family="Verdana" font-size="40.0"
-          text-anchor="middle" x="155.0" y="35.0">name
-    </text>
     <defs/>
 </svg>
