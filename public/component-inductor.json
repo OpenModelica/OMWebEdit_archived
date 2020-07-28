@@ -1,29 +1,31 @@
 {
   "id": "Modelica.Electrical.Analog.Basic.Inductor",
-  "svgPath": "./assets/inductor.svg",
+  "svgPath": "./Modelica.Electrical.Analog.Basic.Inductor.svg",
+  "size": {
+    "width": 310,
+    "height": 105
+  },
   "connectors": [
     {
       "id": "Modelica.Electrical.Analog.Interfaces.PositivePin",
+      "svgUrl": "./Modelica.Electrical.Analog.Interfaces.PositivePin.svg",
       "placement": {
         "bottomLeft": {
-          "x": 100,
-          "y": 100
+          "x": 50,
+          "y": 105
         },
-        "topRight": {
-          "x": 200,
-          "y": 200
-        },
-        "rotation": 90
+        "rotation": 0
       }
     },
     {
       "id": "Modelica.Electrical.Analog.Interfaces.NegativePin",
+      "svgUrl": "./Modelica.Electrical.Analog.Interfaces.NegativePin.svg",
       "placement": {
         "bottomLeft": {
-          "x": 100,
-          "y": 100
+          "x": 245,
+          "y": 105
         },
-        "rotation": 90
+        "rotation": 0
       }
     }
   ],
