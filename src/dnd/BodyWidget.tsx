@@ -5,7 +5,7 @@ import { TrayItemWidget } from "./TrayItemWidget";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import styled from "@emotion/styled";
 import { OMPort } from "../domain-model/OMPort";
-import { OMComponentModel } from "../custom-nodes/omcomponent/OMComponentModel";
+import { OMComponent } from "../domain-model/OMComponent";
 import inductorJson from "../component-inductor.json";
 import groundJson from "../component-ground.json";
 
@@ -18,12 +18,7 @@ function getNodeFromServerResponse(nodeJson) {
   nodeJson.connectors.forEach((connector) => {
     ports.push(connector);
   });
-  return new OMComponentModel(
-    nodeJson.id,
-    nodeJson.svgPath,
-    nodeJson.size,
-    ports
-  );
+  return new OMComponent(nodeJson.id, nodeJson.svgPath, nodeJson.size, ports);
 }
 
 export const Body = styled.div`
@@ -62,6 +57,7 @@ export class BodyWidget extends React.Component<BodyWidgetProps> {
           <div className="title">Storm React Diagrams - DnD foo demo</div>
         </Header>
         <Content>
+          {console.log(this.props.app.getComponentLibrary().getAllComponents())}
           <TrayWidget>
             <TrayItemWidget
               model={{ type: "in" }}
@@ -80,7 +76,7 @@ export class BodyWidget extends React.Component<BodyWidgetProps> {
                 event.dataTransfer.getData("storm-diagram-node")
               );
 
-              var node: OMComponentModel = null;
+              var node: OMComponent = null;
               if (data.type === "in") {
                 node = getNodeFromServerResponse(inductorJson);
               } else {
