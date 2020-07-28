@@ -19,6 +19,6 @@ export class OMComponentFactory extends AbstractReactFactory<
   }
 
   generateModel(event) {
-    return new OMComponentModel("default", null, []);
+    return new OMComponentModel("default", "svgPath", null, []);
   }
 }

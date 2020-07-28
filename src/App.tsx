@@ -15,7 +15,12 @@ function getNodeFromServerResponse(nodeJson) {
   nodeJson.connectors.forEach((connector) => {
     ports.push(connector);
   });
-  return new OMComponentModel(nodeJson.id, nodeJson.size, ports);
+  return new OMComponentModel(
+    nodeJson.id,
+    nodeJson.svgPath,
+    nodeJson.size,
+    ports
+  );
 }
 
 function App() {
