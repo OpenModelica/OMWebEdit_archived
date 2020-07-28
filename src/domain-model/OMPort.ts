@@ -1,8 +1,7 @@
 export interface OMPort {
   id: string;
-  svgUrl: string;
+  svgPath: string;
   placement: OMPortPlacement;
-  rotation: number;
 }
 
 export interface OMPortPlacement {
@@ -10,4 +9,5 @@ export interface OMPortPlacement {
     x: number;
     y: number;
   };
+  rotation: number;
 }

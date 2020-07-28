@@ -27,7 +27,7 @@ export const Port = styled.div`
 `;
 
 export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
-  getPortWidget(topStyle, leftStyle, port, svgUrl) {
+  getPortWidget(topStyle, leftStyle, port, svgPath) {
     return (
       <PortWidget
         style={{
@@ -39,7 +39,7 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
         port={this.props.node.getPort(port.getName())}
         engine={this.props.engine}
       >
-        <Port data-portimage={svgUrl} />
+        <Port data-portimage={svgPath} />
       </PortWidget>
     );
   }
@@ -53,12 +53,13 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
       // TODO: My novice TS skills fail me here. What's the correct way to access 'placement' attribute without the
       // compiler complaining?
       const placement: ConnectorPlacement = portOptions["placement"];
-      const svgUrl = portOptions["svgUrl"];
-      console.log(portOptions);
+      const svgPath = portOptions["svgPath"];
       const topMargin =
         this.props.node.size.height - placement.bottomLeft.y - portWidth / 2;
       const leftMargin = placement.bottomLeft.x;
-      portWidgets.push(this.getPortWidget(topMargin, leftMargin, port, svgUrl));
+      portWidgets.push(
+        this.getPortWidget(topMargin, leftMargin, port, svgPath)
+      );
     }
 
     return (
