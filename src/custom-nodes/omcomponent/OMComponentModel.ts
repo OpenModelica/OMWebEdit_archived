@@ -16,17 +16,19 @@ interface size {
 export class OMComponentModel extends NodeModel<
   NodeModelGenerics & OMWebEditDefaultNodeModelGenerics
 > {
-  icon: string;
+  iconId: string;
+  svgPath: string;
   rotation: string;
   size: size;
   customPorts: OMPort[];
   data: object;
 
-  constructor(icon: string, size: size, ports: OMPort[]) {
+  constructor(iconId: string, svgPath: string, size: size, ports: OMPort[]) {
     super({
       type: "om-component",
     });
-    this.icon = icon;
+    this.iconId = iconId;
+    this.svgPath = svgPath;
     this.size = size;
     this.customPorts = ports;
     this.data = {};
@@ -38,7 +40,8 @@ export class OMComponentModel extends NodeModel<
 
   serialize() {
     return merge(super.serialize(), {
-      icon: this.icon,
+      id: this.iconId,
+      svgPath: this.svgPath,
       rotation: this.rotation,
       customPorts: this.customPorts,
     });
@@ -46,7 +49,8 @@ export class OMComponentModel extends NodeModel<
 
   deserialize(event: DeserializeEvent<this>): void {
     super.deserialize(event);
-    this.icon = event.data.icon;
+    this.iconId = event.data.iconId;
+    this.svgPath = event.data.svgPath;
     this.rotation = event.data.rotation;
     this.customPorts = event.data.customPorts;
   }

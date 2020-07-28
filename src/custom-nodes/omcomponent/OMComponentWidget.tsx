@@ -74,8 +74,8 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
         }}
       >
         <img
-          src={this.props.node.icon + ".svg"}
-          alt={this.props.node.icon + "-icon"}
+          src={this.props.node.svgPath}
+          alt={this.props.node.iconId}
           width="100%"
         />
         {portWidgets}
