@@ -62,37 +62,46 @@ export class BodyWidget extends React.Component<BodyWidgetProps> {
           <div className="title">Storm React Diagrams - DnD foo demo</div>
         </Header>
         <Content>
-          {/*{console.log(this.props.app.getComponentLibrary().getAllComponents())}*/}
+          {console.log(this.props.app.getComponentLibrary().getAllComponents())}
           <TrayWidget>
             <TrayItemWidget
-              model={{ type: "in" }}
-              name="In Node"
+              iconId="Modelica.Electrical.Analog.Basic.Inductor"
+              name="Inductor"
               color="rgb(192,255,0)"
             />
             <TrayItemWidget
-              model={{ type: "out" }}
-              name="Out Node"
+              iconId="Modelica.Electrical.Analog.Basic.Ground"
+              name="Ground"
               color="rgb(0,192,255)"
             />
           </TrayWidget>
           <Layer
             onDrop={(event) => {
-              var data = JSON.parse(
-                event.dataTransfer.getData("storm-diagram-node")
-              );
-
-              var node: OMComponent = null;
-              if (data.type === "in") {
+              let data = JSON.parse(event.dataTransfer.getData("iconId"));
+              console.log("data :: " + data);
+              let node: OMComponent;
+              if (data === "Modelica.Electrical.Analog.Basic.Inductor") {
                 node = getNodeFromServerResponse(inductorJson);
-              } else {
+              } else if (data === "Modelica.Electrical.Analog.Basic.Ground") {
                 node = getNodeFromServerResponse(groundJson);
+              } else {
+                // do nothing, existing node being dragged
               }
-              var point = this.props.app
-                .getDiagramEngine()
-                .getRelativeMousePoint(event);
-              node.setPosition(point);
-              this.props.app.getDiagramEngine().getModel().addNode(node);
+              if (data !== null) {
+                let point = this.props.app
+                  .getDiagramEngine()
+                  .getRelativeMousePoint(event);
+                node.setPosition(point);
+                this.props.app.getDiagramEngine().getModel().addNode(node);
+              }
               this.forceUpdate();
+              this.props.app
+                .getDiagramEngine()
+                .getModel()
+                .getNodes()
+                .forEach((node) => {
+                  console.log(node);
+                });
             }}
             onDragOver={(event) => {
               event.preventDefault();
