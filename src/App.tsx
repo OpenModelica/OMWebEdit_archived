@@ -5,45 +5,26 @@ import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import "./App.css";
 import { OMComponentFactory } from "./custom-nodes/omcomponent/OMComponentFactory";
 import { OMComponentModel } from "./custom-nodes/omcomponent/OMComponentModel";
+import inductorJson from "./component-inductor.json";
 import { OMPort } from "./domain-model/OMPort";
+
+function getNodeFromServerResponse(nodeJson) {
+  let ports = new Array<OMPort>();
+  nodeJson.connectors.forEach((connector) => {
+    ports.push(connector);
+  });
+  return new OMComponentModel(nodeJson.id, nodeJson.size, ports);
+}
 
 function App() {
   const engine = createEngine();
   engine.getNodeFactories().registerFactory(new OMComponentFactory());
   const model = new DiagramModel();
-
-  const port1: OMPort = {
-    id: "Modelica.Electrical.Analog.Interfaces.PositivePin",
-    svgUrl: "./Modelica.Electrical.Analog.Interfaces.PositivePin.svg",
-    placement: {
-      bottomLeft: {
-        x: 50,
-        y: 105,
-      },
-    },
-    rotation: 0,
-  };
-  const port2: OMPort = {
-    id: "Modelica.Electrical.Analog.Interfaces.NegativePin",
-    svgUrl: "./Modelica.Electrical.Analog.Interfaces.NegativePin.svg",
-    placement: {
-      bottomLeft: {
-        x: 245,
-        y: 105,
-      },
-    },
-    rotation: 0,
-  };
-  const ports: OMPort[] = [port1, port2];
-  const inductorNode = new OMComponentModel(
-    "Modelica.Electrical.Analog.Basic.Inductor",
-    { width: 310, height: 210 },
-    ports
-  );
-  inductorNode.setPosition(600, 100);
+  const node1 = getNodeFromServerResponse(inductorJson);
+  node1.setPosition(0, 50);
 
   // add everything to model
-  model.addAll(inductorNode);
+  model.addAll(node1);
 
   // load model into engine
   engine.setModel(model);
