@@ -17,10 +17,16 @@ export class OMComponentLibrary {
   }
 
   getNodeFromServerResponse(nodeJson): OMComponent {
-    let ports = new Array<OMPort>();
+    const node: OMComponent = new OMComponent(
+      nodeJson.id,
+      nodeJson.svgPath,
+      nodeJson.size
+    );
     nodeJson.connectors.forEach((connector) => {
-      ports.push(connector);
+      node.addPort(
+        new OMPort(connector.id, connector.svgPath, connector.placement)
+      );
     });
-    return new OMComponent(nodeJson.id, nodeJson.svgPath, nodeJson.size, ports);
+    return node;
   }
 }

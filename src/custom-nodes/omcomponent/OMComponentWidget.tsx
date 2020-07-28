@@ -2,8 +2,7 @@ import * as React from "react";
 import { OMComponent } from "../../domain-model/OMComponent";
 import { DiagramEngine, PortWidget } from "@projectstorm/react-diagrams";
 import styled from "@emotion/styled";
-
-import { OMPortModel } from "../../domain-model/OMPortModel";
+import { OMPort } from "../../domain-model/OMPort";
 
 export interface OMComponentWidgetProps {
   node: OMComponent;
@@ -48,7 +47,7 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
     const portWidth = 16;
     let portWidgets: JSX.Element[] = [];
     for (let portName in this.props.node.getPorts()) {
-      const port: OMPortModel = this.props.node.getPort(portName);
+      const port: OMPort = this.props.node.getPort(portName);
       const portOptions = port.getOptions();
       // TODO: My novice TS skills fail me here. What's the correct way to access 'placement' attribute without the
       // compiler complaining?
@@ -64,9 +63,6 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
 
     return (
       <div
-        className={
-          "omwebedit-default-node rotation-" + this.props.node.rotation
-        }
         style={{
           position: "relative",
           width: this.props.node.size.width,

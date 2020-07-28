@@ -4,21 +4,26 @@ import { Application } from "../Application";
 import { TrayItemWidget } from "./TrayItemWidget";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import styled from "@emotion/styled";
-import { OMPort } from "../domain-model/OMPort";
 import { OMComponent } from "../domain-model/OMComponent";
 import inductorJson from "../component-inductor.json";
 import groundJson from "../component-ground.json";
+import { OMPort } from "../domain-model/OMPort";
 
 export interface BodyWidgetProps {
   app: Application;
 }
 
 function getNodeFromServerResponse(nodeJson) {
-  let ports = new Array<OMPort>();
+  let node = new OMComponent(nodeJson.id, nodeJson.svgPath, nodeJson.size);
   nodeJson.connectors.forEach((connector) => {
-    ports.push(connector);
+    const port: OMPort = new OMPort(
+      connector.id,
+      connector.svgPath,
+      connector.placement
+    );
+    node.addPort(port);
   });
-  return new OMComponent(nodeJson.id, nodeJson.svgPath, nodeJson.size, ports);
+  return node;
 }
 
 export const Body = styled.div`
@@ -57,7 +62,7 @@ export class BodyWidget extends React.Component<BodyWidgetProps> {
           <div className="title">Storm React Diagrams - DnD foo demo</div>
         </Header>
         <Content>
-          {console.log(this.props.app.getComponentLibrary().getAllComponents())}
+          {/*{console.log(this.props.app.getComponentLibrary().getAllComponents())}*/}
           <TrayWidget>
             <TrayItemWidget
               model={{ type: "in" }}
