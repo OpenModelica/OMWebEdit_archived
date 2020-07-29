@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import { Application } from "./Application";
-import { BodyWidget } from "./dnd/BodyWidget";
+import { AppWidget } from "./dnd/AppWidget";
 
 ReactDOM.render(
-  <BodyWidget app={new Application()} />,
+  <AppWidget app={new Application()} />,
   document.getElementById("root")
 );
