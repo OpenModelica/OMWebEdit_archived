@@ -1,31 +1,15 @@
 import * as React from "react";
 import { TrayWidget } from "./TrayWidget";
 import { Application } from "../Application";
-import { TrayItemWidget } from "./TrayItemWidget";
+import { NodeEventData, TrayItemWidget } from "./TrayItemWidget";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import styled from "@emotion/styled";
 import { OMComponent } from "../domain-model/OMComponent";
-import inductorJson from "../component-inductor.json";
-import groundJson from "../component-ground.json";
-import { OMPort } from "../domain-model/OMPort";
+import { OMComponentLibrary } from "../domain-model/OMComponentLibrary";
 
 export interface BodyWidgetProps {
   app: Application;
 }
-
-function getNodeFromServerResponse(nodeJson) {
-  let node = new OMComponent(nodeJson.id, nodeJson.svgPath, nodeJson.size);
-  nodeJson.connectors.forEach((connector) => {
-    const port: OMPort = new OMPort(
-      connector.id,
-      connector.svgPath,
-      connector.placement
-    );
-    node.addPort(port);
-  });
-  return node;
-}
-
 export const Body = styled.div`
   flex-grow: 1;
   display: flex;
@@ -55,6 +39,28 @@ export const Layer = styled.div`
 `;
 
 export class BodyWidget extends React.Component<BodyWidgetProps> {
+  private onDropEventHandler(event) {
+    const eventData: string = event.dataTransfer.getData(
+      "nodeEventData-lib-drag-event-data"
+    );
+    if (eventData) {
+      const omComponentLibrary = new OMComponentLibrary();
+      const data: NodeEventData = JSON.parse(eventData);
+      const node: OMComponent = omComponentLibrary.getComponentById(
+        data.componentId
+      );
+
+      let point = this.props.app
+        .getDiagramEngine()
+        .getRelativeMousePoint(event);
+      point.x = point.x - node.size.width / 2;
+      point.y = point.y - node.size.height / 2;
+      node.setPosition(point);
+      this.props.app.getDiagramEngine().getModel().addNode(node);
+    }
+    this.forceUpdate();
+  }
+
   render() {
     return (
       <Body>
@@ -62,46 +68,25 @@ export class BodyWidget extends React.Component<BodyWidgetProps> {
           <div className="title">Storm React Diagrams - DnD foo demo</div>
         </Header>
         <Content>
-          {console.log(this.props.app.getComponentLibrary().getAllComponents())}
           <TrayWidget>
             <TrayItemWidget
-              iconId="Modelica.Electrical.Analog.Basic.Inductor"
+              nodeEventData={{
+                componentId: "Modelica.Electrical.Analog.Basic.Inductor",
+              }}
               name="Inductor"
               color="rgb(192,255,0)"
             />
             <TrayItemWidget
-              iconId="Modelica.Electrical.Analog.Basic.Ground"
+              nodeEventData={{
+                componentId: "Modelica.Electrical.Analog.Basic.Ground",
+              }}
               name="Ground"
               color="rgb(0,192,255)"
             />
           </TrayWidget>
           <Layer
             onDrop={(event) => {
-              let data = JSON.parse(event.dataTransfer.getData("iconId"));
-              console.log("data :: " + data);
-              let node: OMComponent;
-              if (data === "Modelica.Electrical.Analog.Basic.Inductor") {
-                node = getNodeFromServerResponse(inductorJson);
-              } else if (data === "Modelica.Electrical.Analog.Basic.Ground") {
-                node = getNodeFromServerResponse(groundJson);
-              } else {
-                // do nothing, existing node being dragged
-              }
-              if (data !== null) {
-                let point = this.props.app
-                  .getDiagramEngine()
-                  .getRelativeMousePoint(event);
-                node.setPosition(point);
-                this.props.app.getDiagramEngine().getModel().addNode(node);
-              }
-              this.forceUpdate();
-              this.props.app
-                .getDiagramEngine()
-                .getModel()
-                .getNodes()
-                .forEach((node) => {
-                  console.log(node);
-                });
+              this.onDropEventHandler(event);
             }}
             onDragOver={(event) => {
               event.preventDefault();
