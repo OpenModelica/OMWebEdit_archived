@@ -22,7 +22,7 @@ export class OMComponent extends NodeModel<
 
   constructor(iconId: string, svgPath: string, size: size) {
     super({
-      type: "om-component",
+      type: "om-nodeEventData",
     });
     this.iconId = iconId;
     this.svgPath = svgPath;
