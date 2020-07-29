@@ -1,16 +1,16 @@
 import * as React from "react";
-import { TrayWidget } from "./TrayWidget";
+import { LibraryWidget } from "./LibraryWidget";
 import { Application } from "../Application";
-import { NodeEventData, TrayItemWidget } from "./TrayItemWidget";
+import { NodeEventData, LibraryItemWidget } from "./LibraryItemWidget";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import styled from "@emotion/styled";
 import { OMComponent } from "../domain-model/OMComponent";
 import { OMComponentLibrary } from "../domain-model/OMComponentLibrary";
 
-export interface BodyWidgetProps {
+export interface AppWidgetProps {
   app: Application;
 }
-export const Body = styled.div`
+export const App = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -33,12 +33,12 @@ export const Content = styled.div`
   flex-grow: 1;
 `;
 
-export const Layer = styled.div`
+export const Workspace = styled.div`
   position: relative;
   flex-grow: 1;
 `;
 
-export class BodyWidget extends React.Component<BodyWidgetProps> {
+export class AppWidget extends React.Component<AppWidgetProps> {
   private onDropEventHandler(event) {
     const eventData: string = event.dataTransfer.getData(
       "nodeEventData-lib-drag-event-data"
@@ -63,28 +63,28 @@ export class BodyWidget extends React.Component<BodyWidgetProps> {
 
   render() {
     return (
-      <Body>
+      <App>
         <Header>
           <div className="title">Storm React Diagrams - DnD foo demo</div>
         </Header>
         <Content>
-          <TrayWidget>
-            <TrayItemWidget
+          <LibraryWidget>
+            <LibraryItemWidget
               nodeEventData={{
                 componentId: "Modelica.Electrical.Analog.Basic.Inductor",
               }}
               name="Inductor"
               color="rgb(192,255,0)"
             />
-            <TrayItemWidget
+            <LibraryItemWidget
               nodeEventData={{
                 componentId: "Modelica.Electrical.Analog.Basic.Ground",
               }}
               name="Ground"
               color="rgb(0,192,255)"
             />
-          </TrayWidget>
-          <Layer
+          </LibraryWidget>
+          <Workspace
             onDrop={(event) => {
               this.onDropEventHandler(event);
             }}
@@ -96,9 +96,9 @@ export class BodyWidget extends React.Component<BodyWidgetProps> {
               engine={this.props.app.getDiagramEngine()}
               className="canvas"
             />
-          </Layer>
+          </Workspace>
         </Content>
-      </Body>
+      </App>
     );
   }
 }

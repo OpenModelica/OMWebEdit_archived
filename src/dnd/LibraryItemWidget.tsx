@@ -3,13 +3,13 @@ import styled from "@emotion/styled";
 
 export type NodeEventData = { componentId: string };
 
-export interface TrayItemWidgetProps {
+export interface LibraryItemWidgetProps {
   nodeEventData: NodeEventData;
   color?: string;
   name: string;
 }
 
-export const Tray = styled.div<{ color: string }>`
+export const LibraryItem = styled.div<{ color: string }>`
   color: white;
   font-family: Helvetica, Arial;
   padding: 5px;
@@ -20,10 +20,10 @@ export const Tray = styled.div<{ color: string }>`
   cursor: pointer;
 `;
 
-export class TrayItemWidget extends React.Component<TrayItemWidgetProps> {
+export class LibraryItemWidget extends React.Component<LibraryItemWidgetProps> {
   render() {
     return (
-      <Tray
+      <LibraryItem
         color={this.props.color}
         draggable={true}
         onDragStart={(event) => {
@@ -35,7 +35,7 @@ export class TrayItemWidget extends React.Component<TrayItemWidgetProps> {
         className="tray-item"
       >
         {this.props.name}
-      </Tray>
+      </LibraryItem>
     );
   }
 }
