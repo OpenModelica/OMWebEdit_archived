@@ -1,10 +1,8 @@
-import * as React from "react";
 import { OMComponent } from "../../domain-model/OMComponent";
 import { DiagramEngine, PortWidget } from "@projectstorm/react-diagrams";
 import styled from "@emotion/styled";
 import { OMPort } from "../../domain-model/OMPort";
-import { Tray } from "../../dnd/TrayItemWidget";
-import { Layer } from "../../dnd/BodyWidget";
+import React from "react";
 
 export interface OMComponentWidgetProps {
   node: OMComponent;
@@ -72,13 +70,6 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
           position: "relative",
           width: this.props.node.size.width,
           height: this.props.node.size.height,
-        }}
-        draggable={true}
-        onDragStart={(event) => {
-          event.dataTransfer.setData("iconId", null);
-        }}
-        onDragOver={(event) => {
-          event.preventDefault();
         }}
       >
         <img

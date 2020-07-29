@@ -1,8 +1,10 @@
 import * as React from "react";
 import styled from "@emotion/styled";
 
+export type NodeEventData = { componentId: string };
+
 export interface TrayItemWidgetProps {
-  iconId: string;
+  nodeEventData: NodeEventData;
   color?: string;
   name: string;
 }
@@ -26,8 +28,8 @@ export class TrayItemWidget extends React.Component<TrayItemWidgetProps> {
         draggable={true}
         onDragStart={(event) => {
           event.dataTransfer.setData(
-            "iconId",
-            JSON.stringify(this.props.iconId)
+            "nodeEventData-lib-drag-event-data",
+            JSON.stringify(this.props.nodeEventData)
           );
         }}
         className="tray-item"
