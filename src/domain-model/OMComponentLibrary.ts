@@ -20,9 +20,9 @@ export class OMComponentLibrary {
     const node1: OMComponent = this.getNodeFromServerResponse(inductorJson);
     const node2: OMComponent = this.getNodeFromServerResponse(resistorJson);
     const node3: OMComponent = this.getNodeFromServerResponse(groundJson);
-    this.components.set(node1.iconId, node1);
-    this.components.set(node2.iconId, node2);
-    this.components.set(node3.iconId, node3);
+    this.components.set(node1.componentId, node1);
+    this.components.set(node2.componentId, node2);
+    this.components.set(node3.componentId, node3);
     return this.components;
   }
 
