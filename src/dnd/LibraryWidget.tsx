@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React from "react";
+import { LibraryItemWidget } from "./LibraryItemWidget";
 
 export const Library = styled.div`
   min-width: 200px;
@@ -10,6 +11,23 @@ export const Library = styled.div`
 
 export class LibraryWidget extends React.Component {
   render() {
-    return <Library>{this.props.children}</Library>;
+    return (
+      <Library>
+        <LibraryItemWidget
+          nodeEventData={{
+            componentId: "Modelica.Electrical.Analog.Basic.Inductor",
+          }}
+          name="Inductor"
+          color="rgb(192,255,0)"
+        />
+        <LibraryItemWidget
+          nodeEventData={{
+            componentId: "Modelica.Electrical.Analog.Basic.Ground",
+          }}
+          name="Ground"
+          color="rgb(0,192,255)"
+        />
+      </Library>
+    );
   }
 }

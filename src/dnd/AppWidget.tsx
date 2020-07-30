@@ -1,7 +1,7 @@
 import * as React from "react";
 import { LibraryWidget } from "./LibraryWidget";
 import { Application } from "../Application";
-import { NodeEventData, LibraryItemWidget } from "./LibraryItemWidget";
+import { NodeEventData } from "./LibraryItemWidget";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import styled from "@emotion/styled";
 import { OMComponent } from "../domain-model/OMComponent";
@@ -68,22 +68,7 @@ export class AppWidget extends React.Component<AppWidgetProps> {
           <div className="title">Storm React Diagrams - DnD foo demo</div>
         </Header>
         <Content>
-          <LibraryWidget>
-            <LibraryItemWidget
-              nodeEventData={{
-                componentId: "Modelica.Electrical.Analog.Basic.Inductor",
-              }}
-              name="Inductor"
-              color="rgb(192,255,0)"
-            />
-            <LibraryItemWidget
-              nodeEventData={{
-                componentId: "Modelica.Electrical.Analog.Basic.Ground",
-              }}
-              name="Ground"
-              color="rgb(0,192,255)"
-            />
-          </LibraryWidget>
+          <LibraryWidget />
           <Workspace
             onDrop={(event) => {
               this.onDropEventHandler(event);
