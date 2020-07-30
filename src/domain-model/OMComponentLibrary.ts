@@ -1,6 +1,4 @@
-import inductorJson from "../component-inductor.json";
-import resistorJson from "../component-resistor.json";
-import groundJson from "../component-ground.json";
+import componentJson from "../components.json";
 import { OMComponent } from "./OMComponent";
 import { OMPort } from "./OMPort";
 
@@ -17,12 +15,10 @@ export class OMComponentLibrary {
 
   public getAllComponents(): Map<String, OMComponent> {
     this.components = new Map<String, OMComponent>();
-    const node1: OMComponent = this.getNodeFromServerResponse(inductorJson);
-    const node2: OMComponent = this.getNodeFromServerResponse(resistorJson);
-    const node3: OMComponent = this.getNodeFromServerResponse(groundJson);
-    this.components.set(node1.componentId, node1);
-    this.components.set(node2.componentId, node2);
-    this.components.set(node3.componentId, node3);
+    componentJson.forEach((componentJson) => {
+      const node: OMComponent = this.getNodeFromServerResponse(componentJson);
+      this.components.set(node.componentId, node);
+    });
     return this.components;
   }
 
