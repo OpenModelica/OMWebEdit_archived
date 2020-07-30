@@ -29,6 +29,7 @@ export class OMComponentLibrary {
   private getNodeFromServerResponse(nodeJson): OMComponent {
     const node: OMComponent = new OMComponent(
       nodeJson.id,
+      nodeJson.displayLabel,
       nodeJson.svgPath,
       nodeJson.size
     );

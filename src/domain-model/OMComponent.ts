@@ -16,15 +16,22 @@ export class OMComponent extends NodeModel<
   NodeModelGenerics & OMWebEditDefaultNodeModelGenerics
 > {
   iconId: string;
+  displayLabel: string;
   svgPath: string;
   size: size;
   data: object;
 
-  constructor(iconId: string, svgPath: string, size: size) {
+  constructor(
+    iconId: string,
+    displayLabel: string,
+    svgPath: string,
+    size: size
+  ) {
     super({
       type: "om-nodeEventData",
     });
     this.iconId = iconId;
+    this.displayLabel = displayLabel;
     this.svgPath = svgPath;
     this.size = size;
     this.data = {};
