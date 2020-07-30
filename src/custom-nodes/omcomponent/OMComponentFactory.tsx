@@ -9,7 +9,7 @@ export class OMComponentFactory extends AbstractReactFactory<
   DiagramEngine
 > {
   constructor() {
-    super("om-nodeEventData");
+    super("om-component");
   }
 
   generateReactWidget(event): JSX.Element {
