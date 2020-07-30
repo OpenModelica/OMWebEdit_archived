@@ -28,7 +28,7 @@ export class LibraryItemWidget extends React.Component<LibraryItemWidgetProps> {
         draggable={true}
         onDragStart={(event) => {
           event.dataTransfer.setData(
-            "nodeEventData-lib-drag-event-data",
+            "lib-item-drag-event-data",
             JSON.stringify(this.props.nodeEventData)
           );
         }}

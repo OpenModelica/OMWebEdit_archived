@@ -41,7 +41,7 @@ export const Workspace = styled.div`
 export class AppWidget extends React.Component<AppWidgetProps> {
   private onDropEventHandler(event) {
     const eventData: string = event.dataTransfer.getData(
-      "nodeEventData-lib-drag-event-data"
+      "lib-item-drag-event-data"
     );
     if (eventData) {
       const omComponentLibrary = this.props.app.getComponentLibrary();
