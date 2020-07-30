@@ -9,14 +9,13 @@ export interface LibraryItemWidgetProps {
   name: string;
 }
 
-export const LibraryItem = styled.div<{ color: string }>`
+export const LibraryItem = styled.div`
   color: white;
-  font-family: Helvetica, Arial;
+  font-family: Helvetica, Arial, serif;
   padding: 5px;
-  margin: 0px 10px;
-  border: solid 1px ${(p) => p.color};
+  border: solid 1px rgb(192, 255, 0);
   border-radius: 5px;
-  margin-bottom: 2px;
+  margin: 0 10px 2px;
   cursor: pointer;
 `;
 
