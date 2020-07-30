@@ -48,7 +48,7 @@ export class LibraryWidget extends React.Component<LibraryWidgetProps> {
           componentId: component.iconId,
         }}
         key={component.iconId}
-        name={component.iconId}
+        name={component.displayLabel}
       />
     );
   }

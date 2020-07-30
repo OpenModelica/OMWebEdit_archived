@@ -1,5 +1,6 @@
 {
   "id": "Modelica.Electrical.Analog.Basic.Ground",
+  "displayLabel": "Analog Ground",
   "svgPath": "./Modelica.Electrical.Analog.Basic.Ground.svg",
   "size": {
     "width": 310,

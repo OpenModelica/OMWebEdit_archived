@@ -1,5 +1,6 @@
 {
   "id": "Modelica.Electrical.Analog.Basic.Resistor",
+  "displayLabel": "Analog Resistor",
   "svgPath": "./Modelica.Electrical.Analog.Basic.Resistor.svg",
   "size": {
     "width": 310,
