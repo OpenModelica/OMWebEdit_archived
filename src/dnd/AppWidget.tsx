@@ -5,7 +5,6 @@ import { NodeEventData } from "./LibraryItemWidget";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import styled from "@emotion/styled";
 import { OMComponent } from "../domain-model/OMComponent";
-import { OMComponentLibrary } from "../domain-model/OMComponentLibrary";
 
 export interface AppWidgetProps {
   app: Application;
@@ -44,7 +43,7 @@ export class AppWidget extends React.Component<AppWidgetProps> {
       "nodeEventData-lib-drag-event-data"
     );
     if (eventData) {
-      const omComponentLibrary = new OMComponentLibrary();
+      const omComponentLibrary = this.props.app.getComponentLibrary();
       const data: NodeEventData = JSON.parse(eventData);
       const node: OMComponent = omComponentLibrary.getComponentById(
         data.componentId
