@@ -25,6 +25,7 @@ export const Header = styled.div`
   font-family: Helvetica, Arial, sans-serif;
   padding: 10px;
   align-items: center;
+  font-size: x-large;
 `;
 
 export const Content = styled.div`
@@ -64,7 +65,7 @@ export class AppWidget extends React.Component<AppWidgetProps> {
     return (
       <App>
         <Header>
-          <div className="title">Storm React Diagrams - DnD foo demo</div>
+          <div className="title">OMWebEdit</div>
         </Header>
         <Content>
           <LibraryWidget />

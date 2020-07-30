@@ -4,15 +4,25 @@ import { LibraryItemWidget } from "./LibraryItemWidget";
 
 export const Library = styled.div`
   min-width: 200px;
-  background: rgb(20, 20, 20);
+  background: rgb(30, 30, 30);
   flex-grow: 0;
   flex-shrink: 0;
+`;
+
+export const WidgetHeaderBar = styled.div`
+  color: white;
+  font-family: Helvetica, Arial;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
 `;
 
 export class LibraryWidget extends React.Component {
   render() {
     return (
       <Library>
+        <WidgetHeaderBar>Component Library</WidgetHeaderBar>
         <LibraryItemWidget
           nodeEventData={{
             componentId: "Modelica.Electrical.Analog.Basic.Inductor",
