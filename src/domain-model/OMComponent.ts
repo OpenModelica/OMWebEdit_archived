@@ -28,7 +28,7 @@ export class OMComponent extends NodeModel<
     size: size
   ) {
     super({
-      type: "om-nodeEventData",
+      type: "om-component",
     });
     this.componentId = componentId;
     this.displayLabel = displayLabel;
