@@ -15,14 +15,14 @@ interface size {
 export class OMComponent extends NodeModel<
   NodeModelGenerics & OMWebEditDefaultNodeModelGenerics
 > {
-  iconId: string;
+  componentId: string;
   displayLabel: string;
   svgPath: string;
   size: size;
   data: object;
 
   constructor(
-    iconId: string,
+    componentId: string,
     displayLabel: string,
     svgPath: string,
     size: size
@@ -30,7 +30,7 @@ export class OMComponent extends NodeModel<
     super({
       type: "om-nodeEventData",
     });
-    this.iconId = iconId;
+    this.componentId = componentId;
     this.displayLabel = displayLabel;
     this.svgPath = svgPath;
     this.size = size;
@@ -39,14 +39,14 @@ export class OMComponent extends NodeModel<
 
   serialize() {
     return merge(super.serialize(), {
-      id: this.iconId,
+      componentId: this.componentId,
       svgPath: this.svgPath,
     });
   }
 
   deserialize(event: DeserializeEvent<this>): void {
     super.deserialize(event);
-    this.iconId = event.data.iconId;
+    this.componentId = event.data.componentId;
     this.svgPath = event.data.svgPath;
   }
 }

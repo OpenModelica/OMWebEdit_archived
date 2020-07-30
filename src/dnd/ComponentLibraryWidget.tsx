@@ -4,7 +4,7 @@ import { LibraryItemWidget } from "./LibraryItemWidget";
 import { Application } from "../Application";
 import { OMComponent } from "../domain-model/OMComponent";
 
-export interface LibraryWidgetProps {
+export interface ComponentLibraryWidgetProps {
   app: Application;
 }
 
@@ -24,7 +24,9 @@ export const WidgetHeaderBar = styled.div`
   cursor: pointer;
 `;
 
-export class LibraryWidget extends React.Component<LibraryWidgetProps> {
+export class ComponentLibraryWidget extends React.Component<
+  ComponentLibraryWidgetProps
+> {
   render() {
     let libraryItemWidgets: JSX.Element[] = [];
     this.props.app
@@ -45,9 +47,9 @@ export class LibraryWidget extends React.Component<LibraryWidgetProps> {
     return (
       <LibraryItemWidget
         nodeEventData={{
-          componentId: component.iconId,
+          componentId: component.componentId,
         }}
-        key={component.iconId}
+        key={component.componentId}
         name={component.displayLabel}
       />
     );

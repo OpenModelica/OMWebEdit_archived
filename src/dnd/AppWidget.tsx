@@ -1,5 +1,5 @@
 import * as React from "react";
-import { LibraryWidget } from "./LibraryWidget";
+import { ComponentLibraryWidget } from "./ComponentLibraryWidget";
 import { Application } from "../Application";
 import { NodeEventData } from "./LibraryItemWidget";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
@@ -68,7 +68,7 @@ export class AppWidget extends React.Component<AppWidgetProps> {
           <div className="title">OMWebEdit</div>
         </Header>
         <Content>
-          <LibraryWidget app={this.props.app} />
+          <ComponentLibraryWidget app={this.props.app} />
           <Workspace
             onDrop={(event) => {
               this.onDropEventHandler(event);
