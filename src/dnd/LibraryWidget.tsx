@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import { LibraryItemWidget } from "./LibraryItemWidget";
 import { Application } from "../Application";
+import { OMComponent } from "../domain-model/OMComponent";
 
 export interface LibraryWidgetProps {
   app: Application;
@@ -16,7 +17,7 @@ export const Library = styled.div`
 
 export const WidgetHeaderBar = styled.div`
   color: white;
-  font-family: Helvetica, Arial;
+  font-family: Helvetica, Arial, serif;
   padding: 5px;
   border-radius: 5px;
   margin: 10px;
@@ -25,24 +26,30 @@ export const WidgetHeaderBar = styled.div`
 
 export class LibraryWidget extends React.Component<LibraryWidgetProps> {
   render() {
+    let libraryItemWidgets: JSX.Element[] = [];
+    this.props.app
+      .getComponentLibrary()
+      .getAllComponents()
+      .forEach((component) => {
+        libraryItemWidgets.push(this.getLibraryItemWidget(component));
+      });
     return (
       <Library>
         <WidgetHeaderBar>Component Library</WidgetHeaderBar>
-        <LibraryItemWidget
-          nodeEventData={{
-            componentId: "Modelica.Electrical.Analog.Basic.Inductor",
-          }}
-          name="Inductor"
-          color="rgb(192,255,0)"
-        />
-        <LibraryItemWidget
-          nodeEventData={{
-            componentId: "Modelica.Electrical.Analog.Basic.Ground",
-          }}
-          name="Ground"
-          color="rgb(0,192,255)"
-        />
+        {libraryItemWidgets}
       </Library>
+    );
+  }
+
+  private getLibraryItemWidget(component: OMComponent) {
+    return (
+      <LibraryItemWidget
+        nodeEventData={{
+          componentId: component.iconId,
+        }}
+        key={component.iconId}
+        name={component.iconId}
+      />
     );
   }
 }
