@@ -1,6 +1,11 @@
 import styled from "@emotion/styled";
 import React from "react";
 import { LibraryItemWidget } from "./LibraryItemWidget";
+import { Application } from "../Application";
+
+export interface LibraryWidgetProps {
+  app: Application;
+}
 
 export const Library = styled.div`
   min-width: 200px;
@@ -18,7 +23,7 @@ export const WidgetHeaderBar = styled.div`
   cursor: pointer;
 `;
 
-export class LibraryWidget extends React.Component {
+export class LibraryWidget extends React.Component<LibraryWidgetProps> {
   render() {
     return (
       <Library>

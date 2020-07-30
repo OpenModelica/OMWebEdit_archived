@@ -68,7 +68,7 @@ export class AppWidget extends React.Component<AppWidgetProps> {
           <div className="title">OMWebEdit</div>
         </Header>
         <Content>
-          <LibraryWidget />
+          <LibraryWidget app={this.props.app} />
           <Workspace
             onDrop={(event) => {
               this.onDropEventHandler(event);
