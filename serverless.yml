@@ -1,0 +1,47 @@
+# Welcome to serverless. Read the docs
+# https://serverless.com/framework/docs/
+
+# Serverless.yml is the configuration the CLI
+# uses to deploy your code to your provider of choice
+
+# The `service` block is the name of the service
+service: omwebedit
+
+# The `provider` block defines where your service will be deployed
+provider:
+  name: aws
+  runtime: nodejs12.x
+  profile: beancrunch
+  region: eu-central-1
+
+plugins:
+  - serverless-s3-deploy
+
+custom:
+  assets:
+    targets:
+      - bucket:
+          Ref: OMWebEditBucket
+        acl: public-read
+        files:
+          - source: ./build/
+            globs: '**/*.html'
+            defaultContentType: text/html
+            headers:
+              CacheControl: no-store
+          - source: ./build/
+            globs: '**/*'
+            headers:
+              CacheControl: no-store
+
+resources:
+  # AWS CloudFormation Template
+  Resources:
+    OMWebEditBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: omwebedit.perpetuallabs.io
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: index.html

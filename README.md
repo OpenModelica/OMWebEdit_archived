@@ -41,6 +41,25 @@ v12.18.1
     npm run start
     ```
 
+## Deploying Using Serverless Framework
+### Build for Deployment
+```
+npm run build
+```
+### Init Serverless Stack
+Doesn't need re-running each time. Only required once to create "serverless stack"
+```
+sls deploy
+```
+### Deploy API-Docs to S3
+```
+sls s3deploy
+```
+### Remove Serveless Stack
+```
+sls remove
+```
+
 # Project Information and Management
 
 ## Requirements
