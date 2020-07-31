@@ -76,6 +76,7 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
           src={this.props.node.svgPath}
           alt={this.props.node.componentId}
           width="100%"
+          draggable={false}
         />
         {portWidgets}
       </div>
