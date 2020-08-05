@@ -10,10 +10,7 @@
     "target": "ES6",
     "module": "esnext",
     "strict": false,
-    "lib": [
-      "dom",
-      "es6"
-    ],
+    "lib": ["dom", "es6"],
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -23,12 +20,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": [
-    "./src"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts",
-    "./dist"
-  ]
+  "include": ["./src"],
+  "exclude": ["node_modules", "**/*.spec.ts", "./dist"]
 }
