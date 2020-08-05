@@ -29,7 +29,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|json|ts|tsx|md)\"",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --list-different",
+    "static-analysis-and-build": "npm run check-format && npm run lint && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
