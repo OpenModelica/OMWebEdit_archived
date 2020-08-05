@@ -29,11 +29,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "ts-compile": "tsc",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|json|ts|tsx|md)\"",
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
-    "static-analysis-and-build": "npm run check-format && npm run lint && npm run build"
+    "static-checks": "npm-run-all --parallel ts-compile check-format lint"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +52,8 @@
     ]
   },
   "devDependencies": {
+    "husky": "^4.2.5",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "serverless-s3-deploy": "^0.9.0"
   }
