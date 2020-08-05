@@ -1,2 +1,2 @@
-* [ ] How should component sizes be handled: server specifies aspect ratio or absolute dimension?
-* [ ] Port positioning information - absolute of percentage based?
+- [ ] How should component sizes be handled: server specifies aspect ratio or absolute dimension?
+- [ ] Port positioning information - absolute of percentage based?
