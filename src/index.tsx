@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import { Application } from "./Application";
-import { AppWidget } from "./dnd/AppWidget";
+import { AppWidget } from "./AppWidget";
 
 ReactDOM.render(
   <AppWidget app={new Application()} />,

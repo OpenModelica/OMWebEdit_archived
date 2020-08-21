@@ -1,10 +1,10 @@
 import * as React from "react";
-import { ComponentLibraryWidget } from "./ComponentLibraryWidget";
-import { Application } from "../Application";
-import { NodeEventData } from "./LibraryItemWidget";
+import { ComponentLibraryWidget } from "./drag-n-drop/ComponentLibraryWidget";
+import { Application } from "./Application";
+import { NodeEventData } from "./drag-n-drop/LibraryItemWidget";
 import { CanvasWidget } from "@projectstorm/react-canvas-core";
 import styled from "@emotion/styled";
-import { OMComponent } from "../domain-model/OMComponent";
+import { OMComponent } from "./domain-model/OMComponent";
 
 export interface AppWidgetProps {
   app: Application;
