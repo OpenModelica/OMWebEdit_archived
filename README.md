@@ -76,6 +76,11 @@ sls s3deploy
 sls remove
 ```
 
+## Continuous Integration Checks
+
+A series of static checks and tests are run as part of the CI workflow.  
+For details, refer: [ci.yml](./.github/workflows/ci.yml)
+
 # Project Information and Management
 
 ## Requirements
