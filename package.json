@@ -29,15 +29,21 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "ts-compile": "tsc",
+    "ts:compile": "tsc",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|json|ts|tsx|md)\"",
     "format": "npm run prettier -- --write",
-    "check-format": "npm run prettier -- --list-different",
-    "static-checks": "npm-run-all --parallel ts-compile check-format lint"
+    "format:check": "npm run prettier -- --list-different",
+    "test:static": "npm-run-all --parallel ts:compile format:check lint",
+    "test:ci": "npm run test -- --watchAll=false"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "jest-emotion"
+    ]
   },
   "browserslist": {
     "production": [
@@ -53,6 +59,7 @@
   },
   "devDependencies": {
     "husky": "^4.2.5",
+    "jest-emotion": "^10.0.32",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "serverless-s3-deploy": "^0.9.0"
