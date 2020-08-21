@@ -86,4 +86,6 @@ export class AppWidget extends React.Component<AppWidgetProps> {
       </App>
     );
   }
+
+  static defaultProps = { app: new Application() };
 }
