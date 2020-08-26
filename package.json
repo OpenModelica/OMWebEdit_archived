@@ -28,14 +28,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "prestart:prod": "npm run build",
+    "start:prod": "serve -s build",
     "eject": "react-scripts eject",
     "ts:compile": "tsc",
     "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|json|ts|tsx|md)\"",
     "format": "npm run prettier -- --write",
     "format:check": "npm run prettier -- --list-different",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
     "test:static": "npm-run-all --parallel ts:compile format:check lint",
-    "test:ci": "npm run test -- --watchAll=false"
+    "test:integration": "npm run test -- --watchAll=false",
+    "test:e2e": "start-server-and-test start:prod http://localhost:5000 cy:run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -65,6 +70,7 @@
     "jest-emotion": "^10.0.32",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
-    "serverless-s3-deploy": "^0.9.0"
+    "serverless-s3-deploy": "^0.9.0",
+    "start-server-and-test": "^1.11.3"
   }
 }
