@@ -1,7 +1,7 @@
 describe("load app and create simple model using components in library", () => {
   it("can load app homepage and place components from library onto canvas", () => {
     const dataTransfer = new DataTransfer();
-    cy.visit("http://localhost:3000")
+    cy.visit("/")
       .get(".css-nyqbs7 > :nth-child(2)")
       .trigger("dragstart", { dataTransfer })
       .get(".canvas")
