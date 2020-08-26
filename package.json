@@ -39,7 +39,7 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test:static": "npm-run-all --parallel ts:compile format:check lint",
-    "test:integration": "npm run test -- --watchAll=false",
+    "test:nowatch": "npm run test -- --watchAll=false",
     "test:e2e": "start-server-and-test start:prod http://localhost:5000 cy:run"
   },
   "eslintConfig": {
