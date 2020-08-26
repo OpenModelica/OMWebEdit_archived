@@ -58,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^1.4.0",
     "cypress": "^5.0.0",
     "eslint-plugin-cypress": "^2.11.1",
     "husky": "^4.2.5",

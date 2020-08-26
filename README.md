@@ -44,9 +44,14 @@ v12.18.1
    npm install
    ```
 1. Run
+
    ```
    npm run start
    ```
+
+## Automated Checks
+
+Todo: eslint, prettier, react-testing-library (component/unit) tests, cypress (integration) tests, husky
 
 ## Deploying Using Serverless Framework
 
