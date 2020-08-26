@@ -24,6 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+
       - name: Cache node modules
         uses: actions/cache@v2
         env:
@@ -36,13 +37,22 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install
-      - run: npm run test:static
-      - run: npm run test:nowatch
-      - run: npm run test:e2e
+
+      - name: Install packages
+        run: npm install
+
+      - name: Run static checks (compile, lint, formatting)
+        run: npm run test:static
+
+      - name: Run tests (integrattion, component and unit)
+        run: npm run test:nowatch
+
+      - name: Run E2E tests
+        run: npm run test:e2e
         env:
           CYPRESS_BASE_URL: http://localhost:5000
