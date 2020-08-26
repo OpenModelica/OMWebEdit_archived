@@ -119,7 +119,7 @@ Doesn't need re-running each time. Only required once to create "serverless stac
 sls deploy
 ```
 
-### Deploy API-Docs to S3
+### Deploy to S3
 
 ```
 sls s3deploy
