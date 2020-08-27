@@ -1,5 +1,8 @@
 import { OMComponent } from "../../domain-model/OMComponent";
-import { DiagramEngine, PortWidget } from "@projectstorm/react-diagrams";
+import createEngine, {
+  DiagramEngine,
+  PortWidget,
+} from "@projectstorm/react-diagrams";
 import styled from "@emotion/styled";
 import { OMPort } from "../../domain-model/OMPort";
 import React from "react";
@@ -26,12 +29,12 @@ export const Port = styled.div`
 `;
 
 export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
-  getPortWidget(topStyle, leftStyle, port, svgPath) {
+  getPortWidget(topMargin, leftMargin, port, svgPath) {
     return (
       <PortWidget
         style={{
-          top: topStyle,
-          left: leftStyle,
+          top: topMargin,
+          left: leftMargin,
           position: "absolute",
         }}
         key={port.getName()}
@@ -71,6 +74,7 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
           width: this.props.node.size.width,
           height: this.props.node.size.height,
         }}
+        data-testid={this.props.node.displayLabel}
       >
         <img
           src={this.props.node.svgPath}
@@ -82,4 +86,8 @@ export class OMComponentWidget extends React.Component<OMComponentWidgetProps> {
       </div>
     );
   }
+
+  static defaultProps = {
+    engine: createEngine(),
+  };
 }

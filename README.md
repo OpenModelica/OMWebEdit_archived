@@ -3,12 +3,19 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
-
 - [OMWebEdit](#omwebedit)
 - [Developer Guide](#developer-guide)
   - [Dev Env Pre-requisites](#dev-env-pre-requisites)
   - [Running Locally](#running-locally)
+  - [Automated Checks and Tests](#automated-checks-and-tests)
+    - [Static Checks](#static-checks)
+    - [Tests](#tests)
+  - [Continuous Integration Checks](#continuous-integration-checks)
+  - [Deploying Using Serverless Framework](#deploying-using-serverless-framework)
+    - [Build for Deployment](#build-for-deployment)
+    - [Init Serverless Stack](#init-serverless-stack)
+    - [Deploy API-Docs to S3](#deploy-api-docs-to-s3)
+    - [Remove Serverless Stack](#remove-serveless-stack)
 - [Project Information and Management](#project-information-and-management)
   - [Requirements](#requirements)
   - [Timeline](#timeline)
@@ -44,9 +51,57 @@ v12.18.1
    npm install
    ```
 1. Run
+
    ```
    npm run start
    ```
+
+## Automated Checks and Tests
+
+The project uses a combination of static checks and automated tests to ensure quality.
+
+### Static Checks
+
+Static checks can be run using the following command
+
+```
+npm run test:static
+```
+
+This command does the following:
+
+- Compiles all [TypeScript](https://www.typescriptlang.org/) code to check for any compilation errors
+- Runs [ESLint](https://eslint.org/) checks
+- Runs [Prettier](https://prettier.io/) checks
+
+All static checks are also run before any commit is accepted, using a pre-commit hook configured using
+[Husky](https://github.com/typicode/husky).
+
+### Tests
+
+The project uses the following category of tests
+
+1. Integration, Component and Unit Tests  
+   These are written using [React-Testing-Library](https://testing-library.com/docs/react-testing-library/intro). These
+   tests don't startup the full application for quick feedback, but still uses actual DOM nodes while testing just like
+   a real user does. These tests use a Test Double for any downstream dependencies to ensure speed of execution.
+   Run these tests using the following command:
+   ```
+   npm run test
+   ```
+1. E2E tests  
+   These are [black-box tests](https://en.wikipedia.org/wiki/Black-box_testing) written using
+   [Cypress](https://www.cypress.io/).  
+   Run these tests using the following command (the app should be running as a pre-requisite):
+   ```
+   npm run cy:open
+   ```
+
+## Continuous Integration Checks
+
+A series of static checks and tests are run as part of the CI workflow. For details, refer:
+[ci.yml](./.github/workflows/ci.yml). Environment variables (capturing non-sensitive information) for use in E2E tests
+are defined in [ci.yml](./.github/workflows/ci.yml).
 
 ## Deploying Using Serverless Framework
 
@@ -64,7 +119,7 @@ Doesn't need re-running each time. Only required once to create "serverless stac
 sls deploy
 ```
 
-### Deploy API-Docs to S3
+### Deploy to S3
 
 ```
 sls s3deploy
