@@ -57,6 +57,8 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v2
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -81,8 +83,6 @@ jobs:
 
       - name: Bump version and tag
         run: npm version minor && git push && git push --tags
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build for production
         run: npm run build
