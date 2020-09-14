@@ -79,6 +79,12 @@ jobs:
       - name: Install packages
         run: npm install
 
+      - name: Bump version and tag
+        run: npm version minor && git push && git push --tags
+
+      - name: Build for production
+        run: npm run build
+
       - name: Serverless deploy
         uses: serverless/github-action@v1.53.0
         with:
