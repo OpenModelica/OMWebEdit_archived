@@ -57,8 +57,6 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -80,6 +78,9 @@ jobs:
 
       - name: Install packages
         run: npm install
+
+      - name: Git config
+        run: git config --global user.email "anurag@perpetuallabs.io" && git config --global user.name "Anurag Kapur"
 
       - name: Bump version and tag
         run: npm version minor && git push && git push --tags
