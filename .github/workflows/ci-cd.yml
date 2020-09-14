@@ -80,7 +80,7 @@ jobs:
         run: npm install
 
       - name: Git config
-        run: git config --global user.email "anurag@perpetuallabs.io" && git config --global user.name "Anurag Kapur"
+        run: git config --global user.email "anurag@perpetuallabs.io" && git config --global user.name "Deployment Bot"
 
       - name: Bump version and tag
         run: npm version minor && git push && git push --tags
