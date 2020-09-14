@@ -81,6 +81,8 @@ jobs:
 
       - name: Bump version and tag
         run: npm version minor && git push && git push --tags
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build for production
         run: npm run build
