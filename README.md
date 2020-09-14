@@ -100,8 +100,8 @@ The project uses the following category of tests
 ## Continuous Integration Checks
 
 A series of static checks and tests are run as part of the CI workflow. For details, refer:
-[ci.yml](./.github/workflows/ci.yml). Environment variables (capturing non-sensitive information) for use in E2E tests
-are defined in [ci.yml](./.github/workflows/ci.yml).
+[ci-cd.yml](.github/workflows/ci-cd.yml). Environment variables (capturing non-sensitive information) for use in E2E
+tests are defined in [ci-cd.yml](.github/workflows/ci-cd.yml).
 
 ## Deploying Using Serverless Framework
 
