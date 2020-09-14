@@ -105,6 +105,9 @@ tests are defined in [ci-cd.yml](.github/workflows/ci-cd.yml).
 
 ## Deploying Using Serverless Framework
 
+All commits to master that pass all tests are deployed automatically as per configuration in
+[ci-cd.yml](.github/workflows/ci-cd.yml).
+
 ### Build for Deployment
 
 ```
