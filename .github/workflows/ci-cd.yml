@@ -52,6 +52,7 @@ jobs:
 
       - name: Save cypress test video
         uses: actions/upload-artifact@v2
+        if: failure()
         with:
           name: cypress-videos
           path: /home/runner/work/OMWebEdit/OMWebEdit/cypress/videos
