@@ -50,6 +50,12 @@ jobs:
         env:
           CYPRESS_BASE_URL: http://localhost:5000
 
+      - name: Save cypress test video
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-videos
+          path: /home/runner/work/OMWebEdit/OMWebEdit/cypress/videos
+
   deploy:
     name: deploy
     runs-on: ubuntu-latest
